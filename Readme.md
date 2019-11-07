@@ -1,7 +1,7 @@
 # Личный проект «Погнали» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Денис Наталевич](https://up.htmlacademy.ru/adaptive/18/user/1139383).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Зубов](https://htmlacademy.ru/profile/id208340).
 
 ---
 

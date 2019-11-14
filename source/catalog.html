@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Погнали</title>
+  </head>
+  <body>
+
+    <header class="page-header inner-page">
+      <h1 class="inner-page__header">Попутчики</h1>
+      <a class="page-header__logo page-header__logo--scroll" href="index.html">
+        <img class="page-header__logo-img page-header__logo-img--scroll" src="https://via.placeholder.com/150x150" width="100" height="19" alt="Логотип сайта Погнали">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle main-nav__toggle--scroll" type="button">Открыть меню</button>
+        <button class="main-nav__toggle main-nav__toggle--scroll main-nav__toggle--close" type="button">Закрыть меню</button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="">О сервисе</a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">Направления</a>
+          </li>
+          <li class="site-list__item">
+            <a>Попутчики</a>
+          </li>
+        </ul>
+        <ul class="main-nav__list user-list">
+          <li class="user-list__item">
+            <a class="user-list__login" href="login.html">Авторизация</a>
+          </li>
+        </ul>
+        <ul class="main-nav__list contacts-list">
+          <li class="contacts-list__item contacts-list__item--phone">
+            <a class="contacts-list__link" href="tel:8-800-555-86-28">8 800 555-86-28</a>
+          </li>
+          <li class="contacts-list__item contacts-list__item--email">
+            <a class="contacts-list__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="page-main page-catalog">
+      <ul class="travelmates__list">
+        <li class="travelmates__item">
+          <p class="travelmate__name">Таня<br>Фирсова<br>
+            <span class="travelmate__raiting">1,5 M</span>
+            <img class="travelmates__foto" src="https://via.placeholder.com/150x150" width="70" height="70" alt="Таня Фирсова">
+          </p>
+          <p class="travelmates__tags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
+          <figure class="travelmates__wishes">
+            <figcaption>хочет посетить:</figcaption>
+            <ul class="travelmates__countries travelmates-countries-list">
+              <li class="travelmates-countries-list__item travelmates-countries-list__item--srilanka">Шри-ланка</li>
+              <li class="travelmates-countries-list__item travelmates-countries-list__item--thailand">Таиланд</li>
+              <li class="travelmates-countries-list__item travelmates-countries-list__item--seychelles">Сейшелы</li>
+            </ul>
+          </figure>
+          <figure class="travelmates__fav-transport">
+            <figcaption>транспорт:</figcaption>
+            <ul class="travelmates__transport transport-list">
+              <li class="transport-list__item transport-list__item--used transport-list__item--airplane">Авиаперелет</li>
+              <li class="transport-list__item transport-list__item--bus">Автотранспорт</li>
+              <li class="transport-list__item transport-list__item--bike">Велосипед</li>
+              <li class="transport-list__item transport-list__item--onfoot">Пешком</li>
+            </ul>
+          </figure>
+          <figure class="travelmates__fav-transport">
+            <figcaption>левел:</figcaption>
+            <span class="travelmates__level">99</span>
+          </figure>
+        <button class="travelmates__button button" type="button" onClick="location.href='travelmate.html'">Позвать</button>
+        </li>
+
+        <li class="travelmates__item">
+          <p class="travelmate__name">Петя<br>Демин<br>
+            <span class="travelmate__raiting">150</span>
+            <img class="travelmates__foto" src="https://via.placeholder.com/150x150" width="70" height="70" alt="Петя Демин">
+          </p>
+          <p class="travelmates__tags">#бургер #бар #футбол #концерт #крафт</p>
+          <figure class="travelmates__wishes">
+            <figcaption>хочет посетить:</figcaption>
+            <ul class="travelmates__countries travelmates-countries-list">
+              <li class="travelmates-countries-list__item travelmates-countries-list__item--belgium">Бельгия</li>
+              <li class="travelmates-countries-list__item travelmates-countries-list__item--czech">Чехия</li>
+            </ul>
+          </figure>
+          <figure class="travelmates__fav-transport">
+            <figcaption>транспорт:</figcaption>
+            <ul class="travelmates__transport transport-list">
+              <li class="transport-list__item transport-list__item--used transport-list__item--airplane">Авиаперелет</li>
+              <li class="transport-list__item transport-list__item--used transport-list__item--bus">Автотранспорт</li>
+              <li class="transport-list__item transport-list__item--bike">Велосипед</li>
+              <li class="transport-list__item transport-list__item--used transport-list__item--onfoot">Пешком</li>
+            </ul>
+          </figure>
+          <figure class="travelmates__fav-transport">
+            <figcaption>левел:</figcaption>
+            <span class="travelmates__level">80</span>
+          </figure>
+        <button class="travelmates__button button" type="button" onClick="location.href='travelmate.html'">Позвать</button>
+        </li>
+
+        <li class="travelmates__item">
+          <p class="travelmate__name">Марк<br>Смолов<br>
+            <span class="travelmate__raiting">1700</span>
+            <img class="travelmates__foto" src="https://via.placeholder.com/150x150" width="70" height="70" alt="Марк Смолов">
+          </p>
+          <p class="travelmates__tags">#рэп #тату #хайпбист #кроссовки #суприм</p>
+          <figure class="travelmates__wishes">
+            <figcaption>хочет посетить:</figcaption>
+            <ul class="travelmates__countries travelmates-countries-list">
+              <li class="travelmates-countries-list__item travelmates-countries-list__item--usa">США</li>
+              <li class="travelmates-countries-list__item travelmates-countries-list__item--australia">Австралия</li>
+              <li class="travelmates-countries-list__item travelmates-countries-list__item--dominican">Доминикана</li>
+            </ul>
+          </figure>
+          <figure class="travelmates__fav-transport">
+            <figcaption>транспорт:</figcaption>
+            <ul class="travelmates__transport transport-list">
+              <li class="transport-list__item transport-list__item--used transport-list__item--airplane">Авиаперелет</li>
+              <li class="transport-list__item transport-list__item--bus">Автотранспорт</li>
+              <li class="transport-list__item transport-list__item--used transport-list__item--bike">Велосипед</li>
+              <li class="transport-list__item transport-list__item--onfoot">Пешком</li>
+            </ul>
+          </figure>
+          <figure class="travelmates__fav-transport">
+            <figcaption>левел:</figcaption>
+            <span class="travelmates__level">25</span>
+          </figure>
+        <button class="travelmates__button button" type="button" onClick="location.href='travelmate.html'">Позвать</button>
+        </li>
+
+        <li class="travelmates__item">
+          <p class="travelmate__name">Лариса<br>Роговая<br>
+            <span class="travelmate__raiting">23</span>
+            <img class="travelmates__foto" src="https://via.placeholder.com/150x150" width="70" height="70" alt="Лариса Роговая">
+          </p>
+          <p class="travelmates__tags">#образование #карьера #учеба #линкедин </p>
+          <figure class="travelmates__wishes">
+            <figcaption>хочет посетить:</figcaption>
+            <ul class="travelmates__countries travelmates-countries-list">
+              <li class="travelmates-countries-list__item travelmates-countries-list__item--greatbritain">Великобритания</li>
+              <li class="travelmates-countries-list__item travelmates-countries-list__item--germany">Германия</li>
+            </ul>
+          </figure>
+          <figure class="travelmates__fav-transport">
+            <figcaption>транспорт:</figcaption>
+            <ul class="travelmates__transport transport-list">
+              <li class="transport-list__item transport-list__item--used transport-list__item--airplane">Авиаперелет</li>
+              <li class="transport-list__item transport-list__item--used transport-list__item--bus">Автотранспорт</li>
+              <li class="transport-list__item transport-list__item--bike">Велосипед</li>
+              <li class="transport-list__item transport-list__item--onfoot">Пешком</li>
+            </ul>
+          </figure>
+          <figure class="travelmates__fav-transport">
+            <figcaption>левел:</figcaption>
+            <span class="travelmates__level">50</span>
+          </figure>
+        <button class="travelmates__button button" type="button" onClick="location.href='travelmate.html'">Позвать</button>
+        </li>
+      </ul>
+      <button class="travelmates__more" type="button" onClick="location.href='travelmates.html'">Показать еще</button>
+      <button class="page-catalog__prev">Назад</button>
+      <button class="page-catalog__next">Вперед</button>
+    </main>
+
+    <footer class="page-footer">
+      <a class="page-footer__logo">
+        <img class="page-footer__logo-img" src="https://via.placeholder.com/150x150" width="100" height="19" alt="Логотип сайта Погнали">
+      </a>
+      <ul class="page-footer__social social-list">
+        <li class="social-list__item social-list__item--fb"><a href="facbook.com">Фэйсбук</a></li>
+        <li class="social-list__item social-list__item--vk"><a href="vk.com">Вконтакте</a></li>
+        <li class="social-list__item social-list__item--inst"><a href="instagram.com">Инстаграм</a></li>
+      </ul>
+      <a class="page-footer__copyrytes htmlacademy-logo" href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="htmlacademy-logo__text">Разработано</span>
+        <img class="htmlacademy-logo__image" src="https://via.placeholder.com/150x150" width="27" height="34" alt="Логотип htmlacademy.ru">
+      </a>
+    </footer>
+
+  </body>
+</html>

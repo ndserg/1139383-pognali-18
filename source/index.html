@@ -38,6 +38,11 @@
             <a class="contacts-list__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </li>
         </ul>
+        <ul class="main-nav__social social-list">
+          <li class="social-list__item social-list__item--fb"><a href="facbook.com">Фэйсбук</a></li>
+          <li class="social-list__item social-list__item--vk"><a href="vk.com">Вконтакте</a></li>
+          <li class="social-list__item social-list__item--inst"><a href="instagram.com">Инстаграм</a></li>
+        </ul>
       </nav>
     </header>
 
@@ -45,12 +50,12 @@
       <h1 class="visually-hidden">Погнали - сайт для поиска попутчиков</h1>
       <section class="intro">
         <h2 class="intro__slogan">В путешествие с крутыми попутчиками!</h2>
-        <ul class="intro__list contacts-list">
-          <li class="contacts-list__item contacts-list__item--phone">
-            <a class="contacts-list__link" href="tel:8-800-555-86-28">8 800 555-86-28</a>
+        <ul class="intro__list intro-contacts">
+          <li class="intro-contacts__item intro-contacts__item--phone">
+            <a class="intro-contacts__link" href="tel:8-800-555-86-28">8 800 555-86-28</a>
           </li>
-          <li class="contacts-list__item contacts-list__item--email">
-            <a class="contacts-list__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          <li class="intro-contacts__item intro-contacts__item--email">
+            <a class="intro-contacts__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </li>
         </ul>
         <ul class="intro__list user-list">
@@ -263,6 +268,30 @@
           </ul>
           <button class="business-rates-modal__button-close" type="button">Закрыть окно</button>
         </div>
+      </section>
+
+      <section class="contact">
+        <h2 class="visually_hidden">Контакты</h2>
+        <b class="page-main__heading contact__heading">Заинтересовались?</b>
+        <p class="page-main__text contact__text ">Зарегистрируйтесь, это быстро и бесплатно!
+           Уже зарегистрированы? Тогда скорее <a class="contact__login" href="login.html">авторизуйтесь.</a>
+        </p>
+        <form class="contact__form" action="https://echo.htmlacademy.ru" method="post">
+          <input class="contact__email" type="email" name="email" id="email" placeholder="E-mail">
+          <button class="contact__button" type="submit">Отправить</button>
+        </form>
+        <p class="page-main__text contact__text ">Остались вопросы? Мы с радостью на них ответим!</p>
+        <ul class="contact__list contacts-list">
+          <li class="contacts-list__item contacts-list__item--phone">
+            <a class="contacts-list__link" href="tel:8-800-555-86-28">8 800 555-86-28</a>
+          </li>
+          <li class="contacts-list__item contacts-list__item--email">
+            <a class="contacts-list__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </li>
+        </ul>
+        <p class="contact_address">ул. Большая<br>Конюшенная, 19/8</p>
+        <a class="contact__map button" href="map.html">Проложить маршрут</a>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1573674028927!5m2!1sru!2sru" width="320" height="546" allowfullscreen=""></iframe>
       </section>
     </main>
 

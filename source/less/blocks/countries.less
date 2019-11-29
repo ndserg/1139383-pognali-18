@@ -1,0 +1,55 @@
+.countries {
+  background-color: @light-blue;
+  opacity: 0.99;
+}
+
+.countries__wrapper {
+  .wrapper();
+  min-height: 1050px;
+  padding-top: 70px;
+}
+
+.countries__text {
+  color: @medium-blue;
+}
+
+.countries__list {
+  .list-clear();
+  padding-top: 30px;
+  margin-bottom: 25px;
+}
+
+.countries__item {
+  box-sizing: border-box;
+  padding-top: 25px;
+  padding-right: 20px;
+  padding-bottom: 25px;
+  padding-left: 25px;
+  position: relative;
+  min-height: 90px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  margin-top: 110px;
+  margin-bottom: 10px;
+}
+
+.countries__name {
+  .font(@fontRegular; 21px; bold);
+  line-height: 21px;
+  margin: 0;
+  color: @dark-blue;
+}
+
+.countries__description,
+.countries__tourists-total {
+  .font-medium();
+  color: rgba(68, 68, 68, 0.3);
+  margin: 0;
+}
+
+.countries__image {
+  position: absolute;
+  bottom: 80px;
+  left: 0;
+  z-index: -1;
+}

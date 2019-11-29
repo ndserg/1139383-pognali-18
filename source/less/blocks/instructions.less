@@ -1,0 +1,47 @@
+.instructions {
+  background: linear-gradient(to bottom, @dark-blue 0, @dark-blue 80px, @medium-blue 80px, @medium-blue 100%);
+}
+
+.instructions__wrapper {
+  .wrapper();
+  min-height: 360px;
+  padding-top: 5px;
+  padding-bottom: 35px;
+}
+
+.instructions__list {
+  .list-clear();
+  counter-reset: instuctionCounter;
+}
+
+.instructions__item {
+  .font(@fontRegular; 18px; bold);
+  line-height: 18px;
+  color: @dark-blue;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-left: 25px;
+  padding-bottom: 20px;
+}
+
+.instructions__item--first {
+  background-color: #ff8d30;
+}
+
+.instructions__item--second {
+  background-color: #ffa530;
+}
+
+.instructions__item--third {
+  background-color: #ffbd30;
+}
+
+.instructions__item--fourth {
+  background-color: #ffd74b;
+}
+
+.instructions__item::after {
+  counter-increment: instuctionCounter;
+  content: counter(instuctionCounter);
+  color: white;
+}

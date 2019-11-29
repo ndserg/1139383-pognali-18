@@ -1,0 +1,76 @@
+.travelmates {
+  background-color: @medium-blue;
+  color: #ffffff;
+  opacity: 0.99;
+}
+
+.travelmates__wrapper {
+  .wrapper();
+  position: relative;
+  padding-top: 70px;
+  background: url("/img/smolov-back-desktop@1x.png") 152px 40px no-repeat,
+    url("/img/rogovaya-back-mobile@1x.png") -10px 310px no-repeat;
+}
+
+.travelmates__wrapper::before {
+  .decorative-block();
+  top: 40px;
+}
+
+.travelmates__list {
+  .list-clear();
+  margin-top: 60px;
+}
+
+.travelmates__item {
+  position: relative;
+  min-height: 430px;
+  margin-bottom: 10px;
+  background-color: #ffffff;
+  border-radius: @border-radius-15;
+}
+
+.travelmates__foto {
+  margin-bottom: 25px;
+  border-top-left-radius: @border-radius-15;
+  border-top-right-radius: @border-radius-15;
+}
+
+.travelmates__name {
+  .font(@fontRegular; 21px; bold);
+  text-align: center;
+  line-height: 21px;
+  margin: 0;
+  margin-bottom: 20px;
+  color: #1d2e5b;
+}
+
+.travelmates-countries-list {
+  .list-clear();
+}
+
+.travelmates-countries-list__item {
+  font-size: 0;
+  line-height: 0;
+}
+
+.travelmates__tags {
+  .font-regular();
+  text-align: center;
+  color: #444444;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.travelmates__level {
+  .font(@fontRegular; 14px);
+  line-height: 14px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+.travelmates__level b {
+  .font(@fontRegular; 24px; bold);
+  line-height: 24px;
+}

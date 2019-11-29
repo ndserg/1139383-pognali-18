@@ -1,0 +1,18 @@
+.about {
+  color: #ffffff;
+  background-color: @medium-blue;
+  opacity: 0.99;
+}
+
+.about__wrapper {
+  .wrapper();
+  min-height: 350px;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  position: relative;
+  background: transparent url("/img/about-mobile@1x.png") 15px 0 no-repeat;
+}
+
+.about__wrapper::before {
+  .decorative-block();
+}

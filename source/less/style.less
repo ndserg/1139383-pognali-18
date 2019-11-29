@@ -1,0 +1,85 @@
+@import "variables.less";
+@import "mixins.less";
+
+@font-face {
+  .font-family(@fontRegular; @fontLight; 200);
+}
+
+@font-face {
+  .font-family(@fontRegular);
+}
+
+@font-face {
+  .font-family(@fontRegular; @fontMedium; 550);
+}
+
+@font-face {
+  .font-family(@fontRegular; @fontBold; bold);
+}
+
+@font-face {
+  .font-family(@fontRegular; @fontLightItalic; 200; italic);
+}
+
+@font-face {
+  .font-family(@fontRegular; @fontRegularItalic; normal; italic);
+}
+
+@font-face {
+  .font-family(@fontRegular; @fontMediumItalic; 550; italic);
+}
+
+@font-face {
+  .font-family(@fontRegular; @fontBoldItalic; bold; italic);
+}
+
+@import "normalize.less";
+@import "blocks/page-header.less";
+@import "blocks/main-nav.less";
+@import "blocks/page-main.less";
+@import "blocks/intro.less";
+@import "blocks/reviews.less";
+@import "blocks/instructions.less";
+@import "blocks/about.less";
+@import "blocks/countries.less";
+@import "blocks/travelmates.less";
+@import "blocks/rates.less";
+@import "blocks/business-rates-modal.less";
+@import "blocks/page-footer.less";
+@import "blocks/page-travelmates.less";
+@import "blocks/travelmates-filter.less";
+@import "blocks/travelmate-info.less";
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden,
+input[type="number"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+
+  white-space: nowrap;
+
+  border: 0;
+
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+}
+
+.page-header,
+.page-main,
+.intro,
+.reviews,
+.instructions,
+.about,
+.countries,
+.travelmates,
+.rates,
+.contact,
+.page-footer {
+  outline: 2px solid red;
+}

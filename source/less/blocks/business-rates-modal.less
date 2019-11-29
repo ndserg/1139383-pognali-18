@@ -1,0 +1,47 @@
+.business-rates-modal {
+  box-sizing: border-box;
+  padding-top: 35px;
+  min-height: 445px;
+  background-color: #ffffff;
+  border-radius: @border-radius-15;
+}
+
+.business-rates-modal__heading {
+  text-align: center;
+}
+
+.business-rates-modal__list {
+  .list-clear();
+  margin-top: 30px;
+  margin-bottom: 50px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.business-rates-modal__item {
+  .font-light();
+  color: #444444;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.business-rates-modal__item:last-child {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.business-rates-modal__button-close {
+  .font-bold();
+  display: block;
+  line-height: 24px;
+  height: 60px;
+  width: 100%;
+  border-bottom-right-radius: @border-radius-15;
+  border-bottom-left-radius: @border-radius-15;
+  background-color: #f3f4f8;
+  color: @button-text-color;
+
+  border: none;
+  text-transform: uppercase;
+  margin: 0 auto;
+}

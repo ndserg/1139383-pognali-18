@@ -3,30 +3,23 @@
 }
 
 .intro__wrapper {
-  padding-top: 20px;
   min-height: 405px;
-  .wrapper();
-  background: url("/img/traveller-illustration-mobile@1x.png") 50% bottom no-repeat,
-    url("/img/globe-back-mobile@1x.jpg") left 0 bottom -90px no-repeat;
+  padding-top: 20px;
+
+  background: url("../img/traveller-illustration-mobile@1x.png") 50% bottom no-repeat,
+    url("../img/globe-back-mobile@1x.jpg") left 0 bottom -90px no-repeat;
 }
 
 .intro__slogan {
-  .font(@fontRegular; 36px; bold);
   margin: 0;
+
+  font-size: 36px;
   line-height: 40px;
+  font-weight: 700;
   text-align: center;
   color: #ffffff;
 }
 
 .intro__list {
-  .list-clear();
-}
-
-.intro-contacts__link {
-  .font(@fontRegular; 17px; bold);
-  line-height: 30px;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: @dark-blue;
-  background-color: #ffd74b; /*временно, для видимости текста*/
+  .list-clear;
 }

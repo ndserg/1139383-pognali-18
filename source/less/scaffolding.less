@@ -1,0 +1,127 @@
+@font-face {
+  font-family: "Bloggersans";
+  src: local("Bloggersans Light"),
+    url("../fonts/bloggersans-light.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Bloggersans";
+  src: local("Bloggersans"),
+    url("../fonts/bloggersans.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Bloggersans";
+  src: local("Bloggersans Medium"),
+    url("../fonts/bloggersans-medium.woff") format("woff");
+  font-weight: 550;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Bloggersans";
+  src: local("Bloggersans Bold"),
+    url("../fonts/bloggersans-bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Bloggersans";
+  src: local("Bloggersans Light"),
+    url("../fonts/bloggersans-lightitalic.woff") format("woff");
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Bloggersans";
+  src: local("Bloggersans"),
+    url("../fonts/bloggersans-italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Bloggersans";
+  src: local("Bloggersans Medium"),
+    url("../fonts/bloggersans-mediumitalic.woff") format("woff");
+  font-weight: 550;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Bloggersans";
+  src: local("Bloggersans Bold"),
+    url("../fonts/bloggersans-bolditalic.woff") format("woff");
+  font-weight: 700;
+  font-style: italic;
+}
+
+body {
+  font-family: "Bloggersans", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: normal;
+}
+
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden,
+input[type="number"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+
+  white-space: nowrap;
+
+  border: 0;
+
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+}
+
+.wrapper {
+  box-sizing: border-box;
+  width: 320px;
+  margin: auto;
+  padding-right: 25px;
+  padding-bottom: 30px;
+  padding-left: 25px;
+  outline: 2px dashed #02eaff;
+}
+
+
+.button {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+
+  color: @button-text-color;
+  text-decoration: none;
+
+  background-color: #ffd74b;
+}
+
+.page-header,
+.page-main,
+.intro,
+.reviews,
+.instructions,
+.about,
+.countries,
+.travelmates,
+.rates,
+.contact,
+.page-footer {
+  outline: 2px solid red;
+}

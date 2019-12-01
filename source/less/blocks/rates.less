@@ -3,7 +3,6 @@
 }
 
 .rates__wrapper {
-  .wrapper();
   min-height: 450px;
   padding-top: 50px;
 }
@@ -16,28 +15,31 @@
 }
 
 .rates__list {
-  .list-clear();
+  .list-clear;
+  margin-bottom: 30px;
   padding-left: 25px;
   padding-right: 25px;
-  margin-bottom: 30px;
 }
 
 .rates__item {
-  .font-light();
-  color: #444444;
   padding-top: 10px;
   padding-bottom: 10px;
-  border-top: 1px solid rgba(0, 0, 0, 0.05);
-}
 
-.rates__item:last-child {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  font-weight: 200;
+  color: #444444;
+
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+
+  &:last-child {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  }
 }
 
 .rates__button {
-  .font-bold();
+  margin-left: 25px;
+
   line-height: 16px;
+  font-weight: 700;
   color: @dark-blue;
   text-decoration: none;
-  margin-left: 25px;
 }

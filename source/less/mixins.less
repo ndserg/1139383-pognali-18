@@ -1,59 +1,7 @@
-.font-family(@font-name; @font-path: @font-name; @weight: normal; @style: normal) {
-  font-family: "@{font-name}";
-  src: url("/fonts/@{font-path}.woff") format("woff");
-  font-weight: @weight;
-  font-style: @style;
-}
-
-.font(@font-family: @fontRegular; @font-size; @font-weight: normal; @font-style: normal) {
-  font-family: @font-family, "Arial", sans-serif;
-  font-size: @font-size;
-  font-weight: @font-weight;
-  font-style: @font-style;
-}
-
-.font-light() {
-  .font(@fontRegular; 16px; 200);
-  line-height: 22px;
-}
-
-.font-regular() {
-  .font(@fontRegular; 16px);
-  line-height: 18px;
-}
-
-.font-medium() {
-  .font(@fontRegular; 16px; 550);
-  line-height: 18px;
-}
-
-.font-bold() {
-  .font(@fontRegular; 16px; bold);
-  line-height: 22px;
-}
-
-.heading-orange() {
-  .font(@fontRegular; 24px; bold);
-  line-height: 24px;
-  color: @heading-orange;
-  margin-top: 0;
-  margin-right: 25px;
-  margin-bottom: 20px;
-  margin-left: 25px;
-}
-
-.wrapper() {
-  box-sizing: border-box;
-  width: 320px;
-  margin: auto;
-  padding-right: 25px;
-  padding-left: 25px;
-  outline: 2px dashed #02eaff;
-}
-
 .list-clear() {
   margin: 0;
   padding: 0;
+
   list-style: none;
 }
 
@@ -62,10 +10,12 @@
   top: 0;
   left: 0;
   z-index: -1;
-  content: "";
+
   display: block;
+  content: "";
   width: 114px;
   height: 132px;
+
   background-color: @dark-blue;
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;

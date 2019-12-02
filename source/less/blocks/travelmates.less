@@ -1,0 +1,79 @@
+.travelmates {
+  color: #ffffff;
+
+  background-color: @medium-blue;
+  opacity: 0.99;
+}
+
+.travelmates__wrapper {
+  position: relative;
+
+  padding-top: 70px;
+
+  background: url("../img/smolov-back-desktop@1x.png") 152px 40px no-repeat,
+    url("../img/rogovaya-back-mobile@1x.png") -10px 310px no-repeat;
+
+  &::before {
+    .decorative-block;
+    top: 40px;
+  }
+}
+
+.travelmates__list {
+  .list-clear;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.travelmates__item {
+  position: relative;
+
+  min-height: 430px;
+  margin-bottom: 10px;
+
+  background-color: #ffffff;
+  border-radius: @border-radius-15;
+}
+
+.travelmates__foto {
+  margin-bottom: 25px;
+
+  border-top-left-radius: @border-radius-15;
+  border-top-right-radius: @border-radius-15;
+}
+
+.travelmates__name {
+  margin: 0;
+  margin-bottom: 20px;
+
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+  text-align: center;
+  color: #1d2e5b;
+}
+
+.travelmates__tags {
+  padding-right: 20px;
+  padding-left: 20px;
+
+  line-height: 18px;
+  text-align: center;
+  color: #444444;
+}
+
+.travelmates__level {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+
+  font-size: 14px;
+  line-height: 14px;
+
+
+  &--number {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+  }
+}

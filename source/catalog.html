@@ -3,424 +3,86 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Погнали</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
 
     <header class="page-header inner-page">
-      <h1 class="inner-page__header">Попутчики</h1>
-      <a class="page-header__logo page-header__logo--scroll" href="index.html">
-        <img class="page-header__logo-img page-header__logo-img--scroll" src="https://via.placeholder.com/150x150" width="100" height="19" alt="Логотип сайта Погнали">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle main-nav__toggle--scroll" type="button">Открыть меню</button>
-        <button class="main-nav__toggle main-nav__toggle--scroll main-nav__toggle--close" type="button">Закрыть меню</button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a href="#">О сервисе</a>
-          </li>
-          <li class="site-list__item">
-            <a href="form.html">Направления</a>
-          </li>
-          <li class="site-list__item">
-            <a>Попутчики</a>
-          </li>
-        </ul>
-        <ul class="main-nav__list user-list">
-          <li class="user-list__item">
-            <a class="user-list__login" href="login.html">Авторизация</a>
-          </li>
-        </ul>
-        <ul class="main-nav__list contacts-list">
-          <li class="contacts-list__item contacts-list__item--phone">
-            <a class="contacts-list__link" href="tel:8-800-555-86-28">8 800 555-86-28</a>
-          </li>
-          <li class="contacts-list__item contacts-list__item--email">
-            <a class="contacts-list__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-          </li>
-        </ul>
-        <ul class="main-nav__social social-list">
-          <li class="social-list__item social-list__item--fb"><a href="facbook.com">Фэйсбук</a></li>
-          <li class="social-list__item social-list__item--vk"><a href="vk.com">Вконтакте</a></li>
-          <li class="social-list__item social-list__item--inst"><a href="instagram.com">Инстаграм</a></li>
-        </ul>
-      </nav>
+      <div class="page-header__wrapper wrapper">
+        <h1 class="inner-page__header">Попутчики</h1>
+        <a class="page-header__logo page-header__logo--scroll" href="index.html">
+          <img class="page-header__logo-img page-header__logo-img--scroll" src="https://via.placeholder.com/150x150" width="100" height="19" alt="Логотип сайта Погнали">
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle main-nav__toggle--scroll" type="button">Открыть меню</button>
+          <button class="main-nav__toggle main-nav__toggle--scroll main-nav__toggle--close" type="button">Закрыть меню</button>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">О сервисе</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">Направления</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link">Попутчики</a>
+            </li>
+          </ul>
+          <ul class="main-nav__list user-list">
+            <li class="user-list__item">
+              <a class="user-list__login" href="login.html">Авторизация</a>
+            </li>
+          </ul>
+          <ul class="main-nav__list contacts-list">
+            <li class="contacts-list__item contacts-list__item--phone">
+              <a class="contacts-list__link" href="tel:8-800-555-86-28">8 800 555-86-28</a>
+            </li>
+            <li class="contacts-list__item contacts-list__item--email">
+              <a class="contacts-list__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </li>
+          </ul>
+          <ul class="main-nav__social social-list">
+            <li class="social-list__item social-list__item--fb"><a href="facbook.com">Фэйсбук</a></li>
+            <li class="social-list__item social-list__item--vk"><a href="vk.com">Вконтакте</a></li>
+            <li class="social-list__item social-list__item--inst"><a href="instagram.com">Инстаграм</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main class="page-main page-travelmates">
-      <section class="page-travelmates__filter-form travelmates-filter">
-        <h2 class="page-travelmates__heading">Подберите идеального попутчика</h2>
-        <form class="travelmates-filter__form" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="travelmates-filter__group travelmates-filter__group--expanded filter-group">
-            <legend class="filter-group__heading">Хобби</legend>
-            <button class="filter-group__button filter-group__button--expand visually-hidden" type="button">Развернуть</button>
-            <button class="filter-group__button filter-group__button--collapse" type="button">Свернуть</button>
-          </fieldset>
-          <fieldset class="travelmates-filter__group travelmates-filter__group--expanded filter-group">
-            <legend class="filter-group__heading">Музыка</legend>
-            <button class="filter-group__button filter-group__button--expand visually-hidden" type="button">Развернуть</button>
-            <button class="filter-group__button filter-group__button--collapse" type="button">Свернуть</button>
-            <input class="filter-group__checkbox" type="checkbox" name="music" value="Тяжелый рок" id="hardrock" checked>
-            <label class="filter-group__checkbox-label" for="hardrock">Тяжелый рок</label>
-            <input class="filter-group__checkbox" type="checkbox" name="music" value="Русский рэп" id="russianrap">
-            <label class="filter-group__checkbox-label" for="russianrap">Русский рэп</label>
-            <input class="filter-group__checkbox" type="checkbox" name="music" value="Евроденс" id="eurodance">
-            <label class="filter-group__checkbox-label" for="eurodance">Евроденс</label>
-          </fieldset>
-          <fieldset class="travelmates-filter__group travelmates-filter__group--expanded filter-group">
-            <legend class="filter-group__heading">Еда</legend>
-            <button class="filter-group__button filter-group__button--expand visually-hidden" type="button">Развернуть</button>
-            <button class="filter-group__button filter-group__button--collapse" type="button">Свернуть</button>
-          </fieldset>
-          <fieldset class="travelmates-filter__group travelmates-filter__group--expanded filter-group">
-            <legend class="filter-group__heading">Транспорт</legend>
-            <button class="filter-group__button filter-group__button--expand visually-hidden" type="button">Развернуть</button>
-            <button class="filter-group__button filter-group__button--collapse" type="button">Свернуть</button>
-            <input class="filter-group__transport" type="checkbox" name="transport" value="Авиаперелет" id="plane" checked>
-            <label class="filter-group__transport-label filter-group__transport-label--plane" for="plane">
-              <span class="visually-hidden">Авиаперелет</span>
-              <svg x="0px" y="0px" width="14" height="16" viewBox="0 0 19 21" style="enable-background:new 0 0 19 21;" xml:space="preserve">
-                <path d="M18.9,18.9c-0.1-0.3-3.7-10.1-3.7-10.1c0,0,0,0,0,0c-0.1-0.5,0.1-0.7,0.3-1.1c0,0,2.1-3.5,2.8-4.6c0.7-1.2,0.6-2.3-0.1-2.8
-                c-0.7-0.5-1.7-0.1-2.5,1c-0.8,1.1-3,4.5-3,4.5c-0.3,0.4-0.4,0.7-0.9,0.8c0,0,0,0,0,0C11.7,6.5,1.5,7,1.2,7c-0.3,0-0.7,0.1-1,0.6
-                C-0.2,8.3,0,8.5,0.4,8.6c0,0,8,2.6,8.3,2.7C9,11.3,9,11.5,8.9,11.9c-0.2,0.4-1.4,2.3-1.6,2.6c-0.1,0.2-0.2,0.2-0.4,0.3l-2.8,1
-                c-0.1,0-0.3,0.1-0.4,0.3c0,0-0.2,0.3-0.4,0.6c-0.2,0.3-0.1,0.5,0.2,0.5c0.3,0.1,2.1,0.2,2.1,0.2c0,0,0.3,0.1,0.4,0.1
-                c0.2,0.1,0.4,0.3,0.2,0.6c-0.3,0.6-0.4,1.2-0.2,1.3s0.6-0.2,1-0.7c0.2-0.3,0.4-0.2,0.6,0C7.8,18.6,8,18.8,8,18.8c0,0,0.8,1.6,1,1.9
-                c0.2,0.3,0.4,0.3,0.6,0c0.2-0.3,0.4-0.6,0.4-0.6c0.1-0.1,0.1-0.3,0.1-0.5l-0.3-3.1c0-0.2,0-0.2,0.1-0.5c0.1-0.2,1.4-2.2,1.6-2.5
-                c0.2-0.3,0.4-0.3,0.6-0.1c0.2,0.2,5.7,6.7,5.7,6.7c0.3,0.3,0.5,0.4,0.9-0.2C19.1,19.5,19,19.1,18.9,18.9z"/>
-              </svg>
-            </label>
-            <input class="filter-group__transport" type="checkbox" name="transport" value="Автотранспорт" id="bus" checked>
-            <label class="filter-group__transport-label filter-group__transport-label--bus" for="bus">
-              <span class="visually-hidden">Автотранспорт</span>
-              <svg  x="0px" y="0px" width="13" height="16" viewBox="0 0 17 21" style="enable-background:new 0 0 17 21;" xml:space="preserve">
-                <path d="M16.2,3.1c-0.2-1.2-1-1.6-2.1-2.1C13,0.6,10.4,0,8.5,0C6.6,0,4,0.6,2.9,1C1.8,1.5,1.1,1.9,0.8,3.1L0,9.5v8.8h1.4v1.4
-                c0,1.7,2.5,1.7,2.5,0v-1.4h4.5h0h4.7v1.4c0,1.7,2.5,1.7,2.5,0v-1.4H17V9.5L16.2,3.1z M5,1.6h3.4H12c0.7,0,0.7,1,0,1H8.4H5
-                C4.3,2.7,4.3,1.6,5,1.6z M2.7,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C3.8,15,3.3,15.6,2.7,15.6z
-                 M8.4,10.2H2.2c-0.6,0-0.7-0.4-0.7-0.9l0.6-4.7c0.1-0.6,0.3-0.9,1-0.9h5.3h5.4c0.7,0,0.9,0.4,1,0.9l0.6,4.7c0.1,0.4-0.1,0.9-0.7,0.9
-                H8.4z M14.3,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C15.5,15,15,15.6,14.3,15.6z"/>
-              </svg>
-            </label>
-            <input class="filter-group__transport" type="checkbox" name="transport" value="Велосипед" id="bike">
-            <label class="filter-group__transport-label filter-group__transport-label--bike" for="bike">
-              <span class="visually-hidden">Велосипед</span>
-              <svg x="0px" y="0px" width="19" height="17" viewBox="0 0 24 21" style="enable-background:new 0 0 24 21;" xml:space="preserve">
-                <path d="M16,3.6c1,0,1.8-0.8,1.8-1.8S17,0,16,0s-1.8,0.8-1.8,1.8S15,3.6,16,3.6z M19,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5
-                S21.8,11,19,11z M19,19.6c-1.9,0-3.5-1.6-3.5-3.5s1.6-3.5,3.5-3.5s3.5,1.6,3.5,3.5S20.9,19.6,19,19.6z M14.8,8.9H19V7.1h-3.2
-                l-1.9-3.3C13.6,3.3,13.1,3,12.4,3c-0.5,0-0.9,0.2-1.2,0.5L7.5,7.2C7.2,7.5,7,7.9,7,8.4C7,9,7.3,9.6,7.8,9.9l3.3,2v5H13v-6.5
-                l-2.2-1.7l2.3-2.4L14.8,8.9z M5,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5S7.8,11,5,11z M5,19.6c-1.9,0-3.5-1.6-3.5-3.5
-                s1.6-3.5,3.5-3.5s3.5,1.5,3.5,3.5S6.9,19.6,5,19.6z"/>
-              </svg>
-            </label>
-            <input class="filter-group__transport" type="checkbox" name="transport" value="Пешком" id="run" checked>
-            <label class="filter-group__transport-label filter-group__transport-label--run" for="run">
-              <span class="visually-hidden">Пешком</span>
-              <svg x="0px" y="0px" width="15" height="17" viewBox="0 0 20 21" style="enable-background:new 0 0 20 21;" xml:space="preserve">
-                <g>
-                  <ellipse cx="14.3" cy="2" rx="2.1" ry="2"/>
-                  <path d="M19.4,4.6c-0.5-0.2-1.2-0.1-1.4,0.4l-0.9,1.6L13,4.3c-0.2-0.1-0.3-0.1-0.6-0.1H7.9C7.5,4.2,7.2,4.3,7,4.7L5.3,7.6
-                    C5,8.1,5.2,8.7,5.7,8.9C5.9,9,6.1,9,6.2,9C6.6,9,7,8.8,7.2,8.5l1.4-2.4h1.6l-4.7,8.1H1.1c-0.6,0-1.1,0.4-1.1,1s0.5,1,1.1,1h5
-                    c0.4,0,0.7-0.2,0.9-0.5l1.9-3.2l3,2.6L11.7,20c-0.1,0.5,0.4,1,1,1c0,0,0,0,0.1,0c0.6,0,1-0.4,1.1-0.9l0.3-5.4
-                    c0-0.3-0.1-0.6-0.3-0.8l-2.6-2.2l2.7-4.6l3.1,1.8C17.1,9,17.5,9.1,17.7,9c0.3-0.1,0.5-0.2,0.7-0.5L19.9,6C20.2,5.5,20,4.9,19.4,4.6
-                    z"/>
-                </g>
-              </svg>
-            </label>
-          </fieldset>
-          <fieldset class="travelmates-filter__group travelmates-filter__group--expanded filter-group">
-            <legend class="filter-group__heading">Левел</legend>
-            <button class="filter-group__button filter-group__button--expand visually-hidden" type="button">Развернуть</button>
-            <button class="filter-group__button filter-group__button--collapse" type="button">Свернуть</button>
-            <p class="filter-group__range range-filter">
-              <input class="range-filter__value range-filter__value--min" type="number" name="min-level" value="30" min="0" max="100" id="min-level">
-              <input class="range-filter__value range-filter__value--max" type="number" name="max-level" value="100" min="1" max="100" id="max-level">
-            </p>
-            <p class="filter-group__range-triggers range-triggers">
-              <label class="range-triggers__label range-triggers__label--min" for="min-level">Минимальный уровень</label>
-              <label class="range-triggers__label range-triggers__label--max" for="max-level">Максимальный уровень</label>
-            </p>
-          </fieldset>
-          <button class="travelmates-filter__button" type="button">Показать</button>
-        </form>
-      </section>
-
-			<ul class="page-travelmates__list">
-        <li class="page-travelmates__item travelmate-info">
-          <div class="travelmate-info__personal">
-            <a class="travelmate-info__link-foto" href="#">
-              <img class="travelmate-info__foto" src="https://via.placeholder.com/150x150" width="70" height="70" alt="Таня Фирсова">
-            </a>
-            <p>
-              <a class="travelmate-info__link-name" href="#">Таня Фирсова</a>
-              <span class="travelmate-info__raiting">1,5 M</span>
-            </p>
-            <button class="travelmate-info__button-like travelmate-info__button-like--active">
-              <svg x="0px" y="0px" width="13" height="11" viewBox="0 0 20 17" style="enable-background:new 0 0 20 17;" xml:space="preserve">
-                <path d="M18.5,1.5c-2-2-5.3-2-7.3,0L10,2.7L8.8,1.5c-2-2-5.3-2-7.3,0c-2,2-2,5.2,0,7.2l1.2,1.2L10,17l7.3-7.2l1.2-1.2
-              	C20.5,6.7,20.5,3.5,18.5,1.5z M14.9,9.8L10,14.6L5.1,9.8L2.7,7.5C1.4,6.1,1.4,4,2.7,2.7c1.3-1.3,3.5-1.3,4.9,0L10,5.1l2.4-2.4
-              	c1.3-1.3,3.5-1.3,4.9,0c1.3,1.3,1.3,3.5,0,4.8L14.9,9.8z"/>
-              </svg>
-            </button>
-          </div>
-          <p class="travelmate-info__tags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
-          <div class="travelmate-info__countries countries-wanted">
-            <span class="travelmate-info__heading">хочет посетить:</span>
-            <ul class="countries-wanted__list">
-              <li class="countries-wanted__list__item countries-wanted__list__item--srilanka">Шри-ланка</li>
-              <li class="countries-wanted__list__item countries-wanted__list__item--thailand">Таиланд</li>
-              <li class="countries-wanted__list__item countries-wanted__list__item--seichelles">Сейшелы</li>
-            </ul>
-          </div>
-          <div class="travelmate-info__fav-transport">
-            <span class="travelmate-info__heading">транспорт:</span>
-            <ul class="travelmate-info__transport transport-list">
-              <li class="transport-list__item transport-list__item--used">
-                <span class="visually-hidden">Авиаперелет</span>
-                <svg x="0px" y="0px" width="14" height="16" viewBox="0 0 19 21" style="enable-background:new 0 0 19 21;" xml:space="preserve">
-                  <path d="M18.9,18.9c-0.1-0.3-3.7-10.1-3.7-10.1c0,0,0,0,0,0c-0.1-0.5,0.1-0.7,0.3-1.1c0,0,2.1-3.5,2.8-4.6c0.7-1.2,0.6-2.3-0.1-2.8
-                	c-0.7-0.5-1.7-0.1-2.5,1c-0.8,1.1-3,4.5-3,4.5c-0.3,0.4-0.4,0.7-0.9,0.8c0,0,0,0,0,0C11.7,6.5,1.5,7,1.2,7c-0.3,0-0.7,0.1-1,0.6
-                	C-0.2,8.3,0,8.5,0.4,8.6c0,0,8,2.6,8.3,2.7C9,11.3,9,11.5,8.9,11.9c-0.2,0.4-1.4,2.3-1.6,2.6c-0.1,0.2-0.2,0.2-0.4,0.3l-2.8,1
-                	c-0.1,0-0.3,0.1-0.4,0.3c0,0-0.2,0.3-0.4,0.6c-0.2,0.3-0.1,0.5,0.2,0.5c0.3,0.1,2.1,0.2,2.1,0.2c0,0,0.3,0.1,0.4,0.1
-                	c0.2,0.1,0.4,0.3,0.2,0.6c-0.3,0.6-0.4,1.2-0.2,1.3s0.6-0.2,1-0.7c0.2-0.3,0.4-0.2,0.6,0C7.8,18.6,8,18.8,8,18.8c0,0,0.8,1.6,1,1.9
-                	c0.2,0.3,0.4,0.3,0.6,0c0.2-0.3,0.4-0.6,0.4-0.6c0.1-0.1,0.1-0.3,0.1-0.5l-0.3-3.1c0-0.2,0-0.2,0.1-0.5c0.1-0.2,1.4-2.2,1.6-2.5
-                	c0.2-0.3,0.4-0.3,0.6-0.1c0.2,0.2,5.7,6.7,5.7,6.7c0.3,0.3,0.5,0.4,0.9-0.2C19.1,19.5,19,19.1,18.9,18.9z"/>
-                </svg>
-              </li>
-              <li class="transport-list__item">
-                <span class="visually-hidden">Автотранспорт</span>
-                <svg  x="0px" y="0px" width="13" height="16" viewBox="0 0 17 21" style="enable-background:new 0 0 17 21;" xml:space="preserve">
-                  <path d="M16.2,3.1c-0.2-1.2-1-1.6-2.1-2.1C13,0.6,10.4,0,8.5,0C6.6,0,4,0.6,2.9,1C1.8,1.5,1.1,1.9,0.8,3.1L0,9.5v8.8h1.4v1.4
-                	c0,1.7,2.5,1.7,2.5,0v-1.4h4.5h0h4.7v1.4c0,1.7,2.5,1.7,2.5,0v-1.4H17V9.5L16.2,3.1z M5,1.6h3.4H12c0.7,0,0.7,1,0,1H8.4H5
-                	C4.3,2.7,4.3,1.6,5,1.6z M2.7,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C3.8,15,3.3,15.6,2.7,15.6z
-                	 M8.4,10.2H2.2c-0.6,0-0.7-0.4-0.7-0.9l0.6-4.7c0.1-0.6,0.3-0.9,1-0.9h5.3h5.4c0.7,0,0.9,0.4,1,0.9l0.6,4.7c0.1,0.4-0.1,0.9-0.7,0.9
-                	H8.4z M14.3,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C15.5,15,15,15.6,14.3,15.6z"/>
-                </svg>
-              </li>
-              <li class="transport-list__item">
-                <span class="visually-hidden">Велосипед</span>
-                <svg x="0px" y="0px" width="19" height="17" viewBox="0 0 24 21" style="enable-background:new 0 0 24 21;" xml:space="preserve">
-                  <path d="M16,3.6c1,0,1.8-0.8,1.8-1.8S17,0,16,0s-1.8,0.8-1.8,1.8S15,3.6,16,3.6z M19,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5
-                	S21.8,11,19,11z M19,19.6c-1.9,0-3.5-1.6-3.5-3.5s1.6-3.5,3.5-3.5s3.5,1.6,3.5,3.5S20.9,19.6,19,19.6z M14.8,8.9H19V7.1h-3.2
-                	l-1.9-3.3C13.6,3.3,13.1,3,12.4,3c-0.5,0-0.9,0.2-1.2,0.5L7.5,7.2C7.2,7.5,7,7.9,7,8.4C7,9,7.3,9.6,7.8,9.9l3.3,2v5H13v-6.5
-                	l-2.2-1.7l2.3-2.4L14.8,8.9z M5,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5S7.8,11,5,11z M5,19.6c-1.9,0-3.5-1.6-3.5-3.5
-                	s1.6-3.5,3.5-3.5s3.5,1.5,3.5,3.5S6.9,19.6,5,19.6z"/>
-                </svg>
-              </li>
-              <li class="transport-list__item">
-                <span class="visually-hidden">Пешком</span>
-                <svg x="0px" y="0px" width="15" height="17" viewBox="0 0 20 21" style="enable-background:new 0 0 20 21;" xml:space="preserve">
-                  <g>
-                  	<ellipse cx="14.3" cy="2" rx="2.1" ry="2"/>
-                  	<path d="M19.4,4.6c-0.5-0.2-1.2-0.1-1.4,0.4l-0.9,1.6L13,4.3c-0.2-0.1-0.3-0.1-0.6-0.1H7.9C7.5,4.2,7.2,4.3,7,4.7L5.3,7.6
-                  		C5,8.1,5.2,8.7,5.7,8.9C5.9,9,6.1,9,6.2,9C6.6,9,7,8.8,7.2,8.5l1.4-2.4h1.6l-4.7,8.1H1.1c-0.6,0-1.1,0.4-1.1,1s0.5,1,1.1,1h5
-                  		c0.4,0,0.7-0.2,0.9-0.5l1.9-3.2l3,2.6L11.7,20c-0.1,0.5,0.4,1,1,1c0,0,0,0,0.1,0c0.6,0,1-0.4,1.1-0.9l0.3-5.4
-                  		c0-0.3-0.1-0.6-0.3-0.8l-2.6-2.2l2.7-4.6l3.1,1.8C17.1,9,17.5,9.1,17.7,9c0.3-0.1,0.5-0.2,0.7-0.5L19.9,6C20.2,5.5,20,4.9,19.4,4.6
-                  		z"/>
-                  </g>
-                </svg>
-              </li>
-            </ul>
-          </div>
-          <div class="travelmate-info__level">
-            <span class="travelmate-info__level-heading">левел:</span>
-            <b class="travelmate-info__level-value">99</b>
-          </div>
-          <a class="travelmate-info__button button" href="travelmate.html">Позвать</a>
-        </li>
-
-        <li class="page-travelmates__item travelmate-info">
-          <div class="travelmate-info__personal">
-            <a class="travelmate-info__link-foto" href="#">
-              <img class="travelmate-info__foto" src="https://via.placeholder.com/150x150" width="70" height="70" alt="Петя Демин">
-            </a>
-            <p>
-              <a class="travelmate-info__link-name" href="#">Петя Демин</a>
-              <span class="travelmate-info__raiting">150</span>
-            </p>
-            <button class="travelmate-info__button-like">
-              <svg x="0px" y="0px" width="13" height="11" viewBox="0 0 20 17" style="enable-background:new 0 0 20 17;" xml:space="preserve">
-                <path d="M18.5,1.5c-2-2-5.3-2-7.3,0L10,2.7L8.8,1.5c-2-2-5.3-2-7.3,0c-2,2-2,5.2,0,7.2l1.2,1.2L10,17l7.3-7.2l1.2-1.2
-              	C20.5,6.7,20.5,3.5,18.5,1.5z M14.9,9.8L10,14.6L5.1,9.8L2.7,7.5C1.4,6.1,1.4,4,2.7,2.7c1.3-1.3,3.5-1.3,4.9,0L10,5.1l2.4-2.4
-              	c1.3-1.3,3.5-1.3,4.9,0c1.3,1.3,1.3,3.5,0,4.8L14.9,9.8z"/>
-              </svg>
-            </button>
-          </div>
-          <p class="travelmate-info__tags">#бургер #бар #футбол #концерт #крафт</p>
-          <div class="travelmate-info__countries countries-wanted">
-            <span class="travelmate-info__heading">хочет посетить:</span>
-            <ul class="countries-wanted__list">
-              <li class="countries-wanted__list__item countries-wanted__list__item--belgium">Бельгия</li>
-              <li class="countries-wanted__list__item countries-wanted__list__item--czech">Чехия</li>
-            </ul>
-          </div>
-          <div class="travelmate-info__fav-transport">
-            <span class="travelmate-info__heading">транспорт:</span>
-            <ul class="travelmate-info__transport transport-list">
-              <li class="transport-list__item transport-list__item--used">
-                <span class="visually-hidden">Авиаперелет</span>
-                <svg x="0px" y="0px" width="14" height="16" viewBox="0 0 19 21" style="enable-background:new 0 0 19 21;" xml:space="preserve">
-                  <path d="M18.9,18.9c-0.1-0.3-3.7-10.1-3.7-10.1c0,0,0,0,0,0c-0.1-0.5,0.1-0.7,0.3-1.1c0,0,2.1-3.5,2.8-4.6c0.7-1.2,0.6-2.3-0.1-2.8
-                	c-0.7-0.5-1.7-0.1-2.5,1c-0.8,1.1-3,4.5-3,4.5c-0.3,0.4-0.4,0.7-0.9,0.8c0,0,0,0,0,0C11.7,6.5,1.5,7,1.2,7c-0.3,0-0.7,0.1-1,0.6
-                	C-0.2,8.3,0,8.5,0.4,8.6c0,0,8,2.6,8.3,2.7C9,11.3,9,11.5,8.9,11.9c-0.2,0.4-1.4,2.3-1.6,2.6c-0.1,0.2-0.2,0.2-0.4,0.3l-2.8,1
-                	c-0.1,0-0.3,0.1-0.4,0.3c0,0-0.2,0.3-0.4,0.6c-0.2,0.3-0.1,0.5,0.2,0.5c0.3,0.1,2.1,0.2,2.1,0.2c0,0,0.3,0.1,0.4,0.1
-                	c0.2,0.1,0.4,0.3,0.2,0.6c-0.3,0.6-0.4,1.2-0.2,1.3s0.6-0.2,1-0.7c0.2-0.3,0.4-0.2,0.6,0C7.8,18.6,8,18.8,8,18.8c0,0,0.8,1.6,1,1.9
-                	c0.2,0.3,0.4,0.3,0.6,0c0.2-0.3,0.4-0.6,0.4-0.6c0.1-0.1,0.1-0.3,0.1-0.5l-0.3-3.1c0-0.2,0-0.2,0.1-0.5c0.1-0.2,1.4-2.2,1.6-2.5
-                	c0.2-0.3,0.4-0.3,0.6-0.1c0.2,0.2,5.7,6.7,5.7,6.7c0.3,0.3,0.5,0.4,0.9-0.2C19.1,19.5,19,19.1,18.9,18.9z"/>
-                </svg>
-              </li>
-              <li class="transport-list__item transport-list__item--used">
-                <span class="visually-hidden">Автотранспорт</span>
-                <svg  x="0px" y="0px" width="13" height="16" viewBox="0 0 17 21" style="enable-background:new 0 0 17 21;" xml:space="preserve">
-                  <path d="M16.2,3.1c-0.2-1.2-1-1.6-2.1-2.1C13,0.6,10.4,0,8.5,0C6.6,0,4,0.6,2.9,1C1.8,1.5,1.1,1.9,0.8,3.1L0,9.5v8.8h1.4v1.4
-                	c0,1.7,2.5,1.7,2.5,0v-1.4h4.5h0h4.7v1.4c0,1.7,2.5,1.7,2.5,0v-1.4H17V9.5L16.2,3.1z M5,1.6h3.4H12c0.7,0,0.7,1,0,1H8.4H5
-                	C4.3,2.7,4.3,1.6,5,1.6z M2.7,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C3.8,15,3.3,15.6,2.7,15.6z
-                	 M8.4,10.2H2.2c-0.6,0-0.7-0.4-0.7-0.9l0.6-4.7c0.1-0.6,0.3-0.9,1-0.9h5.3h5.4c0.7,0,0.9,0.4,1,0.9l0.6,4.7c0.1,0.4-0.1,0.9-0.7,0.9
-                	H8.4z M14.3,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C15.5,15,15,15.6,14.3,15.6z"/>
-                </svg>
-              </li>
-              <li class="transport-list__item">
-                <span class="visually-hidden">Велосипед</span>
-                <svg x="0px" y="0px" width="19" height="17" viewBox="0 0 24 21" style="enable-background:new 0 0 24 21;" xml:space="preserve">
-                  <path d="M16,3.6c1,0,1.8-0.8,1.8-1.8S17,0,16,0s-1.8,0.8-1.8,1.8S15,3.6,16,3.6z M19,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5
-                	S21.8,11,19,11z M19,19.6c-1.9,0-3.5-1.6-3.5-3.5s1.6-3.5,3.5-3.5s3.5,1.6,3.5,3.5S20.9,19.6,19,19.6z M14.8,8.9H19V7.1h-3.2
-                	l-1.9-3.3C13.6,3.3,13.1,3,12.4,3c-0.5,0-0.9,0.2-1.2,0.5L7.5,7.2C7.2,7.5,7,7.9,7,8.4C7,9,7.3,9.6,7.8,9.9l3.3,2v5H13v-6.5
-                	l-2.2-1.7l2.3-2.4L14.8,8.9z M5,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5S7.8,11,5,11z M5,19.6c-1.9,0-3.5-1.6-3.5-3.5
-                	s1.6-3.5,3.5-3.5s3.5,1.5,3.5,3.5S6.9,19.6,5,19.6z"/>
-                </svg>
-              </li>
-              <li class="transport-list__item transport-list__item--used">
-                <span class="visually-hidden">Пешком</span>
-                <svg x="0px" y="0px" width="15" height="17" viewBox="0 0 20 21" style="enable-background:new 0 0 20 21;" xml:space="preserve">
-                  <g>
-                  	<ellipse cx="14.3" cy="2" rx="2.1" ry="2"/>
-                  	<path d="M19.4,4.6c-0.5-0.2-1.2-0.1-1.4,0.4l-0.9,1.6L13,4.3c-0.2-0.1-0.3-0.1-0.6-0.1H7.9C7.5,4.2,7.2,4.3,7,4.7L5.3,7.6
-                  		C5,8.1,5.2,8.7,5.7,8.9C5.9,9,6.1,9,6.2,9C6.6,9,7,8.8,7.2,8.5l1.4-2.4h1.6l-4.7,8.1H1.1c-0.6,0-1.1,0.4-1.1,1s0.5,1,1.1,1h5
-                  		c0.4,0,0.7-0.2,0.9-0.5l1.9-3.2l3,2.6L11.7,20c-0.1,0.5,0.4,1,1,1c0,0,0,0,0.1,0c0.6,0,1-0.4,1.1-0.9l0.3-5.4
-                  		c0-0.3-0.1-0.6-0.3-0.8l-2.6-2.2l2.7-4.6l3.1,1.8C17.1,9,17.5,9.1,17.7,9c0.3-0.1,0.5-0.2,0.7-0.5L19.9,6C20.2,5.5,20,4.9,19.4,4.6
-                  		z"/>
-                  </g>
-                </svg>
-              </li>
-            </ul>
-          </div>
-          <div class="travelmate-info__level">
-            <span class="travelmate-info__level-heading">левел:</span>
-            <b class="travelmate-info__level-value">80</b>
-          </div>
-          <a class="travelmate-info__button button" href="travelmate.html">Позвать</a>
-        </li>
-
-        <li class="page-travelmates__item travelmate-info">
-          <div class="travelmate-info__personal">
-            <a class="travelmate-info__link-foto" href="#">
-              <img class="travelmate-info__foto" src="https://via.placeholder.com/150x150" width="70" height="70" alt="Марк Смолов">
-            </a>
-            <p>
-              <a class="travelmate-info__link-name" href="#">Марк Смолов</a>
-              <span class="travelmate-info__raiting">1700</span>
-            </p>
-            <button class="travelmate-info__button-like">
-              <svg x="0px" y="0px" width="13" height="11" viewBox="0 0 20 17" style="enable-background:new 0 0 20 17;" xml:space="preserve">
-                <path d="M18.5,1.5c-2-2-5.3-2-7.3,0L10,2.7L8.8,1.5c-2-2-5.3-2-7.3,0c-2,2-2,5.2,0,7.2l1.2,1.2L10,17l7.3-7.2l1.2-1.2
-              	C20.5,6.7,20.5,3.5,18.5,1.5z M14.9,9.8L10,14.6L5.1,9.8L2.7,7.5C1.4,6.1,1.4,4,2.7,2.7c1.3-1.3,3.5-1.3,4.9,0L10,5.1l2.4-2.4
-              	c1.3-1.3,3.5-1.3,4.9,0c1.3,1.3,1.3,3.5,0,4.8L14.9,9.8z"/>
-              </svg>
-            </button>
-          </div>
-          <p class="travelmate-info__tags">#рэп #тату #хайпбист #кроссовки #суприм</p>
-          <div class="travelmate-info__countries countries-wanted">
-            <span class="travelmate-info__heading">хочет посетить:</span>
-            <ul class="countries-wanted__list">
-              <li class="countries-wanted__list__item countries-wanted__list__item--usa">США</li>
-              <li class="countries-wanted__list__item countries-wanted__list__item--australlia">Австралия</li>
-              <li class="countries-wanted__list__item countries-wanted__list__item--dominicana">Доминикана</li>
-            </ul>
-          </div>
-          <div class="travelmate-info__fav-transport">
-            <span class="travelmate-info__heading">транспорт:</span>
-            <ul class="travelmate-info__transport transport-list">
-              <li class="transport-list__item transport-list__item--used">
-                <span class="visually-hidden">Авиаперелет</span>
-                <svg x="0px" y="0px" width="14" height="16" viewBox="0 0 19 21" style="enable-background:new 0 0 19 21;" xml:space="preserve">
-                  <path d="M18.9,18.9c-0.1-0.3-3.7-10.1-3.7-10.1c0,0,0,0,0,0c-0.1-0.5,0.1-0.7,0.3-1.1c0,0,2.1-3.5,2.8-4.6c0.7-1.2,0.6-2.3-0.1-2.8
-                	c-0.7-0.5-1.7-0.1-2.5,1c-0.8,1.1-3,4.5-3,4.5c-0.3,0.4-0.4,0.7-0.9,0.8c0,0,0,0,0,0C11.7,6.5,1.5,7,1.2,7c-0.3,0-0.7,0.1-1,0.6
-                	C-0.2,8.3,0,8.5,0.4,8.6c0,0,8,2.6,8.3,2.7C9,11.3,9,11.5,8.9,11.9c-0.2,0.4-1.4,2.3-1.6,2.6c-0.1,0.2-0.2,0.2-0.4,0.3l-2.8,1
-                	c-0.1,0-0.3,0.1-0.4,0.3c0,0-0.2,0.3-0.4,0.6c-0.2,0.3-0.1,0.5,0.2,0.5c0.3,0.1,2.1,0.2,2.1,0.2c0,0,0.3,0.1,0.4,0.1
-                	c0.2,0.1,0.4,0.3,0.2,0.6c-0.3,0.6-0.4,1.2-0.2,1.3s0.6-0.2,1-0.7c0.2-0.3,0.4-0.2,0.6,0C7.8,18.6,8,18.8,8,18.8c0,0,0.8,1.6,1,1.9
-                	c0.2,0.3,0.4,0.3,0.6,0c0.2-0.3,0.4-0.6,0.4-0.6c0.1-0.1,0.1-0.3,0.1-0.5l-0.3-3.1c0-0.2,0-0.2,0.1-0.5c0.1-0.2,1.4-2.2,1.6-2.5
-                	c0.2-0.3,0.4-0.3,0.6-0.1c0.2,0.2,5.7,6.7,5.7,6.7c0.3,0.3,0.5,0.4,0.9-0.2C19.1,19.5,19,19.1,18.9,18.9z"/>
-                </svg>
-              </li>
-              <li class="transport-list__item">
-                <span class="visually-hidden">Автотранспорт</span>
-                <svg  x="0px" y="0px" width="13" height="16" viewBox="0 0 17 21" style="enable-background:new 0 0 17 21;" xml:space="preserve">
-                  <path d="M16.2,3.1c-0.2-1.2-1-1.6-2.1-2.1C13,0.6,10.4,0,8.5,0C6.6,0,4,0.6,2.9,1C1.8,1.5,1.1,1.9,0.8,3.1L0,9.5v8.8h1.4v1.4
-                	c0,1.7,2.5,1.7,2.5,0v-1.4h4.5h0h4.7v1.4c0,1.7,2.5,1.7,2.5,0v-1.4H17V9.5L16.2,3.1z M5,1.6h3.4H12c0.7,0,0.7,1,0,1H8.4H5
-                	C4.3,2.7,4.3,1.6,5,1.6z M2.7,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C3.8,15,3.3,15.6,2.7,15.6z
-                	 M8.4,10.2H2.2c-0.6,0-0.7-0.4-0.7-0.9l0.6-4.7c0.1-0.6,0.3-0.9,1-0.9h5.3h5.4c0.7,0,0.9,0.4,1,0.9l0.6,4.7c0.1,0.4-0.1,0.9-0.7,0.9
-                	H8.4z M14.3,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C15.5,15,15,15.6,14.3,15.6z"/>
-                </svg>
-              </li>
-              <li class="transport-list__item transport-list__item--used">
-                <span class="visually-hidden">Велосипед</span>
-                <svg x="0px" y="0px" width="19" height="17" viewBox="0 0 24 21" style="enable-background:new 0 0 24 21;" xml:space="preserve">
-                  <path d="M16,3.6c1,0,1.8-0.8,1.8-1.8S17,0,16,0s-1.8,0.8-1.8,1.8S15,3.6,16,3.6z M19,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5
-                	S21.8,11,19,11z M19,19.6c-1.9,0-3.5-1.6-3.5-3.5s1.6-3.5,3.5-3.5s3.5,1.6,3.5,3.5S20.9,19.6,19,19.6z M14.8,8.9H19V7.1h-3.2
-                	l-1.9-3.3C13.6,3.3,13.1,3,12.4,3c-0.5,0-0.9,0.2-1.2,0.5L7.5,7.2C7.2,7.5,7,7.9,7,8.4C7,9,7.3,9.6,7.8,9.9l3.3,2v5H13v-6.5
-                	l-2.2-1.7l2.3-2.4L14.8,8.9z M5,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5S7.8,11,5,11z M5,19.6c-1.9,0-3.5-1.6-3.5-3.5
-                	s1.6-3.5,3.5-3.5s3.5,1.5,3.5,3.5S6.9,19.6,5,19.6z"/>
-                </svg>
-              </li>
-              <li class="transport-list__item">
-                <span class="visually-hidden">Пешком</span>
-                <svg x="0px" y="0px" width="15" height="17" viewBox="0 0 20 21" style="enable-background:new 0 0 20 21;" xml:space="preserve">
-                  <g>
-                  	<ellipse cx="14.3" cy="2" rx="2.1" ry="2"/>
-                  	<path d="M19.4,4.6c-0.5-0.2-1.2-0.1-1.4,0.4l-0.9,1.6L13,4.3c-0.2-0.1-0.3-0.1-0.6-0.1H7.9C7.5,4.2,7.2,4.3,7,4.7L5.3,7.6
-                  		C5,8.1,5.2,8.7,5.7,8.9C5.9,9,6.1,9,6.2,9C6.6,9,7,8.8,7.2,8.5l1.4-2.4h1.6l-4.7,8.1H1.1c-0.6,0-1.1,0.4-1.1,1s0.5,1,1.1,1h5
-                  		c0.4,0,0.7-0.2,0.9-0.5l1.9-3.2l3,2.6L11.7,20c-0.1,0.5,0.4,1,1,1c0,0,0,0,0.1,0c0.6,0,1-0.4,1.1-0.9l0.3-5.4
-                  		c0-0.3-0.1-0.6-0.3-0.8l-2.6-2.2l2.7-4.6l3.1,1.8C17.1,9,17.5,9.1,17.7,9c0.3-0.1,0.5-0.2,0.7-0.5L19.9,6C20.2,5.5,20,4.9,19.4,4.6
-                  		z"/>
-                  </g>
-                </svg>
-              </li>
-            </ul>
-          </div>
-          <div class="travelmate-info__level">
-            <span class="travelmate-info__level-heading">левел:</span>
-            <b class="travelmate-info__level-value">25</b>
-          </div>
-          <a class="travelmate-info__button button" href="travelmate.html">Позвать</a>
-        </li>
-
-        <li class="page-travelmates__item page-travelmates__item--online travelmate-info">
-          <div class="travelmate-info__personal">
-            <a class="travelmate-info__link-foto" href="#">
-              <img class="travelmate-info__foto" src="https://via.placeholder.com/150x150" width="70" height="70" alt="Лариса Роговая">
-            </a>
-            <p>
-              <a class="travelmate-info__link-name" href="#">Лариса Роговая</a>
-              <span class="travelmate-info__raiting">23</span>
-            </p>
-            <button class="travelmate-info__button-like">
-              <svg x="0px" y="0px" width="13" height="11" viewBox="0 0 20 17" style="enable-background:new 0 0 20 17;" xml:space="preserve">
-                <path d="M18.5,1.5c-2-2-5.3-2-7.3,0L10,2.7L8.8,1.5c-2-2-5.3-2-7.3,0c-2,2-2,5.2,0,7.2l1.2,1.2L10,17l7.3-7.2l1.2-1.2
-                C20.5,6.7,20.5,3.5,18.5,1.5z M14.9,9.8L10,14.6L5.1,9.8L2.7,7.5C1.4,6.1,1.4,4,2.7,2.7c1.3-1.3,3.5-1.3,4.9,0L10,5.1l2.4-2.4
-                c1.3-1.3,3.5-1.3,4.9,0c1.3,1.3,1.3,3.5,0,4.8L14.9,9.8z"/>
-              </svg>
-            </button>
-          </div>
-          <p class="travelmate-info__tags">#образование #карьера #учеба #линкедин</p>
-          <div class="travelmate-info__countries countries-wanted">
-            <span class="travelmate-info__heading">хочет посетить:</span>
-            <ul class="countries-wanted__list">
-              <li class="countries-wanted__list__item countries-wanted__list__item--greatbritain">Великобритания</li>
-              <li class="countries-wanted__list__item countries-wanted__list__item--germany">Германия</li>
-            </ul>
-          </div>
-          <div class="travelmate-info__fav-transport">
-            <span class="travelmate-info__heading">транспорт:</span>
-            <ul class="travelmate-info__transport transport-list">
-              <li class="transport-list__item transport-list__item--used">
+      <div class="page-travelmates__wrapper wrapper">
+        <section class="page-travelmates__filter-form travelmates-filter">
+          <h2 class="page-travelmates__heading">Подберите идеального попутчика</h2>
+          <form class="travelmates-filter__form" action="https://echo.htmlacademy.ru" method="post">
+            <fieldset class="travelmates-filter__group travelmates-filter__group--expanded filter-group">
+              <legend class="filter-group__heading">Хобби</legend>
+              <button class="filter-group__button filter-group__button--expand visually-hidden" type="button">Развернуть</button>
+              <button class="filter-group__button filter-group__button--collapse" type="button">Свернуть</button>
+            </fieldset>
+            <fieldset class="travelmates-filter__group travelmates-filter__group--expanded filter-group">
+              <legend class="filter-group__heading">Музыка</legend>
+              <button class="filter-group__button filter-group__button--expand visually-hidden" type="button">Развернуть</button>
+              <button class="filter-group__button filter-group__button--collapse" type="button">Свернуть</button>
+              <input class="filter-group__checkbox" type="checkbox" name="music" value="Тяжелый рок" id="hardrock" checked>
+              <label class="filter-group__checkbox-label" for="hardrock">Тяжелый рок</label>
+              <input class="filter-group__checkbox" type="checkbox" name="music" value="Русский рэп" id="russianrap">
+              <label class="filter-group__checkbox-label" for="russianrap">Русский рэп</label>
+              <input class="filter-group__checkbox" type="checkbox" name="music" value="Евроденс" id="eurodance">
+              <label class="filter-group__checkbox-label" for="eurodance">Евроденс</label>
+            </fieldset>
+            <fieldset class="travelmates-filter__group travelmates-filter__group--expanded filter-group">
+              <legend class="filter-group__heading">Еда</legend>
+              <button class="filter-group__button filter-group__button--expand visually-hidden" type="button">Развернуть</button>
+              <button class="filter-group__button filter-group__button--collapse" type="button">Свернуть</button>
+            </fieldset>
+            <fieldset class="travelmates-filter__group travelmates-filter__group--expanded filter-group">
+              <legend class="filter-group__heading">Транспорт</legend>
+              <button class="filter-group__button filter-group__button--expand visually-hidden" type="button">Развернуть</button>
+              <button class="filter-group__button filter-group__button--collapse" type="button">Свернуть</button>
+              <input class="filter-group__transport" type="checkbox" name="transport" value="Авиаперелет" id="plane" checked>
+              <label class="filter-group__transport-label filter-group__transport-label--plane" for="plane">
                 <span class="visually-hidden">Авиаперелет</span>
                 <svg x="0px" y="0px" width="14" height="16" viewBox="0 0 19 21" style="enable-background:new 0 0 19 21;" xml:space="preserve">
                   <path d="M18.9,18.9c-0.1-0.3-3.7-10.1-3.7-10.1c0,0,0,0,0,0c-0.1-0.5,0.1-0.7,0.3-1.1c0,0,2.1-3.5,2.8-4.6c0.7-1.2,0.6-2.3-0.1-2.8
@@ -431,18 +93,20 @@
                   c0.2,0.3,0.4,0.3,0.6,0c0.2-0.3,0.4-0.6,0.4-0.6c0.1-0.1,0.1-0.3,0.1-0.5l-0.3-3.1c0-0.2,0-0.2,0.1-0.5c0.1-0.2,1.4-2.2,1.6-2.5
                   c0.2-0.3,0.4-0.3,0.6-0.1c0.2,0.2,5.7,6.7,5.7,6.7c0.3,0.3,0.5,0.4,0.9-0.2C19.1,19.5,19,19.1,18.9,18.9z"/>
                 </svg>
-              </li>
-              <li class="transport-list__item transport-list__item--used">
+              </label>
+              <input class="filter-group__transport" type="checkbox" name="transport" value="Автотранспорт" id="bus" checked>
+              <label class="filter-group__transport-label filter-group__transport-label--bus" for="bus">
                 <span class="visually-hidden">Автотранспорт</span>
                 <svg  x="0px" y="0px" width="13" height="16" viewBox="0 0 17 21" style="enable-background:new 0 0 17 21;" xml:space="preserve">
                   <path d="M16.2,3.1c-0.2-1.2-1-1.6-2.1-2.1C13,0.6,10.4,0,8.5,0C6.6,0,4,0.6,2.9,1C1.8,1.5,1.1,1.9,0.8,3.1L0,9.5v8.8h1.4v1.4
                   c0,1.7,2.5,1.7,2.5,0v-1.4h4.5h0h4.7v1.4c0,1.7,2.5,1.7,2.5,0v-1.4H17V9.5L16.2,3.1z M5,1.6h3.4H12c0.7,0,0.7,1,0,1H8.4H5
                   C4.3,2.7,4.3,1.6,5,1.6z M2.7,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C3.8,15,3.3,15.6,2.7,15.6z
-                   M8.4,10.2H2.2c-0.6,0-0.7-0.4-0.7-0.9l0.6-4.7c0.1-0.6,0.3-0.9,1-0.9h5.3h5.4c0.7,0,0.9,0.4,1,0.9l0.6,4.7c0.1,0.4-0.1,0.9-0.7,0.9
+                  M8.4,10.2H2.2c-0.6,0-0.7-0.4-0.7-0.9l0.6-4.7c0.1-0.6,0.3-0.9,1-0.9h5.3h5.4c0.7,0,0.9,0.4,1,0.9l0.6,4.7c0.1,0.4-0.1,0.9-0.7,0.9
                   H8.4z M14.3,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C15.5,15,15,15.6,14.3,15.6z"/>
                 </svg>
-              </li>
-              <li class="transport-list__item">
+              </label>
+              <input class="filter-group__transport" type="checkbox" name="transport" value="Велосипед" id="bike">
+              <label class="filter-group__transport-label filter-group__transport-label--bike" for="bike">
                 <span class="visually-hidden">Велосипед</span>
                 <svg x="0px" y="0px" width="19" height="17" viewBox="0 0 24 21" style="enable-background:new 0 0 24 21;" xml:space="preserve">
                   <path d="M16,3.6c1,0,1.8-0.8,1.8-1.8S17,0,16,0s-1.8,0.8-1.8,1.8S15,3.6,16,3.6z M19,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5
@@ -451,8 +115,9 @@
                   l-2.2-1.7l2.3-2.4L14.8,8.9z M5,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5S7.8,11,5,11z M5,19.6c-1.9,0-3.5-1.6-3.5-3.5
                   s1.6-3.5,3.5-3.5s3.5,1.5,3.5,3.5S6.9,19.6,5,19.6z"/>
                 </svg>
-              </li>
-              <li class="transport-list__item">
+              </label>
+              <input class="filter-group__transport" type="checkbox" name="transport" value="Пешком" id="run" checked>
+              <label class="filter-group__transport-label filter-group__transport-label--run" for="run">
                 <span class="visually-hidden">Пешком</span>
                 <svg x="0px" y="0px" width="15" height="17" viewBox="0 0 20 21" style="enable-background:new 0 0 20 21;" xml:space="preserve">
                   <g>
@@ -464,34 +129,377 @@
                       z"/>
                   </g>
                 </svg>
-              </li>
-            </ul>
-          </div>
-          <div class="travelmate-info__level">
-            <span class="travelmate-info__level-heading">левел:</span>
-            <b class="travelmate-info__level-value">50</b>
-          </div>
-          <a class="travelmate-info__button button" href="travelmate.html">Позвать</a>
-        </li>
-      </ul>
-      <a class="page-travelmates__button-more" href="travelmates.html">Показать еще</a>
-      <button class="page-travelmates__button page-travelmates__button--prev" type="button">Назад</button>
-      <button class="page-travelmates__button page-travelmates__button--next" type="button">Вперед</button>
+              </label>
+            </fieldset>
+            <fieldset class="travelmates-filter__group travelmates-filter__group--expanded filter-group">
+              <legend class="filter-group__heading">Левел</legend>
+              <button class="filter-group__button filter-group__button--expand visually-hidden" type="button">Развернуть</button>
+              <button class="filter-group__button filter-group__button--collapse" type="button">Свернуть</button>
+              <p class="filter-group__range range-filter">
+                <input class="range-filter__value range-filter__value--min" type="number" name="min-level" value="30" min="0" max="100" id="min-level">
+                <input class="range-filter__value range-filter__value--max" type="number" name="max-level" value="100" min="1" max="100" id="max-level">
+              </p>
+              <p class="filter-group__range-triggers range-triggers">
+                <label class="range-triggers__label range-triggers__label--min" for="min-level">Минимальный уровень</label>
+                <label class="range-triggers__label range-triggers__label--max" for="max-level">Максимальный уровень</label>
+              </p>
+            </fieldset>
+            <button class="travelmates-filter__button" type="button">Показать</button>
+          </form>
+        </section>
+
+        <ul class="page-travelmates__list">
+          <li class="page-travelmates__item travelmate-info">
+            <div class="travelmate-info__personal">
+              <a class="travelmate-info__link-foto" href="#">
+                <img class="travelmate-info__foto" src="https://via.placeholder.com/150x150" width="70" height="70" alt="Таня Фирсова">
+              </a>
+              <p>
+                <a class="travelmate-info__link-name" href="#">Таня Фирсова</a>
+                <span class="travelmate-info__raiting">1,5 M</span>
+              </p>
+              <button class="travelmate-info__button-like travelmate-info__button-like--active">
+                <svg x="0px" y="0px" width="13" height="11" viewBox="0 0 20 17" style="enable-background:new 0 0 20 17;" xml:space="preserve">
+                  <path d="M18.5,1.5c-2-2-5.3-2-7.3,0L10,2.7L8.8,1.5c-2-2-5.3-2-7.3,0c-2,2-2,5.2,0,7.2l1.2,1.2L10,17l7.3-7.2l1.2-1.2
+                  C20.5,6.7,20.5,3.5,18.5,1.5z M14.9,9.8L10,14.6L5.1,9.8L2.7,7.5C1.4,6.1,1.4,4,2.7,2.7c1.3-1.3,3.5-1.3,4.9,0L10,5.1l2.4-2.4
+                  c1.3-1.3,3.5-1.3,4.9,0c1.3,1.3,1.3,3.5,0,4.8L14.9,9.8z"/>
+                </svg>
+              </button>
+            </div>
+            <p class="travelmate-info__tags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
+            <div class="travelmate-info__countries countries-wanted">
+              <span class="travelmate-info__heading">хочет посетить:</span>
+              <ul class="countries-wanted__list">
+                <li class="countries-wanted__item countries-wanted__item--srilanka">Шри-ланка</li>
+                <li class="countries-wanted__item countries-wanted__item--thailand">Таиланд</li>
+                <li class="countries-wanted__item countries-wanted__item--seichelles">Сейшелы</li>
+              </ul>
+            </div>
+            <div class="travelmate-info__fav-transport">
+              <span class="travelmate-info__heading">транспорт:</span>
+              <ul class="travelmate-info__transport transport-list">
+                <li class="transport-list__item transport-list__item--used">
+                  <span class="visually-hidden">Авиаперелет</span>
+                  <svg x="0px" y="0px" width="14" height="16" viewBox="0 0 19 21" style="enable-background:new 0 0 19 21;" xml:space="preserve">
+                    <path d="M18.9,18.9c-0.1-0.3-3.7-10.1-3.7-10.1c0,0,0,0,0,0c-0.1-0.5,0.1-0.7,0.3-1.1c0,0,2.1-3.5,2.8-4.6c0.7-1.2,0.6-2.3-0.1-2.8
+                    c-0.7-0.5-1.7-0.1-2.5,1c-0.8,1.1-3,4.5-3,4.5c-0.3,0.4-0.4,0.7-0.9,0.8c0,0,0,0,0,0C11.7,6.5,1.5,7,1.2,7c-0.3,0-0.7,0.1-1,0.6
+                    C-0.2,8.3,0,8.5,0.4,8.6c0,0,8,2.6,8.3,2.7C9,11.3,9,11.5,8.9,11.9c-0.2,0.4-1.4,2.3-1.6,2.6c-0.1,0.2-0.2,0.2-0.4,0.3l-2.8,1
+                    c-0.1,0-0.3,0.1-0.4,0.3c0,0-0.2,0.3-0.4,0.6c-0.2,0.3-0.1,0.5,0.2,0.5c0.3,0.1,2.1,0.2,2.1,0.2c0,0,0.3,0.1,0.4,0.1
+                    c0.2,0.1,0.4,0.3,0.2,0.6c-0.3,0.6-0.4,1.2-0.2,1.3s0.6-0.2,1-0.7c0.2-0.3,0.4-0.2,0.6,0C7.8,18.6,8,18.8,8,18.8c0,0,0.8,1.6,1,1.9
+                    c0.2,0.3,0.4,0.3,0.6,0c0.2-0.3,0.4-0.6,0.4-0.6c0.1-0.1,0.1-0.3,0.1-0.5l-0.3-3.1c0-0.2,0-0.2,0.1-0.5c0.1-0.2,1.4-2.2,1.6-2.5
+                    c0.2-0.3,0.4-0.3,0.6-0.1c0.2,0.2,5.7,6.7,5.7,6.7c0.3,0.3,0.5,0.4,0.9-0.2C19.1,19.5,19,19.1,18.9,18.9z"/>
+                  </svg>
+                </li>
+                <li class="transport-list__item">
+                  <span class="visually-hidden">Автотранспорт</span>
+                  <svg  x="0px" y="0px" width="13" height="16" viewBox="0 0 17 21" style="enable-background:new 0 0 17 21;" xml:space="preserve">
+                    <path d="M16.2,3.1c-0.2-1.2-1-1.6-2.1-2.1C13,0.6,10.4,0,8.5,0C6.6,0,4,0.6,2.9,1C1.8,1.5,1.1,1.9,0.8,3.1L0,9.5v8.8h1.4v1.4
+                    c0,1.7,2.5,1.7,2.5,0v-1.4h4.5h0h4.7v1.4c0,1.7,2.5,1.7,2.5,0v-1.4H17V9.5L16.2,3.1z M5,1.6h3.4H12c0.7,0,0.7,1,0,1H8.4H5
+                    C4.3,2.7,4.3,1.6,5,1.6z M2.7,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C3.8,15,3.3,15.6,2.7,15.6z
+                    M8.4,10.2H2.2c-0.6,0-0.7-0.4-0.7-0.9l0.6-4.7c0.1-0.6,0.3-0.9,1-0.9h5.3h5.4c0.7,0,0.9,0.4,1,0.9l0.6,4.7c0.1,0.4-0.1,0.9-0.7,0.9
+                    H8.4z M14.3,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C15.5,15,15,15.6,14.3,15.6z"/>
+                  </svg>
+                </li>
+                <li class="transport-list__item">
+                  <span class="visually-hidden">Велосипед</span>
+                  <svg x="0px" y="0px" width="19" height="17" viewBox="0 0 24 21" style="enable-background:new 0 0 24 21;" xml:space="preserve">
+                    <path d="M16,3.6c1,0,1.8-0.8,1.8-1.8S17,0,16,0s-1.8,0.8-1.8,1.8S15,3.6,16,3.6z M19,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5
+                    S21.8,11,19,11z M19,19.6c-1.9,0-3.5-1.6-3.5-3.5s1.6-3.5,3.5-3.5s3.5,1.6,3.5,3.5S20.9,19.6,19,19.6z M14.8,8.9H19V7.1h-3.2
+                    l-1.9-3.3C13.6,3.3,13.1,3,12.4,3c-0.5,0-0.9,0.2-1.2,0.5L7.5,7.2C7.2,7.5,7,7.9,7,8.4C7,9,7.3,9.6,7.8,9.9l3.3,2v5H13v-6.5
+                    l-2.2-1.7l2.3-2.4L14.8,8.9z M5,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5S7.8,11,5,11z M5,19.6c-1.9,0-3.5-1.6-3.5-3.5
+                    s1.6-3.5,3.5-3.5s3.5,1.5,3.5,3.5S6.9,19.6,5,19.6z"/>
+                  </svg>
+                </li>
+                <li class="transport-list__item">
+                  <span class="visually-hidden">Пешком</span>
+                  <svg x="0px" y="0px" width="15" height="17" viewBox="0 0 20 21" style="enable-background:new 0 0 20 21;" xml:space="preserve">
+                    <g>
+                      <ellipse cx="14.3" cy="2" rx="2.1" ry="2"/>
+                      <path d="M19.4,4.6c-0.5-0.2-1.2-0.1-1.4,0.4l-0.9,1.6L13,4.3c-0.2-0.1-0.3-0.1-0.6-0.1H7.9C7.5,4.2,7.2,4.3,7,4.7L5.3,7.6
+                        C5,8.1,5.2,8.7,5.7,8.9C5.9,9,6.1,9,6.2,9C6.6,9,7,8.8,7.2,8.5l1.4-2.4h1.6l-4.7,8.1H1.1c-0.6,0-1.1,0.4-1.1,1s0.5,1,1.1,1h5
+                        c0.4,0,0.7-0.2,0.9-0.5l1.9-3.2l3,2.6L11.7,20c-0.1,0.5,0.4,1,1,1c0,0,0,0,0.1,0c0.6,0,1-0.4,1.1-0.9l0.3-5.4
+                        c0-0.3-0.1-0.6-0.3-0.8l-2.6-2.2l2.7-4.6l3.1,1.8C17.1,9,17.5,9.1,17.7,9c0.3-0.1,0.5-0.2,0.7-0.5L19.9,6C20.2,5.5,20,4.9,19.4,4.6
+                        z"/>
+                    </g>
+                  </svg>
+                </li>
+              </ul>
+            </div>
+            <div class="travelmate-info__level">
+              <span class="travelmate-info__level-heading">левел:</span>
+              <b class="travelmate-info__level-value">99</b>
+            </div>
+            <a class="travelmate-info__button button" href="travelmate.html">Позвать</a>
+          </li>
+
+          <li class="page-travelmates__item travelmate-info">
+            <div class="travelmate-info__personal">
+              <a class="travelmate-info__link-foto" href="#">
+                <img class="travelmate-info__foto" src="https://via.placeholder.com/150x150" width="70" height="70" alt="Петя Демин">
+              </a>
+              <p>
+                <a class="travelmate-info__link-name" href="#">Петя Демин</a>
+                <span class="travelmate-info__raiting">150</span>
+              </p>
+              <button class="travelmate-info__button-like">
+                <svg x="0px" y="0px" width="13" height="11" viewBox="0 0 20 17" style="enable-background:new 0 0 20 17;" xml:space="preserve">
+                  <path d="M18.5,1.5c-2-2-5.3-2-7.3,0L10,2.7L8.8,1.5c-2-2-5.3-2-7.3,0c-2,2-2,5.2,0,7.2l1.2,1.2L10,17l7.3-7.2l1.2-1.2
+                  C20.5,6.7,20.5,3.5,18.5,1.5z M14.9,9.8L10,14.6L5.1,9.8L2.7,7.5C1.4,6.1,1.4,4,2.7,2.7c1.3-1.3,3.5-1.3,4.9,0L10,5.1l2.4-2.4
+                  c1.3-1.3,3.5-1.3,4.9,0c1.3,1.3,1.3,3.5,0,4.8L14.9,9.8z"/>
+                </svg>
+              </button>
+            </div>
+            <p class="travelmate-info__tags">#бургер #бар #футбол #концерт #крафт</p>
+            <div class="travelmate-info__countries countries-wanted">
+              <span class="travelmate-info__heading">хочет посетить:</span>
+              <ul class="countries-wanted__list">
+                <li class="countries-wanted__item countries-wanted__item--belgium">Бельгия</li>
+                <li class="countries-wanted__item countries-wanted__item--czech">Чехия</li>
+              </ul>
+            </div>
+            <div class="travelmate-info__fav-transport">
+              <span class="travelmate-info__heading">транспорт:</span>
+              <ul class="travelmate-info__transport transport-list">
+                <li class="transport-list__item transport-list__item--used">
+                  <span class="visually-hidden">Авиаперелет</span>
+                  <svg x="0px" y="0px" width="14" height="16" viewBox="0 0 19 21" style="enable-background:new 0 0 19 21;" xml:space="preserve">
+                    <path d="M18.9,18.9c-0.1-0.3-3.7-10.1-3.7-10.1c0,0,0,0,0,0c-0.1-0.5,0.1-0.7,0.3-1.1c0,0,2.1-3.5,2.8-4.6c0.7-1.2,0.6-2.3-0.1-2.8
+                    c-0.7-0.5-1.7-0.1-2.5,1c-0.8,1.1-3,4.5-3,4.5c-0.3,0.4-0.4,0.7-0.9,0.8c0,0,0,0,0,0C11.7,6.5,1.5,7,1.2,7c-0.3,0-0.7,0.1-1,0.6
+                    C-0.2,8.3,0,8.5,0.4,8.6c0,0,8,2.6,8.3,2.7C9,11.3,9,11.5,8.9,11.9c-0.2,0.4-1.4,2.3-1.6,2.6c-0.1,0.2-0.2,0.2-0.4,0.3l-2.8,1
+                    c-0.1,0-0.3,0.1-0.4,0.3c0,0-0.2,0.3-0.4,0.6c-0.2,0.3-0.1,0.5,0.2,0.5c0.3,0.1,2.1,0.2,2.1,0.2c0,0,0.3,0.1,0.4,0.1
+                    c0.2,0.1,0.4,0.3,0.2,0.6c-0.3,0.6-0.4,1.2-0.2,1.3s0.6-0.2,1-0.7c0.2-0.3,0.4-0.2,0.6,0C7.8,18.6,8,18.8,8,18.8c0,0,0.8,1.6,1,1.9
+                    c0.2,0.3,0.4,0.3,0.6,0c0.2-0.3,0.4-0.6,0.4-0.6c0.1-0.1,0.1-0.3,0.1-0.5l-0.3-3.1c0-0.2,0-0.2,0.1-0.5c0.1-0.2,1.4-2.2,1.6-2.5
+                    c0.2-0.3,0.4-0.3,0.6-0.1c0.2,0.2,5.7,6.7,5.7,6.7c0.3,0.3,0.5,0.4,0.9-0.2C19.1,19.5,19,19.1,18.9,18.9z"/>
+                  </svg>
+                </li>
+                <li class="transport-list__item transport-list__item--used">
+                  <span class="visually-hidden">Автотранспорт</span>
+                  <svg  x="0px" y="0px" width="13" height="16" viewBox="0 0 17 21" style="enable-background:new 0 0 17 21;" xml:space="preserve">
+                    <path d="M16.2,3.1c-0.2-1.2-1-1.6-2.1-2.1C13,0.6,10.4,0,8.5,0C6.6,0,4,0.6,2.9,1C1.8,1.5,1.1,1.9,0.8,3.1L0,9.5v8.8h1.4v1.4
+                    c0,1.7,2.5,1.7,2.5,0v-1.4h4.5h0h4.7v1.4c0,1.7,2.5,1.7,2.5,0v-1.4H17V9.5L16.2,3.1z M5,1.6h3.4H12c0.7,0,0.7,1,0,1H8.4H5
+                    C4.3,2.7,4.3,1.6,5,1.6z M2.7,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C3.8,15,3.3,15.6,2.7,15.6z
+                    M8.4,10.2H2.2c-0.6,0-0.7-0.4-0.7-0.9l0.6-4.7c0.1-0.6,0.3-0.9,1-0.9h5.3h5.4c0.7,0,0.9,0.4,1,0.9l0.6,4.7c0.1,0.4-0.1,0.9-0.7,0.9
+                    H8.4z M14.3,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C15.5,15,15,15.6,14.3,15.6z"/>
+                  </svg>
+                </li>
+                <li class="transport-list__item">
+                  <span class="visually-hidden">Велосипед</span>
+                  <svg x="0px" y="0px" width="19" height="17" viewBox="0 0 24 21" style="enable-background:new 0 0 24 21;" xml:space="preserve">
+                    <path d="M16,3.6c1,0,1.8-0.8,1.8-1.8S17,0,16,0s-1.8,0.8-1.8,1.8S15,3.6,16,3.6z M19,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5
+                    S21.8,11,19,11z M19,19.6c-1.9,0-3.5-1.6-3.5-3.5s1.6-3.5,3.5-3.5s3.5,1.6,3.5,3.5S20.9,19.6,19,19.6z M14.8,8.9H19V7.1h-3.2
+                    l-1.9-3.3C13.6,3.3,13.1,3,12.4,3c-0.5,0-0.9,0.2-1.2,0.5L7.5,7.2C7.2,7.5,7,7.9,7,8.4C7,9,7.3,9.6,7.8,9.9l3.3,2v5H13v-6.5
+                    l-2.2-1.7l2.3-2.4L14.8,8.9z M5,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5S7.8,11,5,11z M5,19.6c-1.9,0-3.5-1.6-3.5-3.5
+                    s1.6-3.5,3.5-3.5s3.5,1.5,3.5,3.5S6.9,19.6,5,19.6z"/>
+                  </svg>
+                </li>
+                <li class="transport-list__item transport-list__item--used">
+                  <span class="visually-hidden">Пешком</span>
+                  <svg x="0px" y="0px" width="15" height="17" viewBox="0 0 20 21" style="enable-background:new 0 0 20 21;" xml:space="preserve">
+                    <g>
+                      <ellipse cx="14.3" cy="2" rx="2.1" ry="2"/>
+                      <path d="M19.4,4.6c-0.5-0.2-1.2-0.1-1.4,0.4l-0.9,1.6L13,4.3c-0.2-0.1-0.3-0.1-0.6-0.1H7.9C7.5,4.2,7.2,4.3,7,4.7L5.3,7.6
+                        C5,8.1,5.2,8.7,5.7,8.9C5.9,9,6.1,9,6.2,9C6.6,9,7,8.8,7.2,8.5l1.4-2.4h1.6l-4.7,8.1H1.1c-0.6,0-1.1,0.4-1.1,1s0.5,1,1.1,1h5
+                        c0.4,0,0.7-0.2,0.9-0.5l1.9-3.2l3,2.6L11.7,20c-0.1,0.5,0.4,1,1,1c0,0,0,0,0.1,0c0.6,0,1-0.4,1.1-0.9l0.3-5.4
+                        c0-0.3-0.1-0.6-0.3-0.8l-2.6-2.2l2.7-4.6l3.1,1.8C17.1,9,17.5,9.1,17.7,9c0.3-0.1,0.5-0.2,0.7-0.5L19.9,6C20.2,5.5,20,4.9,19.4,4.6
+                        z"/>
+                    </g>
+                  </svg>
+                </li>
+              </ul>
+            </div>
+            <div class="travelmate-info__level">
+              <span class="travelmate-info__level-heading">левел:</span>
+              <b class="travelmate-info__level-value">80</b>
+            </div>
+            <a class="travelmate-info__button button" href="travelmate.html">Позвать</a>
+          </li>
+
+          <li class="page-travelmates__item travelmate-info">
+            <div class="travelmate-info__personal">
+              <a class="travelmate-info__link-foto" href="#">
+                <img class="travelmate-info__foto" src="https://via.placeholder.com/150x150" width="70" height="70" alt="Марк Смолов">
+              </a>
+              <p>
+                <a class="travelmate-info__link-name" href="#">Марк Смолов</a>
+                <span class="travelmate-info__raiting">1700</span>
+              </p>
+              <button class="travelmate-info__button-like">
+                <svg x="0px" y="0px" width="13" height="11" viewBox="0 0 20 17" style="enable-background:new 0 0 20 17;" xml:space="preserve">
+                  <path d="M18.5,1.5c-2-2-5.3-2-7.3,0L10,2.7L8.8,1.5c-2-2-5.3-2-7.3,0c-2,2-2,5.2,0,7.2l1.2,1.2L10,17l7.3-7.2l1.2-1.2
+                  C20.5,6.7,20.5,3.5,18.5,1.5z M14.9,9.8L10,14.6L5.1,9.8L2.7,7.5C1.4,6.1,1.4,4,2.7,2.7c1.3-1.3,3.5-1.3,4.9,0L10,5.1l2.4-2.4
+                  c1.3-1.3,3.5-1.3,4.9,0c1.3,1.3,1.3,3.5,0,4.8L14.9,9.8z"/>
+                </svg>
+              </button>
+            </div>
+            <p class="travelmate-info__tags">#рэп #тату #хайпбист #кроссовки #суприм</p>
+            <div class="travelmate-info__countries countries-wanted">
+              <span class="travelmate-info__heading">хочет посетить:</span>
+              <ul class="countries-wanted__list">
+                <li class="countries-wanted__item countries-wanted__item--usa">США</li>
+                <li class="countries-wanted__item countries-wanted__item--australlia">Австралия</li>
+                <li class="countries-wanted__item countries-wanted__item--dominicana">Доминикана</li>
+              </ul>
+            </div>
+            <div class="travelmate-info__fav-transport">
+              <span class="travelmate-info__heading">транспорт:</span>
+              <ul class="travelmate-info__transport transport-list">
+                <li class="transport-list__item transport-list__item--used">
+                  <span class="visually-hidden">Авиаперелет</span>
+                  <svg x="0px" y="0px" width="14" height="16" viewBox="0 0 19 21" style="enable-background:new 0 0 19 21;" xml:space="preserve">
+                    <path d="M18.9,18.9c-0.1-0.3-3.7-10.1-3.7-10.1c0,0,0,0,0,0c-0.1-0.5,0.1-0.7,0.3-1.1c0,0,2.1-3.5,2.8-4.6c0.7-1.2,0.6-2.3-0.1-2.8
+                    c-0.7-0.5-1.7-0.1-2.5,1c-0.8,1.1-3,4.5-3,4.5c-0.3,0.4-0.4,0.7-0.9,0.8c0,0,0,0,0,0C11.7,6.5,1.5,7,1.2,7c-0.3,0-0.7,0.1-1,0.6
+                    C-0.2,8.3,0,8.5,0.4,8.6c0,0,8,2.6,8.3,2.7C9,11.3,9,11.5,8.9,11.9c-0.2,0.4-1.4,2.3-1.6,2.6c-0.1,0.2-0.2,0.2-0.4,0.3l-2.8,1
+                    c-0.1,0-0.3,0.1-0.4,0.3c0,0-0.2,0.3-0.4,0.6c-0.2,0.3-0.1,0.5,0.2,0.5c0.3,0.1,2.1,0.2,2.1,0.2c0,0,0.3,0.1,0.4,0.1
+                    c0.2,0.1,0.4,0.3,0.2,0.6c-0.3,0.6-0.4,1.2-0.2,1.3s0.6-0.2,1-0.7c0.2-0.3,0.4-0.2,0.6,0C7.8,18.6,8,18.8,8,18.8c0,0,0.8,1.6,1,1.9
+                    c0.2,0.3,0.4,0.3,0.6,0c0.2-0.3,0.4-0.6,0.4-0.6c0.1-0.1,0.1-0.3,0.1-0.5l-0.3-3.1c0-0.2,0-0.2,0.1-0.5c0.1-0.2,1.4-2.2,1.6-2.5
+                    c0.2-0.3,0.4-0.3,0.6-0.1c0.2,0.2,5.7,6.7,5.7,6.7c0.3,0.3,0.5,0.4,0.9-0.2C19.1,19.5,19,19.1,18.9,18.9z"/>
+                  </svg>
+                </li>
+                <li class="transport-list__item">
+                  <span class="visually-hidden">Автотранспорт</span>
+                  <svg  x="0px" y="0px" width="13" height="16" viewBox="0 0 17 21" style="enable-background:new 0 0 17 21;" xml:space="preserve">
+                    <path d="M16.2,3.1c-0.2-1.2-1-1.6-2.1-2.1C13,0.6,10.4,0,8.5,0C6.6,0,4,0.6,2.9,1C1.8,1.5,1.1,1.9,0.8,3.1L0,9.5v8.8h1.4v1.4
+                    c0,1.7,2.5,1.7,2.5,0v-1.4h4.5h0h4.7v1.4c0,1.7,2.5,1.7,2.5,0v-1.4H17V9.5L16.2,3.1z M5,1.6h3.4H12c0.7,0,0.7,1,0,1H8.4H5
+                    C4.3,2.7,4.3,1.6,5,1.6z M2.7,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C3.8,15,3.3,15.6,2.7,15.6z
+                    M8.4,10.2H2.2c-0.6,0-0.7-0.4-0.7-0.9l0.6-4.7c0.1-0.6,0.3-0.9,1-0.9h5.3h5.4c0.7,0,0.9,0.4,1,0.9l0.6,4.7c0.1,0.4-0.1,0.9-0.7,0.9
+                    H8.4z M14.3,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C15.5,15,15,15.6,14.3,15.6z"/>
+                  </svg>
+                </li>
+                <li class="transport-list__item transport-list__item--used">
+                  <span class="visually-hidden">Велосипед</span>
+                  <svg x="0px" y="0px" width="19" height="17" viewBox="0 0 24 21" style="enable-background:new 0 0 24 21;" xml:space="preserve">
+                    <path d="M16,3.6c1,0,1.8-0.8,1.8-1.8S17,0,16,0s-1.8,0.8-1.8,1.8S15,3.6,16,3.6z M19,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5
+                    S21.8,11,19,11z M19,19.6c-1.9,0-3.5-1.6-3.5-3.5s1.6-3.5,3.5-3.5s3.5,1.6,3.5,3.5S20.9,19.6,19,19.6z M14.8,8.9H19V7.1h-3.2
+                    l-1.9-3.3C13.6,3.3,13.1,3,12.4,3c-0.5,0-0.9,0.2-1.2,0.5L7.5,7.2C7.2,7.5,7,7.9,7,8.4C7,9,7.3,9.6,7.8,9.9l3.3,2v5H13v-6.5
+                    l-2.2-1.7l2.3-2.4L14.8,8.9z M5,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5S7.8,11,5,11z M5,19.6c-1.9,0-3.5-1.6-3.5-3.5
+                    s1.6-3.5,3.5-3.5s3.5,1.5,3.5,3.5S6.9,19.6,5,19.6z"/>
+                  </svg>
+                </li>
+                <li class="transport-list__item">
+                  <span class="visually-hidden">Пешком</span>
+                  <svg x="0px" y="0px" width="15" height="17" viewBox="0 0 20 21" style="enable-background:new 0 0 20 21;" xml:space="preserve">
+                    <g>
+                      <ellipse cx="14.3" cy="2" rx="2.1" ry="2"/>
+                      <path d="M19.4,4.6c-0.5-0.2-1.2-0.1-1.4,0.4l-0.9,1.6L13,4.3c-0.2-0.1-0.3-0.1-0.6-0.1H7.9C7.5,4.2,7.2,4.3,7,4.7L5.3,7.6
+                        C5,8.1,5.2,8.7,5.7,8.9C5.9,9,6.1,9,6.2,9C6.6,9,7,8.8,7.2,8.5l1.4-2.4h1.6l-4.7,8.1H1.1c-0.6,0-1.1,0.4-1.1,1s0.5,1,1.1,1h5
+                        c0.4,0,0.7-0.2,0.9-0.5l1.9-3.2l3,2.6L11.7,20c-0.1,0.5,0.4,1,1,1c0,0,0,0,0.1,0c0.6,0,1-0.4,1.1-0.9l0.3-5.4
+                        c0-0.3-0.1-0.6-0.3-0.8l-2.6-2.2l2.7-4.6l3.1,1.8C17.1,9,17.5,9.1,17.7,9c0.3-0.1,0.5-0.2,0.7-0.5L19.9,6C20.2,5.5,20,4.9,19.4,4.6
+                        z"/>
+                    </g>
+                  </svg>
+                </li>
+              </ul>
+            </div>
+            <div class="travelmate-info__level">
+              <span class="travelmate-info__level-heading">левел:</span>
+              <b class="travelmate-info__level-value">25</b>
+            </div>
+            <a class="travelmate-info__button button" href="travelmate.html">Позвать</a>
+          </li>
+
+          <li class="page-travelmates__item page-travelmates__item--online travelmate-info">
+            <div class="travelmate-info__personal">
+              <a class="travelmate-info__link-foto" href="#">
+                <img class="travelmate-info__foto" src="https://via.placeholder.com/150x150" width="70" height="70" alt="Лариса Роговая">
+              </a>
+              <p>
+                <a class="travelmate-info__link-name" href="#">Лариса Роговая</a>
+                <span class="travelmate-info__raiting">23</span>
+              </p>
+              <button class="travelmate-info__button-like">
+                <svg x="0px" y="0px" width="13" height="11" viewBox="0 0 20 17" style="enable-background:new 0 0 20 17;" xml:space="preserve">
+                  <path d="M18.5,1.5c-2-2-5.3-2-7.3,0L10,2.7L8.8,1.5c-2-2-5.3-2-7.3,0c-2,2-2,5.2,0,7.2l1.2,1.2L10,17l7.3-7.2l1.2-1.2
+                  C20.5,6.7,20.5,3.5,18.5,1.5z M14.9,9.8L10,14.6L5.1,9.8L2.7,7.5C1.4,6.1,1.4,4,2.7,2.7c1.3-1.3,3.5-1.3,4.9,0L10,5.1l2.4-2.4
+                  c1.3-1.3,3.5-1.3,4.9,0c1.3,1.3,1.3,3.5,0,4.8L14.9,9.8z"/>
+                </svg>
+              </button>
+            </div>
+            <p class="travelmate-info__tags">#образование #карьера #учеба #линкедин</p>
+            <div class="travelmate-info__countries countries-wanted">
+              <span class="travelmate-info__heading">хочет посетить:</span>
+              <ul class="countries-wanted__list">
+                <li class="countries-wanted__item countries-wanted__item--greatbritain">Великобритания</li>
+                <li class="countries-wanted__item countries-wanted__item--germany">Германия</li>
+              </ul>
+            </div>
+            <div class="travelmate-info__fav-transport">
+              <span class="travelmate-info__heading">транспорт:</span>
+              <ul class="travelmate-info__transport transport-list">
+                <li class="transport-list__item transport-list__item--used">
+                  <span class="visually-hidden">Авиаперелет</span>
+                  <svg x="0px" y="0px" width="14" height="16" viewBox="0 0 19 21" style="enable-background:new 0 0 19 21;" xml:space="preserve">
+                    <path d="M18.9,18.9c-0.1-0.3-3.7-10.1-3.7-10.1c0,0,0,0,0,0c-0.1-0.5,0.1-0.7,0.3-1.1c0,0,2.1-3.5,2.8-4.6c0.7-1.2,0.6-2.3-0.1-2.8
+                    c-0.7-0.5-1.7-0.1-2.5,1c-0.8,1.1-3,4.5-3,4.5c-0.3,0.4-0.4,0.7-0.9,0.8c0,0,0,0,0,0C11.7,6.5,1.5,7,1.2,7c-0.3,0-0.7,0.1-1,0.6
+                    C-0.2,8.3,0,8.5,0.4,8.6c0,0,8,2.6,8.3,2.7C9,11.3,9,11.5,8.9,11.9c-0.2,0.4-1.4,2.3-1.6,2.6c-0.1,0.2-0.2,0.2-0.4,0.3l-2.8,1
+                    c-0.1,0-0.3,0.1-0.4,0.3c0,0-0.2,0.3-0.4,0.6c-0.2,0.3-0.1,0.5,0.2,0.5c0.3,0.1,2.1,0.2,2.1,0.2c0,0,0.3,0.1,0.4,0.1
+                    c0.2,0.1,0.4,0.3,0.2,0.6c-0.3,0.6-0.4,1.2-0.2,1.3s0.6-0.2,1-0.7c0.2-0.3,0.4-0.2,0.6,0C7.8,18.6,8,18.8,8,18.8c0,0,0.8,1.6,1,1.9
+                    c0.2,0.3,0.4,0.3,0.6,0c0.2-0.3,0.4-0.6,0.4-0.6c0.1-0.1,0.1-0.3,0.1-0.5l-0.3-3.1c0-0.2,0-0.2,0.1-0.5c0.1-0.2,1.4-2.2,1.6-2.5
+                    c0.2-0.3,0.4-0.3,0.6-0.1c0.2,0.2,5.7,6.7,5.7,6.7c0.3,0.3,0.5,0.4,0.9-0.2C19.1,19.5,19,19.1,18.9,18.9z"/>
+                  </svg>
+                </li>
+                <li class="transport-list__item transport-list__item--used">
+                  <span class="visually-hidden">Автотранспорт</span>
+                  <svg  x="0px" y="0px" width="13" height="16" viewBox="0 0 17 21" style="enable-background:new 0 0 17 21;" xml:space="preserve">
+                    <path d="M16.2,3.1c-0.2-1.2-1-1.6-2.1-2.1C13,0.6,10.4,0,8.5,0C6.6,0,4,0.6,2.9,1C1.8,1.5,1.1,1.9,0.8,3.1L0,9.5v8.8h1.4v1.4
+                    c0,1.7,2.5,1.7,2.5,0v-1.4h4.5h0h4.7v1.4c0,1.7,2.5,1.7,2.5,0v-1.4H17V9.5L16.2,3.1z M5,1.6h3.4H12c0.7,0,0.7,1,0,1H8.4H5
+                    C4.3,2.7,4.3,1.6,5,1.6z M2.7,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C3.8,15,3.3,15.6,2.7,15.6z
+                    M8.4,10.2H2.2c-0.6,0-0.7-0.4-0.7-0.9l0.6-4.7c0.1-0.6,0.3-0.9,1-0.9h5.3h5.4c0.7,0,0.9,0.4,1,0.9l0.6,4.7c0.1,0.4-0.1,0.9-0.7,0.9
+                    H8.4z M14.3,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C15.5,15,15,15.6,14.3,15.6z"/>
+                  </svg>
+                </li>
+                <li class="transport-list__item">
+                  <span class="visually-hidden">Велосипед</span>
+                  <svg x="0px" y="0px" width="19" height="17" viewBox="0 0 24 21" style="enable-background:new 0 0 24 21;" xml:space="preserve">
+                    <path d="M16,3.6c1,0,1.8-0.8,1.8-1.8S17,0,16,0s-1.8,0.8-1.8,1.8S15,3.6,16,3.6z M19,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5
+                    S21.8,11,19,11z M19,19.6c-1.9,0-3.5-1.6-3.5-3.5s1.6-3.5,3.5-3.5s3.5,1.6,3.5,3.5S20.9,19.6,19,19.6z M14.8,8.9H19V7.1h-3.2
+                    l-1.9-3.3C13.6,3.3,13.1,3,12.4,3c-0.5,0-0.9,0.2-1.2,0.5L7.5,7.2C7.2,7.5,7,7.9,7,8.4C7,9,7.3,9.6,7.8,9.9l3.3,2v5H13v-6.5
+                    l-2.2-1.7l2.3-2.4L14.8,8.9z M5,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5S7.8,11,5,11z M5,19.6c-1.9,0-3.5-1.6-3.5-3.5
+                    s1.6-3.5,3.5-3.5s3.5,1.5,3.5,3.5S6.9,19.6,5,19.6z"/>
+                  </svg>
+                </li>
+                <li class="transport-list__item">
+                  <span class="visually-hidden">Пешком</span>
+                  <svg x="0px" y="0px" width="15" height="17" viewBox="0 0 20 21" style="enable-background:new 0 0 20 21;" xml:space="preserve">
+                    <g>
+                      <ellipse cx="14.3" cy="2" rx="2.1" ry="2"/>
+                      <path d="M19.4,4.6c-0.5-0.2-1.2-0.1-1.4,0.4l-0.9,1.6L13,4.3c-0.2-0.1-0.3-0.1-0.6-0.1H7.9C7.5,4.2,7.2,4.3,7,4.7L5.3,7.6
+                        C5,8.1,5.2,8.7,5.7,8.9C5.9,9,6.1,9,6.2,9C6.6,9,7,8.8,7.2,8.5l1.4-2.4h1.6l-4.7,8.1H1.1c-0.6,0-1.1,0.4-1.1,1s0.5,1,1.1,1h5
+                        c0.4,0,0.7-0.2,0.9-0.5l1.9-3.2l3,2.6L11.7,20c-0.1,0.5,0.4,1,1,1c0,0,0,0,0.1,0c0.6,0,1-0.4,1.1-0.9l0.3-5.4
+                        c0-0.3-0.1-0.6-0.3-0.8l-2.6-2.2l2.7-4.6l3.1,1.8C17.1,9,17.5,9.1,17.7,9c0.3-0.1,0.5-0.2,0.7-0.5L19.9,6C20.2,5.5,20,4.9,19.4,4.6
+                        z"/>
+                    </g>
+                  </svg>
+                </li>
+              </ul>
+            </div>
+            <div class="travelmate-info__level">
+              <span class="travelmate-info__level-heading">левел:</span>
+              <b class="travelmate-info__level-value">50</b>
+            </div>
+            <a class="travelmate-info__button button" href="travelmate.html">Позвать</a>
+          </li>
+        </ul>
+        <a class="page-travelmates__button-more" href="travelmates.html">Показать еще</a>
+        <button class="page-travelmates__button page-travelmates__button--prev" type="button">Назад</button>
+        <button class="page-travelmates__button page-travelmates__button--next" type="button">Вперед</button>
+    </div>
     </main>
 
     <footer class="page-footer">
-      <a class="page-footer__logo" href="index.html">
-        <img class="page-footer__logo-img" src="https://via.placeholder.com/150x150" width="100" height="19" alt="Логотип сайта Погнали">
-      </a>
-      <ul class="page-footer__social social-list">
-        <li class="social-list__item social-list__item--fb"><a href="facbook.com">Фэйсбук</a></li>
-        <li class="social-list__item social-list__item--vk"><a href="vk.com">Вконтакте</a></li>
-        <li class="social-list__item social-list__item--inst"><a href="instagram.com">Инстаграм</a></li>
-      </ul>
-      <a class="page-footer__copyrytes htmlacademy-logo" href="https://htmlacademy.ru/intensive/adaptive">
-        <span class="htmlacademy-logo__text">Разработано</span>
-        <img class="htmlacademy-logo__image" src="https://via.placeholder.com/150x150" width="27" height="34" alt="Логотип htmlacademy.ru">
-      </a>
+      <div class="page-footer__wrapper wrapper">
+        <a class="page-footer__logo" href="index.html">
+          <img class="page-footer__logo-img" src="https://via.placeholder.com/150x150" width="100" height="19" alt="Логотип сайта Погнали">
+        </a>
+        <ul class="page-footer__social social-list">
+          <li class="social-list__item social-list__item--fb"><a href="facbook.com">Фэйсбук</a></li>
+          <li class="social-list__item social-list__item--vk"><a href="vk.com">Вконтакте</a></li>
+          <li class="social-list__item social-list__item--inst"><a href="instagram.com">Инстаграм</a></li>
+        </ul>
+        <a class="page-footer__copyrytes htmlacademy-logo" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="htmlacademy-logo__text">Разработано</span>
+          <img class="htmlacademy-logo__image" src="https://via.placeholder.com/150x150" width="27" height="34" alt="Логотип htmlacademy.ru">
+        </a>
+      </div>
     </footer>
 
     <section class="countries-filter countries-filter--opened countries-filter--closed">

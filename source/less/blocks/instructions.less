@@ -1,0 +1,51 @@
+.instructions {
+  background: linear-gradient(to bottom, @dark-blue 0, @dark-blue 80px, @medium-blue 80px, @medium-blue 100%);
+}
+
+.instructions__wrapper {
+  min-height: 360px;
+  padding-top: 5px;
+  padding-bottom: 35px;
+}
+
+.instructions__list {
+  .list-clear;
+  counter-reset: instuctionCounter;
+}
+
+.instructions__item {
+  display: block;
+  box-sizing: border-box;
+  min-height: 80px;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-left: 25px;
+  padding-bottom: 20px;
+
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  color: @dark-blue;
+
+  &::after {
+    counter-increment: instuctionCounter;
+    content: counter(instuctionCounter);
+    color: white;
+  }
+
+  &--first {
+    background-color: #ff8d30;
+  }
+
+  &--second {
+    background-color: #ffa530;
+  }
+
+  &--third {
+    background-color: #ffbd30;
+  }
+
+  &--fourth {
+    background-color: #ffd74b;
+  }
+}

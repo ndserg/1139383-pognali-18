@@ -54,7 +54,7 @@
     <main class="page-main page-travelmates">
       <div class="page-travelmates__wrapper wrapper">
         <section class="page-travelmates__filter-form travelmates-filter">
-          <h2 class="page-travelmates__heading">Подберите идеального попутчика</h2>
+          <h2 class="page-travelmates__heading travelmates-filter__heading">Подберите идеального попутчика</h2>
           <form class="travelmates-filter__form" action="https://echo.htmlacademy.ru" method="post">
             <fieldset class="travelmates-filter__group travelmates-filter__group--expanded filter-group">
               <legend class="filter-group__heading">Хобби</legend>
@@ -503,89 +503,91 @@
     </footer>
 
     <section class="countries-filter countries-filter--opened countries-filter--closed">
-      <h2 class="countries-filter__heading">Фильтрация по странам</h2>
-      <button class="countries-filter__button-close" type="button">Закрыть</button>
-      <ul class="countries-filter__list continens-list">
-        <li class="continens-list__item continens-list__item--selected">
-          <a href="europe.html">Европа</a>
-        </li>
-        <li class="continens-list__item">
-          <a href="asia.html">Азия</a>
-        </li>
-        <li class="continens-list__item">
-          <a href="usa.html">Америка</a>
-        </li>
-        <li class="continens-list__item">
-          <a href="islands.html">Острова</a>
-        </li>
-      </ul>
-      <table class="countries-filter__table table-abc">
-        <tr>
-          <td class="table-abc__letter table-abc__letter--selected">А</td>
-          <td class="table-abc__letter">Б</td>
-          <td class="table-abc__letter">В</td>
-          <td class="table-abc__letter">Г</td>
-          <td class="table-abc__letter">Д</td>
-        </tr>
-        <tr>
-          <td class="table-abc__letter">Е</td>
-          <td class="table-abc__letter">З</td>
-          <td class="table-abc__letter">И</td>
-          <td class="table-abc__letter">К</td>
-          <td class="table-abc__letter">Л</td>
-        </tr>
-        <tr>
-          <td class="table-abc__letter">М</td>
-          <td class="table-abc__letter">Н</td>
-          <td class="table-abc__letter">О</td>
-          <td class="table-abc__letter">П</td>
-          <td class="table-abc__letter">Р</td>
-        </tr>
-        <tr>
-          <td class="table-abc__letter">С</td>
-          <td class="table-abc__letter">Т</td>
-          <td class="table-abc__letter">У</td>
-          <td class="table-abc__letter">Ф</td>
-          <td class="table-abc__letter">Х</td>
-        </tr>
-        <tr>
-          <td class="table-abc__letter">Ч</td>
-          <td class="table-abc__letter">Ш</td>
-          <td class="table-abc__letter">Э</td>
-          <td class="table-abc__letter">Ю</td>
-          <td class="table-abc__letter">Я</td>
-        </tr>
-      </table>
-      <ul class="countries-filter__list countries-filter-list">
-        <li class="countries-filter-list__item">
-          <a href="/asia/afganistan.html">Афганистан</a>
-        </li>
-        <li class="countries-filter-list__item">
-          <a href="/europe/albania.html">Албания</a>
-        </li>
-        <li class="countries-filter-list__item">
-          <a href="/islands/aljir.html">Алжир</a>
-        </li>
-        <li class="countries-filter-list__item">
-          <a href="/europe/andorra.html">Андорра</a>
-        </li>
-        <li class="countries-filter-list__item">
-          <a href="/usa/argentina.html">Аргентина</a>
-        </li>
-        <li class="countries-filter-list__item">
-          <a href="/asia/armenia.html">Армения</a>
-        </li>
-        <li class="countries-filter-list__item">
-          <a href="/islands/australlia.html">Австралия</a>
-        </li>
-        <li class="countries-filter-list__item">
-          <a href="/europe/austria.html">Австрия</a>
-        </li>
-        <li class="countries-filter-list__item">
-          <a href="/asia/azerbaidjan.html">Азербайджан</a>
-        </li>
-      </ul>
-      <button class="countries-filter__button-minimize button" type="button">Свернуть</button>
+      <div class="countries-filter__wrapper wrapper">
+        <h2 class="countries-filter__heading">Фильтрация по странам</h2>
+        <button class="countries-filter__button-close" type="button">Закрыть</button>
+        <ul class="countries-filter__list continens-list">
+          <li class="continens-list__item">
+            <a class="continens-list__link continens-list__link--selected" href="europe.html">Европа</a>
+          </li>
+          <li class="continens-list__item">
+            <a class="continens-list__link" href="asia.html">Азия</a>
+          </li>
+          <li class="continens-list__item">
+            <a class="continens-list__link" href="usa.html">Америка</a>
+          </li>
+          <li class="continens-list__item">
+            <a class="continens-list__link" href="islands.html">Острова</a>
+          </li>
+        </ul>
+        <table class="countries-filter__table table-abc">
+          <tr>
+            <td class="table-abc__letter table-abc__letter--selected">А</td>
+            <td class="table-abc__letter">Б</td>
+            <td class="table-abc__letter">В</td>
+            <td class="table-abc__letter">Г</td>
+            <td class="table-abc__letter">Д</td>
+          </tr>
+          <tr>
+            <td class="table-abc__letter">Е</td>
+            <td class="table-abc__letter">З</td>
+            <td class="table-abc__letter">И</td>
+            <td class="table-abc__letter">К</td>
+            <td class="table-abc__letter">Л</td>
+          </tr>
+          <tr>
+            <td class="table-abc__letter">М</td>
+            <td class="table-abc__letter">Н</td>
+            <td class="table-abc__letter">О</td>
+            <td class="table-abc__letter">П</td>
+            <td class="table-abc__letter">Р</td>
+          </tr>
+          <tr>
+            <td class="table-abc__letter">С</td>
+            <td class="table-abc__letter">Т</td>
+            <td class="table-abc__letter">У</td>
+            <td class="table-abc__letter">Ф</td>
+            <td class="table-abc__letter">Х</td>
+          </tr>
+          <tr>
+            <td class="table-abc__letter">Ч</td>
+            <td class="table-abc__letter">Ш</td>
+            <td class="table-abc__letter">Э</td>
+            <td class="table-abc__letter">Ю</td>
+            <td class="table-abc__letter">Я</td>
+          </tr>
+        </table>
+        <ul class="countries-filter__list countries-filter-list">
+          <li class="countries-filter-list__item">
+            <a class="countries-filter-list__link" href="/asia/afganistan.html">Афганистан</a>
+          </li>
+          <li class="countries-filter-list__item">
+            <a class="countries-filter-list__link" href="/europe/albania.html">Албания</a>
+          </li>
+          <li class="countries-filter-list__item">
+            <a class="countries-filter-list__link" href="/islands/aljir.html">Алжир</a>
+          </li>
+          <li class="countries-filter-list__item">
+            <a class="countries-filter-list__link" href="/europe/andorra.html">Андорра</a>
+          </li>
+          <li class="countries-filter-list__item">
+            <a class="countries-filter-list__link" href="/usa/argentina.html">Аргентина</a>
+          </li>
+          <li class="countries-filter-list__item">
+            <a class="countries-filter-list__link" href="/asia/armenia.html">Армения</a>
+          </li>
+          <li class="countries-filter-list__item">
+            <a class="countries-filter-list__link" href="/islands/australlia.html">Австралия</a>
+          </li>
+          <li class="countries-filter-list__item">
+            <a class="countries-filter-list__link" href="/europe/austria.html">Австрия</a>
+          </li>
+          <li class="countries-filter-list__item">
+            <a class="countries-filter-list__link" href="/asia/azerbaidjan.html">Азербайджан</a>
+          </li>
+        </ul>
+        <button class="countries-filter__button-minimize" type="button">Свернуть</button>
+      </div>
     </section>
 
   </body>

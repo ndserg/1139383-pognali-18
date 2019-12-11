@@ -7,15 +7,19 @@
   color: @grey;
 
   border-collapse: collapse;
+
+  td {
+    text-align: center;
+    vertical-align: middle;
+  }
 }
 
-.calendar td {
-  text-align: center;
-  vertical-align: middle;
-}
+.calendar__week-day {
+  padding-top: 25px;
 
-.calendar__week-day--weekend {
-  color: #ff5c23;
+  &--weekend {
+    color: #ff5c23;
+  }
 }
 
 .calendar__day {
@@ -24,6 +28,17 @@
 
   border: 1px solid #cbced9;
   background-color: @light-blue;
+
+  &--disabled {
+    color: @light-grey;
+
+    background-color: #ffffff;
+  }
+
+  &--selected {
+    color: #ffffff;
+    background-color: @travelmate-page-blue;
+  }
 
   &:hover {
     outline: 2px solid #ff5c23;
@@ -34,17 +49,6 @@
 
     background-color: #101d41;
   }
-}
-
-.calendar__day--disabled {
-  color: @light-grey;
-
-  background-color: #ffffff;
-}
-
-.calendar__day--selected {
-  color: #ffffff;
-  background-color: @travelmate-page-blue;
 }
 
 .calendar__month {
@@ -65,8 +69,4 @@
 
   border: none;
   background: transparent url("");
-}
-
-.calendar__week-day {
-  padding-top: 25px;
 }

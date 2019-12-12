@@ -1,0 +1,72 @@
+.calendar {
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  font-size: 14px;
+  line-height: 18px;
+  color: @grey;
+
+  border-collapse: collapse;
+
+  td {
+    text-align: center;
+    vertical-align: middle;
+  }
+}
+
+.calendar__week-day {
+  padding-top: 25px;
+
+  &--weekend {
+    color: #ff5c23;
+  }
+}
+
+.calendar__day {
+  width: 32px;
+  height: 32px;
+
+  border: 1px solid #cbced9;
+  background-color: @light-blue;
+
+  &--disabled {
+    color: @light-grey;
+
+    background-color: #ffffff;
+  }
+
+  &--selected {
+    color: #ffffff;
+    background-color: @travelmate-page-blue;
+  }
+
+  &:hover {
+    outline: 2px solid #ff5c23;
+  }
+
+  &:active {
+    color: #ffffff;
+
+    background-color: #101d41;
+  }
+}
+
+.calendar__month {
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+  color: @travelmate-page-blue;
+
+  border-top: 1px solid #cbced9;
+  border-bottom: 1px solid #cbced9;
+}
+
+.calendar__month-button {
+  font-size: 0;
+
+  border: none;
+  background: transparent url("");
+}

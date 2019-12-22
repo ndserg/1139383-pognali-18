@@ -1,9 +1,44 @@
 .main-nav {
+  flex-grow: 1;
   padding-top: 45px;
 
   background-color: #ffffff;
 }
 
+.main-nav__toggle {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+}
+
 .main-nav__list {
   .list-clear;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__toggle {
+    margin: auto;
+    top: 40px;
+    left: 0;
+    right: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav {
+    width: 1080px;
+    display: flex;
+    padding-top: 0;
+    padding-left: 105px;
+
+    background-color: @dark-blue;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__list.social-list {
+    display: none;
+  }
 }

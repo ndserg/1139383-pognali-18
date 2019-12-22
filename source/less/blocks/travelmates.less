@@ -77,3 +77,76 @@
     font-weight: 700;
   }
 }
+
+
+.travelmates__transport {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: @tablet-width) {
+  .travelmates__wrapper {
+    min-height: 1250px;
+    padding-top: 140px;
+    padding-bottom: 85px;
+  }
+
+  .travelmates__list {
+    display: flex;
+  }
+
+  .travelmates__item {
+    width: 285px;
+    margin-right: 50px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .travelmates__foto {
+    width: 285px;
+    height: 285px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .travelmates__wrapper {
+    height: 490px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: space-between;
+    min-height: 715px;
+    padding-top: 130px;
+    padding-bottom: 135px;
+  }
+
+  .travelmates__text {
+    width: 435px;
+  }
+
+  .travelmates__list {
+    order: 2;
+    width: 630px;
+    margin-top: 0;
+  }
+
+  .travelmates__item {
+    margin-right: 60px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .travelmates__foto {
+    width: 285px;
+    height: 285px;
+  }
+
+  .travelmates__button {
+    margin-top: auto;
+  }
+}

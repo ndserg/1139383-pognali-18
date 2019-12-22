@@ -13,3 +13,32 @@
 
   background-color: #ffd74b; //временно, для видимости текста
 }
+
+@media (min-width: @tablet-width) {
+  .user-list {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+
+    width: 330px;
+
+    text-align: right;
+  }
+
+  .user-list__login {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .user-list {
+    position: static;
+    width: auto;
+    order: 2;
+    margin: 0;
+  }
+
+  .user-list__login {
+    font-size: 20px;
+  }
+}

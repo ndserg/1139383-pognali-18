@@ -10,12 +10,15 @@
   <body>
 
     <header class="page-header inner-page">
-      <div class="page-header__wrapper wrapper">
-        <h1 class="inner-page__header">Направления</h1>
-        <a class="page-header__logo page-header__logo--scroll" href="index.html">
-          <img class="page-header__logo-img page-header__logo-img--scroll" src="https://via.placeholder.com/150x150" width="100" height="19" alt="Логотип сайта Погнали">
-        </a>
-        <nav class="main-nav">
+      <div class="page-header__wrapper">
+        <section class="page-header__top-menu inner-page__top-menu top-menu wrapper">
+          <h1 class="inner-page__heading">Направления</h1>
+          <a class="top-menu__logo top-menu__logo--scroll" href="index.html">
+            <img class="top-menu__logo-img top-menu__logo-img--scroll" src="https://via.placeholder.com/150x150" width="100" height="19" alt="Логотип сайта Погнали">
+          </a>
+        </section>
+
+        <nav class="main-nav wrapper">
           <button class="main-nav__toggle main-nav__toggle--scroll" type="button">Открыть меню</button>
           <button class="main-nav__toggle main-nav__toggle--scroll main-nav__toggle--close" type="button">Закрыть меню</button>
           <ul class="main-nav__list site-list">
@@ -42,7 +45,7 @@
               <a class="contacts-list__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </li>
           </ul>
-          <ul class="main-nav__social social-list">
+          <ul class="main-nav__list social-list">
             <li class="social-list__item social-list__item--fb"><a href="facbook.com">Фэйсбук</a></li>
             <li class="social-list__item social-list__item--vk"><a href="vk.com">Вконтакте</a></li>
             <li class="social-list__item social-list__item--inst"><a href="instagram.com">Инстаграм</a></li>
@@ -57,13 +60,13 @@
           <p class="traveller-info__level"><b>80</b> level</p>
           <img class="traveller-info__foto" src="https://via.placeholder.com/150x150" width="100" height="100" alt="Петя Демин">
           <button class="destinations__button destinations__button--foto button" type="button">Сменить фото</button>
-          <fieldset class="traveller-info__group">
+          <fieldset class="traveller-info__tags traveller-info__group">
             <legend class="traveller-info__heading">Тэги</legend>
             <textarea class="traveller-info__text" name="tags" rows="2" cols="30">#бургер #бар #футбол #концерт #крафт</textarea>
           </fieldset>
-          <fieldset class="traveller-info__group">
+          <fieldset class="traveller-info__transport traveller-info__group">
             <legend class="traveller-info__heading">Транспорт</legend>
-            <input class="traveller-info__transport" type="checkbox" name="transport" value="Авиаперелет" id="plane" checked>
+            <input class="traveller-info__transport-checkbox" type="checkbox" name="transport" value="Авиаперелет" id="plane" checked>
             <label class="traveller-info__transport-label traveller-info__transport-label--plane" for="plane">
               <span class="visually-hidden">Авиаперелет</span>
               <svg x="0px" y="0px" width="14" height="16" viewBox="0 0 19 21" style="enable-background:new 0 0 19 21;" xml:space="preserve">
@@ -76,7 +79,7 @@
                 c0.2-0.3,0.4-0.3,0.6-0.1c0.2,0.2,5.7,6.7,5.7,6.7c0.3,0.3,0.5,0.4,0.9-0.2C19.1,19.5,19,19.1,18.9,18.9z"/>
               </svg>
             </label>
-            <input class="traveller-info__transport" type="checkbox" name="transport" value="Автотранспорт" id="bus" checked>
+            <input class="traveller-info__transport-checkbox" type="checkbox" name="transport" value="Автотранспорт" id="bus" checked>
             <label class="traveller-info__transport-label traveller-info__transport-label--bus" for="bus">
               <span class="visually-hidden">Автотранспорт</span>
               <svg  x="0px" y="0px" width="13" height="16" viewBox="0 0 17 21" style="enable-background:new 0 0 17 21;" xml:space="preserve">
@@ -87,7 +90,7 @@
                 H8.4z M14.3,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C15.5,15,15,15.6,14.3,15.6z"/>
               </svg>
             </label>
-            <input class="traveller-info__transport" type="checkbox" name="transport" value="Велосипед" id="bike">
+            <input class="traveller-info__transport-checkbox" type="checkbox" name="transport" value="Велосипед" id="bike">
             <label class="traveller-info__transport-label traveller-info__transport-label--bike" for="bike">
               <span class="visually-hidden">Велосипед</span>
               <svg x="0px" y="0px" width="19" height="17" viewBox="0 0 24 21" style="enable-background:new 0 0 24 21;" xml:space="preserve">
@@ -98,7 +101,7 @@
                 s1.6-3.5,3.5-3.5s3.5,1.5,3.5,3.5S6.9,19.6,5,19.6z"/>
               </svg>
             </label>
-            <input class="traveller-info__transport" type="checkbox" name="transport" value="Пешком" id="run" checked>
+            <input class="traveller-info__transport-checkbox" type="checkbox" name="transport" value="Пешком" id="run" checked>
             <label class="traveller-info__transport-label traveller-info__transport-label--run" for="run">
               <span class="visually-hidden">Пешком</span>
               <svg x="0px" y="0px" width="15" height="17" viewBox="0 0 20 21" style="enable-background:new 0 0 20 21;" xml:space="preserve">
@@ -142,29 +145,33 @@
         <section class="destinations__plans-config plans-editor">
           <div class="plans-editor__wrapper wrapper">
             <h2 class="destinations__heading">Добавить план:</h2>
-            <ul class="plans-editor__steps-markers marker-list">
-              <li class="marker-list__item marker-list__item--current">Шаг 1</li>
-              <li class="marker-list__item">Шаг 2</li>
-              <li class="marker-list__item">Шаг 3</li>
-            </ul>
             <div class="plans-editor__steps travel-interval" id="step1">
               <h3 class="plans-editor__heading">
                 <span class="plans-editor__step-number">Шаг 1.</span>
                 Даты пребывания
               </h3>
+              <ul class="plans-editor__steps-markers marker-list">
+                <li class="marker-list__item marker-list__item--current">Даты</li>
+                <li class="marker-list__item">Маршрут</li>
+                <li class="marker-list__item">Развлечения</li>
+              </ul>
               <p class="plans-editor__description">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
-              <label class="travel-interval__label" for="travellers-amount">
-                Ищу попутчиков:
-                <span>Чел.</span>
-              </label>
-              <input class="travel-interval__amount" type="number" name="travellers" value="2" id="travellers-amount">
-              <label class="travel-interval__label" for="travel-period">
-                Длительность:
-                <span>Дн.</span>
-              </label>
-              <input class="travel-interval__amount" type="number" name="travel-period" value="2" id="travel-period">
-              <input type="checkbox" name="ischildren" id="ischildren" checked>
-              <label class="travel-interval__checkbox-label" for="ischildren">Можно с детьми</label>
+              <ul class="travel-interval__group">
+                <li class="travel-interval__group-item">
+                  <label class="travel-interval__label" for="travellers-amount">Ищу попутчиков:</label>
+                  <span class="travel-interval__measurment">Чел.</span>
+                  <input class="travel-interval__amount" type="number" name="travellers" value="2" id="travellers-amount">
+                </li>
+                <li class="travel-interval__group-item">
+                  <label class="travel-interval__label" for="travel-period">Длительность:</label>
+                  <span class="travel-interval__measurment">Дн.</span>
+                  <input class="travel-interval__amount" type="number" name="travel-period" value="2" id="travel-period">
+                </li>
+                <li class="travel-interval__group-item travel-interval__ischildren">
+                  <input type="checkbox" name="ischildren" id="ischildren" checked>
+                  <label class="travel-interval__checkbox-label" for="ischildren">Можно с детьми</label>
+                </li>
+              </ul>
               <table class="travel-interval__calendar calendar">
                 <tr class="calendar__month">
                   <td class="calendar__month">
@@ -247,6 +254,11 @@
                 <span class="plans-editor__step-number">Шаг 2.</span>
                 Маршрут
               </h3>
+              <ul class="plans-editor__steps-markers marker-list">
+                <li class="marker-list__item marker-list__item--current">Даты</li>
+                <li class="marker-list__item">Маршрут</li>
+                <li class="marker-list__item">Развлечения</li>
+              </ul>
               <p class="plans-editor__description">Укажите страны, которые вы хотели по посетить. Это может быть одна или сразу несколько.</p>
               <ul class="countries-select__list">
                 <li class="countries-select__item">
@@ -346,6 +358,8 @@
                   </li>
                 </ul>
               </div>
+              <a class="destinations__button button" href="#step3">Следующий шаг</a>
+              <a class="destinations__button-step-back" href="#step1">На шаг назад</a>
             </div>
 
             <div class="plans-editor__steps entertainment" id="step3">
@@ -353,6 +367,11 @@
                 <span class="plans-editor__step-number">Шаг 3.</span>
                 Развлечения
               </h3>
+              <ul class="plans-editor__steps-markers marker-list">
+                <li class="marker-list__item marker-list__item--current">Даты</li>
+                <li class="marker-list__item">Маршрут</li>
+                <li class="marker-list__item">Развлечения</li>
+              </ul>
               <p class="plans-editor__description">Наконец, расскажите о своих планах времяпровождения.
                 Можно писать в свободной форме и ставить тэги.</p>
               <ul class="entertainment__list">

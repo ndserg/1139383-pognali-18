@@ -64,3 +64,26 @@
   text-decoration: none;
   color: @dark-blue;
 }
+
+@media (min-width: @tablet-width) {
+  .destinations__button {
+    order: 1;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .destinations {
+    position: relative;
+  }
+
+  .destinations__button {
+    width: 190px;
+    order: 0;
+  }
+
+  .destinations__button--foto {
+    position: absolute;
+    top: 0;
+    right: 260px;
+  }
+}

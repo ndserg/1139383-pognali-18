@@ -18,3 +18,56 @@
     .decorative-block;
   }
 }
+
+.about__button {
+  display: none;
+}
+
+
+@media (min-width: @tablet-width) {
+  .about {
+    padding-top: 110px;
+  }
+
+  .about__wrapper {
+    min-height: 670px;
+    padding-top: 40px;
+    padding-right: 385px;
+
+    &::before {
+      .decorative-block;
+      left: 40px;
+      width: 688px;
+      height: 213px;
+
+      border-top-left-radius: 30px;
+      border-bottom-left-radius: 30px;
+    }
+  }
+
+  .about__button {
+    display: block;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .about {
+    padding-top: 70px;
+  }
+
+  .about__wrapper {
+    min-height: 680px;
+    padding-top: 60px;
+    padding-right: 690px;
+
+    &::before {
+      .decorative-block;
+      left: 60px;
+      width: 213px;
+      height: 213px;
+
+      border-top-left-radius: 30px;
+      border-bottom-left-radius: 30px;
+    }
+  }
+}

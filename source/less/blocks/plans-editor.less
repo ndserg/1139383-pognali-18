@@ -7,6 +7,7 @@
 }
 
 .plans-editor__steps {
+  position: relative;
   margin-bottom: 10px;
   padding-top: 25px;
   padding-right: 25px;
@@ -31,4 +32,32 @@
 
 .plans-editor__description {
   color: @grey;
+}
+
+@media (min-width: @tablet-width) {
+  .plans-editor__steps {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  .plans-editor__description {
+    width: 390px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .plans-editor__steps-markers {
+    position: absolute;
+    top: 25px;
+    left: 975px;
+  }
+
+  .plans-editor__steps {
+    padding-right: 160px;
+    padding-left: 160px;
+  }
+
+  .plans-editor__description {
+    width: 580px;
+  }
 }

@@ -1,5 +1,7 @@
 .site-list {
   margin-bottom: 60px;
+
+  text-align: center;
 }
 
 .site-list__link {
@@ -9,4 +11,40 @@
   text-decoration: none;
   text-transform: uppercase;
   color: @medium-blue;
+}
+
+@media (min-width: @tablet-width) {
+  .site-list {
+    margin-bottom: 115px;
+    margin-left: 20px;
+
+    text-align: left;
+  }
+
+  .site-list__link {
+    font-size: 60px;
+    line-height: 71px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-list {
+    display: flex;
+    flex-grow: 2;
+    margin: 0;
+  }
+
+  .site-list__item {
+    margin-right: 40px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .site-list__link {
+    font-size: 20px;
+    line-height: 30px;
+    color: #ffffff;
+  }
 }

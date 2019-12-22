@@ -68,5 +68,18 @@
   font-size: 0;
 
   border: none;
-  background: transparent url("");
+}
+
+@media (min-width: @tablet-width) {
+  .calendar__day {
+    width: 75px;
+    height: 75px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .calendar__day {
+    width: 143px;
+    height: 72px;
+  }
 }

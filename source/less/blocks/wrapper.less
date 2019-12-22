@@ -1,9 +1,25 @@
 .wrapper {
   box-sizing: border-box;
   width: 320px;
-  margin: auto;
+  margin: 0 auto;
+  padding: 0;
   padding-right: 25px;
-  padding-bottom: 30px;
   padding-left: 25px;
   outline: 2px dashed #02eaff;
+}
+
+@media (min-width: @tablet-width) {
+  .wrapper {
+    width: @tablet-width;
+    padding-right: 75px;
+    padding-left: 75px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .wrapper {
+    width: @desktop-width;
+    padding-right: 60px;
+    padding-left: 130px;
+  }
 }

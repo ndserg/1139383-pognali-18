@@ -1,3 +1,9 @@
+.travel-interval__group {
+  .list-clear;
+  margin: 0;
+  padding: 0;
+}
+
 .travel-interval__label {
   display: block;
   margin-bottom: 10px;
@@ -7,10 +13,10 @@
   font-weight: 500;
   color: @travelmate-page-blue;
   text-transform: uppercase;
+}
 
-  span {
-    opacity: 0.3;
-  }
+.travel-interval__measurment {
+  opacity: 0.3;
 }
 
 .travel-interval__amount {
@@ -32,4 +38,68 @@
   font-size: 15px;
   line-height: 15px;
   color: @grey;
+}
+
+@media (min-width: @tablet-width) {
+  .travel-interval__group {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .travel-interval__group-item {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .travel-interval__group-item:first-child {
+    order: -2;
+  }
+
+  .travel-interval__label {
+    width: 355px;
+  }
+
+  .travel-interval__amount {
+    width: 100%;
+  }
+
+  .travel-interval__ischildren {
+    justify-content: flex-start;
+    order: -1;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .travel-interval__group-item {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    width: 535px;
+
+    &:first-child {
+      order: -2;
+    }
+  }
+
+  .travel-interval__label {
+    width: 190px;
+    margin-right: 35px;
+  }
+
+  .travel-interval__measurment {
+    order: 1;
+  }
+
+  .travel-interval__amount {
+    width: 185px;
+    margin-right: 35px;
+  }
+
+  .travel-interval__ischildren {
+    justify-content: flex-end;
+    width: 300px;
+    order: -1;
+  }
 }

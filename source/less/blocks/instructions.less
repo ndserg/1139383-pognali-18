@@ -1,11 +1,10 @@
 .instructions {
-  background: linear-gradient(to bottom, @dark-blue 0, @dark-blue 80px, @medium-blue 80px, @medium-blue 100%);
-}
-
-.instructions__wrapper {
-  min-height: 360px;
+  min-height: 330px;
   padding-top: 5px;
+  padding-right: 25px;
   padding-bottom: 35px;
+  padding-left: 25px;
+  background: linear-gradient(to bottom, @dark-blue 0, @dark-blue 80px, @medium-blue 80px, @medium-blue 100%);
 }
 
 .instructions__list {
@@ -47,5 +46,38 @@
 
   &--fourth {
     background-color: #ffd74b;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .instructions {
+    min-height: 280px;
+    padding-right: 40px;
+    padding-bottom: 15px;
+    padding-left: 40px;
+
+    background: transparent;
+  }
+
+  .instructions__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .instructions__item {
+    box-sizing: border-box;
+    width: 344px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .instructions {
+    min-height: 110px;
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+
+  .instructions__item {
+    width: 330px;
   }
 }

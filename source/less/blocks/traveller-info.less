@@ -50,3 +50,58 @@
 
   resize: none;
 }
+
+@media (min-width: @tablet-width) {
+  .traveller-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .traveller-info__foto {
+    background-color: #cccccc;
+    order: 1;
+  }
+
+  .traveller-info__tags {
+    width: 100%;
+    order: 2;
+  }
+
+  .traveller-info__text {
+    width: 100%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .traveller-info {
+    padding-top: 70px;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+
+  .traveller-info__level {
+    position: absolute;
+    top: -160px;
+    right: 470px;
+  }
+
+  .traveller-info__foto {
+    width: 190px;
+    height: 190px;
+    position: absolute;
+    top: -190px;
+    right: 260px;
+    order: 0;
+  }
+
+  .traveller-info__tags {
+    width: 730px;
+    order: 0;
+  }
+
+  .traveller-info__transport {
+    width: 380px;
+    margin-left: auto;
+  }
+}

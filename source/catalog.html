@@ -10,12 +10,16 @@
   <body>
 
     <header class="page-header inner-page">
-      <div class="page-header__wrapper wrapper">
-        <h1 class="inner-page__header">Попутчики</h1>
-        <a class="page-header__logo page-header__logo--scroll" href="index.html">
-          <img class="page-header__logo-img page-header__logo-img--scroll" src="https://via.placeholder.com/150x150" width="100" height="19" alt="Логотип сайта Погнали">
-        </a>
-        <nav class="main-nav">
+      <div class="page-header__wrapper">
+        <section class="page-header__top-menu inner-page__top-menu top-menu wrapper">
+          <h1 class="inner-page__heading">Попутчики</h1>
+          <a class="top-menu__logo top-menu__logo--scroll" href="index.html">
+            <img class="top-menu__logo-img top-menu__logo-img--scroll" src="https://via.placeholder.com/150x150" width="100" height="19" alt="Логотип сайта Погнали">
+          </a>
+          <a class="top-menu__home-link" href="index.html">На главную</a>
+        </section>
+
+        <nav class="main-nav wrapper">
           <button class="main-nav__toggle main-nav__toggle--scroll" type="button">Открыть меню</button>
           <button class="main-nav__toggle main-nav__toggle--scroll main-nav__toggle--close" type="button">Закрыть меню</button>
           <ul class="main-nav__list site-list">
@@ -42,7 +46,7 @@
               <a class="contacts-list__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </li>
           </ul>
-          <ul class="main-nav__social social-list">
+          <ul class="main-nav__list social-list">
             <li class="social-list__item social-list__item--fb"><a href="facbook.com">Фэйсбук</a></li>
             <li class="social-list__item social-list__item--vk"><a href="vk.com">Вконтакте</a></li>
             <li class="social-list__item social-list__item--inst"><a href="instagram.com">Инстаграм</a></li>
@@ -154,19 +158,19 @@
               <a class="travelmate-info__link-foto" href="#">
                 <img class="travelmate-info__foto" src="https://via.placeholder.com/150x150" width="70" height="70" alt="Таня Фирсова">
               </a>
-              <p>
-                <a class="travelmate-info__link-name" href="#">Таня Фирсова</a>
+              <a class="travelmate-info__link-name" href="#">Таня Фирсова</a>
+              <p class="travelmate-info__likes">
+                <button class="travelmate-info__button-like travelmate-info__button-like--active">
+                  <svg x="0px" y="0px" width="13" height="11" viewBox="0 0 20 17" style="enable-background:new 0 0 20 17;" xml:space="preserve">
+                    <path d="M18.5,1.5c-2-2-5.3-2-7.3,0L10,2.7L8.8,1.5c-2-2-5.3-2-7.3,0c-2,2-2,5.2,0,7.2l1.2,1.2L10,17l7.3-7.2l1.2-1.2
+                    C20.5,6.7,20.5,3.5,18.5,1.5z M14.9,9.8L10,14.6L5.1,9.8L2.7,7.5C1.4,6.1,1.4,4,2.7,2.7c1.3-1.3,3.5-1.3,4.9,0L10,5.1l2.4-2.4
+                    c1.3-1.3,3.5-1.3,4.9,0c1.3,1.3,1.3,3.5,0,4.8L14.9,9.8z"/>
+                  </svg>
+                </button>
                 <span class="travelmate-info__raiting">1,5 M</span>
               </p>
-              <button class="travelmate-info__button-like travelmate-info__button-like--active">
-                <svg x="0px" y="0px" width="13" height="11" viewBox="0 0 20 17" style="enable-background:new 0 0 20 17;" xml:space="preserve">
-                  <path d="M18.5,1.5c-2-2-5.3-2-7.3,0L10,2.7L8.8,1.5c-2-2-5.3-2-7.3,0c-2,2-2,5.2,0,7.2l1.2,1.2L10,17l7.3-7.2l1.2-1.2
-                  C20.5,6.7,20.5,3.5,18.5,1.5z M14.9,9.8L10,14.6L5.1,9.8L2.7,7.5C1.4,6.1,1.4,4,2.7,2.7c1.3-1.3,3.5-1.3,4.9,0L10,5.1l2.4-2.4
-                  c1.3-1.3,3.5-1.3,4.9,0c1.3,1.3,1.3,3.5,0,4.8L14.9,9.8z"/>
-                </svg>
-              </button>
+              <p class="travelmate-info__tags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
             </div>
-            <p class="travelmate-info__tags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
             <div class="travelmate-info__countries countries-wanted">
               <span class="travelmate-info__heading">хочет посетить:</span>
               <ul class="countries-wanted__list">
@@ -237,19 +241,19 @@
               <a class="travelmate-info__link-foto" href="#">
                 <img class="travelmate-info__foto" src="https://via.placeholder.com/150x150" width="70" height="70" alt="Петя Демин">
               </a>
-              <p>
-                <a class="travelmate-info__link-name" href="#">Петя Демин</a>
+              <a class="travelmate-info__link-name" href="#">Петя Демин</a>
+              <p class="travelmate-info__likes">
+                <button class="travelmate-info__button-like">
+                  <svg x="0px" y="0px" width="13" height="11" viewBox="0 0 20 17" style="enable-background:new 0 0 20 17;" xml:space="preserve">
+                    <path d="M18.5,1.5c-2-2-5.3-2-7.3,0L10,2.7L8.8,1.5c-2-2-5.3-2-7.3,0c-2,2-2,5.2,0,7.2l1.2,1.2L10,17l7.3-7.2l1.2-1.2
+                    C20.5,6.7,20.5,3.5,18.5,1.5z M14.9,9.8L10,14.6L5.1,9.8L2.7,7.5C1.4,6.1,1.4,4,2.7,2.7c1.3-1.3,3.5-1.3,4.9,0L10,5.1l2.4-2.4
+                    c1.3-1.3,3.5-1.3,4.9,0c1.3,1.3,1.3,3.5,0,4.8L14.9,9.8z"/>
+                  </svg>
+                </button>
                 <span class="travelmate-info__raiting">150</span>
               </p>
-              <button class="travelmate-info__button-like">
-                <svg x="0px" y="0px" width="13" height="11" viewBox="0 0 20 17" style="enable-background:new 0 0 20 17;" xml:space="preserve">
-                  <path d="M18.5,1.5c-2-2-5.3-2-7.3,0L10,2.7L8.8,1.5c-2-2-5.3-2-7.3,0c-2,2-2,5.2,0,7.2l1.2,1.2L10,17l7.3-7.2l1.2-1.2
-                  C20.5,6.7,20.5,3.5,18.5,1.5z M14.9,9.8L10,14.6L5.1,9.8L2.7,7.5C1.4,6.1,1.4,4,2.7,2.7c1.3-1.3,3.5-1.3,4.9,0L10,5.1l2.4-2.4
-                  c1.3-1.3,3.5-1.3,4.9,0c1.3,1.3,1.3,3.5,0,4.8L14.9,9.8z"/>
-                </svg>
-              </button>
+              <p class="travelmate-info__tags">#бургер #бар #футбол #концерт #крафт</p>
             </div>
-            <p class="travelmate-info__tags">#бургер #бар #футбол #концерт #крафт</p>
             <div class="travelmate-info__countries countries-wanted">
               <span class="travelmate-info__heading">хочет посетить:</span>
               <ul class="countries-wanted__list">
@@ -319,19 +323,19 @@
               <a class="travelmate-info__link-foto" href="#">
                 <img class="travelmate-info__foto" src="https://via.placeholder.com/150x150" width="70" height="70" alt="Марк Смолов">
               </a>
-              <p>
-                <a class="travelmate-info__link-name" href="#">Марк Смолов</a>
+              <a class="travelmate-info__link-name" href="#">Марк Смолов</a>
+              <p class="travelmate-info__likes">
+                <button class="travelmate-info__button-like">
+                  <svg x="0px" y="0px" width="13" height="11" viewBox="0 0 20 17" style="enable-background:new 0 0 20 17;" xml:space="preserve">
+                    <path d="M18.5,1.5c-2-2-5.3-2-7.3,0L10,2.7L8.8,1.5c-2-2-5.3-2-7.3,0c-2,2-2,5.2,0,7.2l1.2,1.2L10,17l7.3-7.2l1.2-1.2
+                    C20.5,6.7,20.5,3.5,18.5,1.5z M14.9,9.8L10,14.6L5.1,9.8L2.7,7.5C1.4,6.1,1.4,4,2.7,2.7c1.3-1.3,3.5-1.3,4.9,0L10,5.1l2.4-2.4
+                    c1.3-1.3,3.5-1.3,4.9,0c1.3,1.3,1.3,3.5,0,4.8L14.9,9.8z"/>
+                  </svg>
+                </button>
                 <span class="travelmate-info__raiting">1700</span>
               </p>
-              <button class="travelmate-info__button-like">
-                <svg x="0px" y="0px" width="13" height="11" viewBox="0 0 20 17" style="enable-background:new 0 0 20 17;" xml:space="preserve">
-                  <path d="M18.5,1.5c-2-2-5.3-2-7.3,0L10,2.7L8.8,1.5c-2-2-5.3-2-7.3,0c-2,2-2,5.2,0,7.2l1.2,1.2L10,17l7.3-7.2l1.2-1.2
-                  C20.5,6.7,20.5,3.5,18.5,1.5z M14.9,9.8L10,14.6L5.1,9.8L2.7,7.5C1.4,6.1,1.4,4,2.7,2.7c1.3-1.3,3.5-1.3,4.9,0L10,5.1l2.4-2.4
-                  c1.3-1.3,3.5-1.3,4.9,0c1.3,1.3,1.3,3.5,0,4.8L14.9,9.8z"/>
-                </svg>
-              </button>
+              <p class="travelmate-info__tags">#рэп #тату #хайпбист #кроссовки #суприм</p>
             </div>
-            <p class="travelmate-info__tags">#рэп #тату #хайпбист #кроссовки #суприм</p>
             <div class="travelmate-info__countries countries-wanted">
               <span class="travelmate-info__heading">хочет посетить:</span>
               <ul class="countries-wanted__list">
@@ -402,19 +406,19 @@
               <a class="travelmate-info__link-foto" href="#">
                 <img class="travelmate-info__foto" src="https://via.placeholder.com/150x150" width="70" height="70" alt="Лариса Роговая">
               </a>
-              <p>
-                <a class="travelmate-info__link-name" href="#">Лариса Роговая</a>
+              <a class="travelmate-info__link-name" href="#">Лариса Роговая</a>
+              <p class="travelmate-info__likes">
+                <button class="travelmate-info__button-like">
+                  <svg x="0px" y="0px" width="13" height="11" viewBox="0 0 20 17" style="enable-background:new 0 0 20 17;" xml:space="preserve">
+                    <path d="M18.5,1.5c-2-2-5.3-2-7.3,0L10,2.7L8.8,1.5c-2-2-5.3-2-7.3,0c-2,2-2,5.2,0,7.2l1.2,1.2L10,17l7.3-7.2l1.2-1.2
+                    C20.5,6.7,20.5,3.5,18.5,1.5z M14.9,9.8L10,14.6L5.1,9.8L2.7,7.5C1.4,6.1,1.4,4,2.7,2.7c1.3-1.3,3.5-1.3,4.9,0L10,5.1l2.4-2.4
+                    c1.3-1.3,3.5-1.3,4.9,0c1.3,1.3,1.3,3.5,0,4.8L14.9,9.8z"/>
+                  </svg>
+                </button>
                 <span class="travelmate-info__raiting">23</span>
               </p>
-              <button class="travelmate-info__button-like">
-                <svg x="0px" y="0px" width="13" height="11" viewBox="0 0 20 17" style="enable-background:new 0 0 20 17;" xml:space="preserve">
-                  <path d="M18.5,1.5c-2-2-5.3-2-7.3,0L10,2.7L8.8,1.5c-2-2-5.3-2-7.3,0c-2,2-2,5.2,0,7.2l1.2,1.2L10,17l7.3-7.2l1.2-1.2
-                  C20.5,6.7,20.5,3.5,18.5,1.5z M14.9,9.8L10,14.6L5.1,9.8L2.7,7.5C1.4,6.1,1.4,4,2.7,2.7c1.3-1.3,3.5-1.3,4.9,0L10,5.1l2.4-2.4
-                  c1.3-1.3,3.5-1.3,4.9,0c1.3,1.3,1.3,3.5,0,4.8L14.9,9.8z"/>
-                </svg>
-              </button>
+              <p class="travelmate-info__tags">#образование #карьера #учеба #линкедин</p>
             </div>
-            <p class="travelmate-info__tags">#образование #карьера #учеба #линкедин</p>
             <div class="travelmate-info__countries countries-wanted">
               <span class="travelmate-info__heading">хочет посетить:</span>
               <ul class="countries-wanted__list">
@@ -480,9 +484,25 @@
           </li>
         </ul>
         <a class="page-travelmates__button-more" href="travelmates.html">Показать еще</a>
-        <button class="page-travelmates__button page-travelmates__button--prev" type="button">Назад</button>
-        <button class="page-travelmates__button page-travelmates__button--next" type="button">Вперед</button>
-    </div>
+        <div class="page-travelmates__pagination travelmates-pagination">
+          <ul class="travelmates-pagination__list">
+            <li class="travelmates-pagination__item">
+              <a href="" class="travelmates-pagination__link">1</a>
+            </li>
+            <li class="travelmates-pagination__item">
+              <a href="" class="travelmates-pagination__link">2</a>
+            </li>
+            <li class="travelmates-pagination__item">
+              <a href="" class="travelmates-pagination__link">3</a>
+            </li>
+            <li class="travelmates-pagination__item">
+              <a href="" class="travelmates-pagination__link">4</a>
+            </li>
+          </ul>
+          <button class="travelmates-pagination__button travelmates-pagination__button--prev" type="button">Назад</button>
+          <button class="travelmates-pagination__button travelmates-pagination__button--next" type="button">Вперед</button>
+        </div>
+      </div>
     </main>
 
     <footer class="page-footer">

@@ -1,4 +1,4 @@
-.business-rates-modal {
+.rates-modal {
   box-sizing: border-box;
   min-height: 445px;
   padding-top: 35px;
@@ -7,11 +7,11 @@
   border-radius: @border-radius-15;
 }
 
-.business-rates-modal__heading {
+.rates-modal__heading {
   text-align: center;
 }
 
-.business-rates-modal__list {
+.rates-modal__list {
   .list-clear;
   margin-top: 30px;
   margin-bottom: 50px;
@@ -19,7 +19,7 @@
   padding-left: 25px;
 }
 
-.business-rates-modal__item {
+.rates-modal__item {
   padding-top: 10px;
   padding-bottom: 10px;
 
@@ -33,7 +33,11 @@
   }
 }
 
-.business-rates-modal__button-close {
+.rates-modal__price {
+  display: block;
+}
+
+.rates-modal__button-close {
   display: block;
   height: 60px;
   width: 100%;
@@ -48,4 +52,51 @@
   border: none;
   border-bottom-right-radius: @border-radius-15;
   border-bottom-left-radius: @border-radius-15;
+}
+
+@media (min-width: @tablet-width) {
+  .rates-modal {
+    width: 688px;
+    min-height: 300px;
+    margin-left: -35px;
+    padding-top: 55px;
+  }
+
+  .rates-modal__heading {
+    width: 100%;
+    margin-bottom: 50px;
+
+    text-align: center;
+  }
+
+  .rates-modal__list {
+    padding-right: 90px;
+    padding-left: 90px;
+  }
+
+
+  .rates-modal__item {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .rates-modal__price {
+    display: inline-block;
+  }
+
+  .rates-modal__button-close {
+    height: 110px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .rates-modal {
+    width: 750px;
+    margin: 0 auto;
+  }
+
+  .rates-modal__list {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
 }

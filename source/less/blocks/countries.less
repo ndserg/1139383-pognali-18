@@ -14,8 +14,9 @@
 
 .countries__list {
   .list-clear;
-  padding-top: 10px;
+  margin-top: 40px;
   margin-bottom: 25px;
+  padding-top: 10px;
 }
 
 .countries__item {
@@ -54,6 +55,67 @@
 .countries__image {
   position: absolute;
   top: -100px;
-  left: 0;
+  right: 0;
   z-index: -1;
+}
+
+@media (min-width: @tablet-width) {
+  .countries__text {
+    width: 345px;
+    margin-bottom: 85px;
+  }
+
+  .countries__list {
+    margin-bottom: 45px;
+  }
+
+  .countries__item {
+    display: flex;
+    flex-direction: column;
+    min-height: 140px;
+    margin-top: 10px;
+    padding-top: 30px;
+    padding-left: 30px;
+  }
+
+  .countries__tourists-total {
+    order: 2;
+  }
+
+  .countries__image {
+    top: 0;
+    right: 0;
+
+    width: 186px;
+    height: 140px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .countries__wrapper {
+    min-height: 0;
+    height: 740px;
+    padding-top: 160px;
+    padding-bottom: 140px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+  }
+
+  .countries__heading {
+    width: 400px;
+  }
+
+  .countries__list {
+    width: 560px;
+    margin-top: 0;
+    margin-right: 170px;
+    padding-top: 0;
+    order: -1;
+  }
+
+  .countries__item {
+    margin-top: 0;
+  }
 }

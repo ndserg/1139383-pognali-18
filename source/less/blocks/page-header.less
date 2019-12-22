@@ -3,7 +3,27 @@
 }
 
 .page-header__wrapper {
-  min-height: 570px;
-  padding-top: 25px;
-  padding-bottom: 40px;
+  position: relative;
+  width: @mobile-width;
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__wrapper {
+    width: @tablet-width;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    background-color: @dark-blue;
+  }
+
+  .page-header__wrapper {
+    width: @desktop-width;
+    display: flex;
+    min-height: 50px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+  }
 }

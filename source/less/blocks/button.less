@@ -1,4 +1,7 @@
 .button {
+  display: inline-block;
+  width: 100%;
+
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;
@@ -7,4 +10,10 @@
   text-decoration: none;
 
   background-color: #ffd74b;
+}
+
+@media (min-width: @tablet-width) {
+  .button {
+    width: auto;
+  }
 }

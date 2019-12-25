@@ -35,12 +35,12 @@
               <a class="user-list__login" href="login.html">Авторизация</a>
             </li>
           </ul>
-          <ul class="main-nav__list contacts-list">
-            <li class="contacts-list__item contacts-list__item--phone">
-              <a class="contacts-list__link" href="tel:8-800-555-86-28">8 800 555-86-28</a>
+          <ul class="main-nav__list top-contacts-list">
+            <li class="top-contacts-list__item top-contacts-list__item--phone">
+              <a class="top-contacts-list__link top-contacts-list__link" href="tel:8-800-555-86-28">8 800 555-86-28</a>
             </li>
-            <li class="contacts-list__item contacts-list__item--email">
-              <a class="contacts-list__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            <li class="top-contacts-list__item top-contacts-list__item--email">
+              <a class="top-contacts-list__link top-contacts-list__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </li>
           </ul>
           <ul class="main-nav__list social-list">
@@ -312,14 +312,19 @@
         <div class="contact__wrapper wrapper">
           <h2 class="visually-hidden">Контакты</h2>
           <b class="page-main__heading contact__heading">Заинтересовались?</b>
-          <p class="page-main__text contact__text">Зарегистрируйтесь,<br> это быстро и бесплатно!<br>
+          <p class="page-main__text contact__text">
+            Зарегистрируйтесь,<span class="contact__text-inner"> это быстро и бесплатно!</span>
+          </p>
+          <p class="page-main__text contact__text">
             Уже зарегистрированы? Тогда скорее <a class="contact__login" href="login.html">авторизуйтесь.</a>
           </p>
           <form class="contact__form" action="https://echo.htmlacademy.ru" method="post">
             <input class="contact__email" type="email" name="email" id="email" placeholder="E-mail">
             <button class="contact__button" type="submit">Отправить</button>
           </form>
-          <p class="page-main__text contact__text">Остались вопросы?<br> Мы с радостью на них ответим!</p>
+          <p class="page-main__text contact__text">Остались вопросы?
+            <span class="contact__text-inner">Мы с радостью на них ответим!</span>
+          </p>
           <ul class="contact__list contacts-list">
             <li class="contacts-list__item contacts-list__item--phone">
               <a class="contacts-list__link contacts-list__link--yellow" href="tel:8-800-555-86-28">8 800 555-86-28</a>
@@ -334,7 +339,7 @@
       <section class="map">
         <h2 class="visually-hidden">Карта</h2>
         <div class="map__wrapper wrapper">
-          <p class="map__address">ул. Большая<br>Конюшенная, 19/8</p>
+          <p class="map__address">ул. Большая Конюшенная, 19/8</p>
           <a class="map__button" href="map.html">Проложить маршрут</a>
         </div>
         <div class="map__frame wrapper">

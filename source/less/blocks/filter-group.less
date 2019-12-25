@@ -13,3 +13,23 @@
   text-transform: uppercase;
   color: @travelmate-page-blue;
 }
+
+.filter-group__list {
+  .list-clear;
+  display: flex;
+  flex-wrap: wrap;
+
+  &--mobile-collapsed {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .filter-group {
+    display: flex;
+  }
+
+  .filter-group__list {
+    display: flex;
+  }
+}

@@ -1,5 +1,4 @@
 .table-abc {
-  width: 100%;
   margin-bottom: 50px;
 
   border-collapse: collapse;
@@ -23,5 +22,35 @@
     color: #ffffff;
 
     background-color: @travelmate-page-blue;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .table-abc {
+    margin-left: -21px;
+  }
+
+  .table-abc__letter {
+    width: 76px;
+    height: 76px;
+
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 700;
+    color: @medium-blue;
+    opacity: 0.2;
+
+    border: none;
+    background-color: transparent;
+
+    &--selected {
+      opacity: 1;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .table-abc {
+    display: none;
   }
 }

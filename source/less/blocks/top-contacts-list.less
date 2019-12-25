@@ -1,8 +1,8 @@
-.contacts-list {
+.top-contacts-list {
   margin-bottom: 40px;
 }
 
-.contacts-list__link {
+.top-contacts-list__link {
   display: inline-block;
 
   line-height: 45px;
@@ -17,12 +17,12 @@
 }
 
 @media (min-width: @tablet-width) {
-  .contacts-list {
+  .top-contacts-list {
     margin-bottom: 100px;
     margin-left: 20px;
   }
 
-  .contacts-list__link {
+  .top-contacts-list__link {
     height: 70px;
 
     font-size: 28px;
@@ -31,16 +31,15 @@
 }
 
 @media (min-width: @desktop-width) {
-  .contacts-list {
-    display: flex;
-    justify-content: center;
+  .top-contacts-list {
+    margin: 0;
+    padding: 0;
   }
 
-  .contacts-list__item {
-    margin-right: 105px;
+  .top-contacts-list__link {
+    height: 0;
 
-    &:last-child {
-      margin-right: 0;
-    }
+    font-size: 0;
+    line-height: 0;
   }
 }

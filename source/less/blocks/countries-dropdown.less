@@ -1,3 +1,12 @@
+.countries-dropdown {
+  position: absolute;
+  z-index: 1;
+
+  width: 220px;
+
+  background-color: #ffffff;
+}
+
 .countries-dropdown__heading {
   padding-top: 11px;
   padding-bottom: 11px;
@@ -11,4 +20,40 @@
   text-transform: uppercase;
 
   background-color: @travelmate-page-blue;
+}
+
+@media (min-width: @tablet-width) {
+  .countries-dropdown {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 578px;
+
+    background: linear-gradient(to bottom, transparent, transparent 70px, #ffffff 70px, #ffffff 100%);
+  }
+
+  .countries-dropdown__heading {
+    width: 369px;
+    margin: 0;
+    padding: 0;
+    height: 70px;
+
+    line-height: 70px;
+    vertical-align: middle;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .countries-dropdown {
+    width: 670px;
+    padding-right: 30px;
+    padding-left: 30px;
+
+    background: linear-gradient(to bottom, @travelmate-page-blue 0, @travelmate-page-blue 70px, #ffffff 70px, #ffffff 100%);
+  }
+
+  .countries-dropdown__heading {
+    width: 500px;
+    margin-bottom: 30px;
+  }
 }

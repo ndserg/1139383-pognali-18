@@ -23,3 +23,36 @@
     background-color: @light-blue;
   }
 }
+
+@media (min-width: @tablet-width) {
+  .dropdown-table-abc {
+    width: auto;
+  }
+
+  .dropdown-table-abc__letter {
+    width: 52px;
+    height: 70px;
+
+    &--selected {
+      color: #ffffff;
+
+      background-color: @button-text-color;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .dropdown-table-abc {
+    margin-top: -15px;
+
+    border-collapse: separate;
+    border-spacing: 15px;
+  }
+
+  .dropdown-table-abc__letter {
+    width: 60px;
+    height: 70px;
+
+    border-radius: 5px;
+  }
+}

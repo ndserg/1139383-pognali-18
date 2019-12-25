@@ -53,13 +53,22 @@
 
 @media (min-width: @desktop-width) {
   .page-travelmates__wrapper {
+    position: relative;
     width: @desktop-width;
     padding-top: 150px;
     padding-right: 430px;
     padding-left: 60px;
   }
 
+  .page-travelmates__list {
+    margin-top: 0;
+  }
+
   .page-travelmates__item {
     margin-top: 30px;
+
+    &:first-child {
+      margin-top: 0;
+    }
   }
 }

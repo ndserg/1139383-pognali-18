@@ -13,12 +13,18 @@
 .contact__heading {
   display: block;
   margin-bottom: 20px;
+
+  text-align: center;
 }
 
 .contact__text {
-  margin-bottom: 25px;
-
+  width: 220px;
+  margin: 0 auto;
   text-align: center;
+}
+
+.contact__text-inner {
+  display: block;
 }
 
 .contact__login {
@@ -26,9 +32,32 @@
 }
 
 .contact__form {
+  margin-top: 25px;
   margin-bottom: 30px;
 }
 
 .contact__list {
   .list-clear;
+}
+
+@media (min-width: @tablet-width) {
+  .contact__wrapper {
+    padding-right: 75px;
+    padding-left: 75px;
+  }
+
+  .contact__text {
+    width: auto;
+  }
+
+  .contact__text-inner {
+    display: inline;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contact__wrapper {
+    padding-right: 130px;
+    padding-left: 130px;
+  }
 }

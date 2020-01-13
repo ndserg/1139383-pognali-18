@@ -18,7 +18,7 @@ if (top_menu.classList.contains("top-menu--scroll")) {
 };
 
 main_nav_toggle.addEventListener("click", function (evt) {
-	evt.preventDefault();
+  evt.preventDefault();
   if (main_nav.classList.contains("nav-show")) {
     main_nav_toggle.classList.remove("main-nav__toggle--close");
     main_nav.classList.remove("nav-show");

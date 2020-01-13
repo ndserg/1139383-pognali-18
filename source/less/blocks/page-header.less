@@ -1,5 +1,5 @@
 .page-header {
-  background-color: #ffffff;
+  background-color: @dark-blue;
 }
 
 .page-header__wrapper {
@@ -9,8 +9,13 @@
 }
 
 @media (min-width: @tablet-width) {
+  .page-header {
+    background-color: #182044;
+  }
+
   .page-header__wrapper {
     width: @tablet-width;
+    padding-bottom: 40px;
   }
 }
 

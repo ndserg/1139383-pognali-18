@@ -1,13 +1,28 @@
 .countries-filter {
+  position: absolute;
+  z-index: -1;
+  top: 90px;
+  left: 0;
+  right: 0;
+  padding-top: 70px;
+  padding-bottom: 15px;
+
   background-color: #e2e5f2;
+  border-bottom-right-radius: @border-radius-30;
+  border-bottom-left-radius: @border-radius-30;
 }
 
 .countries-filter__wrapper {
+  display: none;
   position: relative;
   padding-top: 20px;
   padding-right: 50px;
   padding-bottom: 30px;
   padding-left: 50px;
+}
+
+.countries-filter__top-wrapper {
+  position: relative;
 }
 
 .countries-filter__list {
@@ -18,13 +33,23 @@
   display: block;
 }
 
-.countries-filter__button-close {
+.countries-filter__button-toggle {
   position: absolute;
   top: 0;
   right: 0;
+
+  font-size: 0;
+  line-height: 0;
+
+  background: none;
+  border: none;
 }
 
 .countries-filter__heading {
+  margin: 0;
+  padding: 0;
+  padding-left: 27px;
+
   font-size: 16px;
   line-height: 22px;
   font-weight: 700;
@@ -49,12 +74,34 @@
 }
 
 @media (min-width: @tablet-width) {
+  .countries-filter {
+    top: 300px;
+    border-bottom-right-radius: @border-radius-50;
+    border-bottom-left-radius: @border-radius-50;
+  }
+
   .countries-filter__wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    min-height: 225px;
+    padding-top: 40px;
     padding-right: 75px;
     padding-left: 75px;
+
+    &--closed {
+      min-height: 25px;
+    }
+
+    &--closed .countries-filter__table,
+    &--closed .countries-filter__list,
+    &--closed .countries-filter__button-minimize {
+      display: none;
+    }
+
+    &--closed .continens-list {
+      display: flex;
+    }
   }
 
   .countries-filter__heading {
@@ -72,6 +119,17 @@
 
     clip: rect(0 0 0 0);
     clip-path: inset(100%);
+  }
+
+  .countries-filter__button-toggle {
+    top: 40px;
+    right: 115px;
+
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    color: @medium-blue;
+    text-transform: uppercase;
   }
 
   .countries-filter__button-minimize {
@@ -93,7 +151,10 @@
   }
 
   .countries-filter__heading {
-    position: static;
+    position: absolute;
+    top: 40px;
+    left: 124px;
+
     width: auto;
     height: auto;
     margin: 0;
@@ -101,10 +162,16 @@
     padding: 0;
     overflow: auto;
 
+    font-size: 20px;
+    line-height: 24px;
     color: #000000;
     white-space: normal;
 
     clip: auto;
     clip-path: none;
+  }
+
+  .countries-filter__button-toggle {
+    padding-right: 55px;
   }
 }

@@ -1,5 +1,6 @@
 .top-contacts-list {
   margin-bottom: 40px;
+  margin-left: 62px;
 }
 
 .top-contacts-list__link {
@@ -18,28 +19,42 @@
 
 @media (min-width: @tablet-width) {
   .top-contacts-list {
-    margin-bottom: 100px;
-    margin-left: 20px;
+    margin-bottom: 130px;
+    margin-left: 112px;
+
+    &--tablet {
+      display: none;
+    }
   }
 
   .top-contacts-list__link {
-    height: 70px;
+    height: 68px;
 
     font-size: 28px;
-    line-height: 70px;
+    line-height: 68px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .top-contacts-list {
+    display: flex;
     margin: 0;
     padding: 0;
+
+    &--tablet {
+      display: flex;
+    }
   }
 
   .top-contacts-list__link {
-    height: 0;
+    display: block;
+    width: 50px;
+    height: 50px;
 
     font-size: 0;
     line-height: 0;
+
+    background-color: @yellow;
+    border-radius: 50%;
   }
 }

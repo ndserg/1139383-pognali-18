@@ -83,17 +83,39 @@
 
   .traveller-info__level {
     position: absolute;
-    top: -160px;
-    right: 330px;
+    top: -148px;
+    right: 390px;
+
+    box-sizing: border-box;
+    width: 94px;
+    height: 94px;
+    padding-top: 20px;
+    padding-right: 15px;
+    padding-left: 15px;
+
+    text-align: center;
+    color: #ffffff;
+
+    border: 3px solid #ff8d30;
+    border-radius: 50%;
+
+    & b {
+      font-size: 38px;
+      line-height: 38px;
+      font-weight: 700;
+      color: #ffffff;
+    }
   }
 
   .traveller-info__foto {
+    position: absolute;
+    z-index: 2;
+    top: -190px;
+    right: 155px;
+    order: 0;
+
     width: 190px;
     height: 190px;
-    position: absolute;
-    top: -190px;
-    right: 95px;
-    order: 0;
   }
 
   .traveller-info__tags {

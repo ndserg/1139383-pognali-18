@@ -1,4 +1,16 @@
 .social-list {
   display: flex;
   justify-content: center;
+  margin-bottom: 40px;
+}
+
+@media (min-width: @tablet-width) {
+  .social-list {
+    justify-content: flex-start;
+    margin-left: 50px;
+  }
+
+  .social-list--tablet {
+    display: none;
+  }
 }

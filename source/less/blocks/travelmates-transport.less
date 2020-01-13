@@ -1,0 +1,44 @@
+.travelmates-transport {
+  .list-clear;
+  display: flex;
+  justify-content: center;
+}
+
+.travelmates-transport__item {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+
+  text-align: center;
+
+  &--avia svg {
+    width: 19px;
+    height: 21px;
+  }
+
+  &--bus svg {
+    width: 17px;
+    height: 21px;
+  }
+
+  &--bike svg {
+    width: 24px;
+    height: 21px;
+  }
+
+  &--walk svg {
+    width: 20px;
+    height: 21px;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .travelmates__transport {
+    padding-top: 22px;
+    padding-left: 5px;
+  }
+}

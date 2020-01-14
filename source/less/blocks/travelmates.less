@@ -29,17 +29,21 @@
 .travelmates__list {
   .list-clear;
   margin-top: 59px;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 .travelmates__item {
   position: relative;
 
-  min-height: 425px;
+  min-height: 427px;
   margin-bottom: 10px;
 
   background-color: #ffffff;
   border-radius: @border-radius-10;
+
+  &:nth-child(2) .travelmates__tags {
+    padding-left: 45px;
+  }
 }
 
 .travelmates__foto {
@@ -62,7 +66,7 @@
 
 .travelmates__tags {
   margin: 0;
-  margin-bottom: 17px;
+  margin-bottom: 20px;
   padding: 0;
   padding-right: 30px;
   padding-left: 30px;
@@ -74,14 +78,25 @@
 
 .travelmates__level {
   position: absolute;
-  top: 15px;
-  left: 15px;
+  top: 13px;
+  left: 18px;
+
+  box-sizing: border-box;
+  width: 60px;
+  height: 60px;
+  margin: 0;
+  padding-top: 13px;
+  padding-right: 15px;
+  padding-left: 14px;
+  background-color: #020c10;
+  border: 3px solid #ff8d30;
+  border-radius: 50%;
 
   font-size: 14px;
   line-height: 14px;
 
 
-  &--number {
+  & b {
     font-size: 24px;
     line-height: 24px;
     font-weight: 700;
@@ -143,6 +158,10 @@
     &:last-child {
       margin-right: 0;
     }
+
+    &:nth-child(2) .travelmates__tags {
+      padding-left: 30px;
+    }
   }
 
   .travelmates__foto {
@@ -163,6 +182,11 @@
 
     font-size: 20px;
     line-height: 24px;
+  }
+
+  .travelmates__level {
+    top: 20px;
+    left: 21px;
   }
 
   .travelmates__button {
@@ -225,6 +249,11 @@
 
   .travelmates__name {
     margin-bottom: 18px;
+  }
+
+  .travelmates__level {
+    top: 23px;
+    left: 23px;
   }
 
   .travelmates__button {

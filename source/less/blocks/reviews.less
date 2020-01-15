@@ -1,6 +1,6 @@
 .reviews {
-  min-height: 85px;
-  padding-top: 50px;
+  min-height: 145px;
+  padding-top: 47px;
   padding-right: 25px;
   padding-bottom: 10px;
   padding-left: 25px;
@@ -29,18 +29,23 @@
 
 @media (min-width: @tablet-width) {
   .reviews {
-    min-height: 360px;
+    min-height: 385px;
     padding-top: 0;
     padding-left: 75px;
 
     background-color: transparent;
   }
+
+  .reviews__item {
+    width: 265px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .reviews {
-    min-height: 300px;
-    width: 315px;
+    min-height: 290px;
+    width: 320px;
+    padding-top: 10px;
     padding-left: 0;
   }
 }

@@ -1,22 +1,31 @@
 .about {
+  position: relative;
+  z-index: 7;
+
   color: #ffffff;
 
   background-color: @medium-blue;
+  border-bottom-right-radius: @border-radius-30;
+  border-bottom-left-radius: @border-radius-30;
   opacity: 0.99;
 }
 
 .about__wrapper {
   position: relative;
 
-  min-height: 350px;
-  padding-top: 30px;
+  min-height: 345px;
+  padding-top: 27px;
   padding-bottom: 50px;
 
-  background: transparent url("../img/about-mobile@1x.png") 15px 0 no-repeat;
+  background: transparent url("../img/about-mobile@1x.png") 17px -5px no-repeat;
 
   &::before {
     .decorative-block;
   }
+}
+
+.about__text-tablet-br {
+  display: none;
 }
 
 .about__button {
@@ -26,13 +35,18 @@
 
 @media (min-width: @tablet-width) {
   .about {
-    padding-top: 110px;
+    padding-top: 83px;
+
+    border-bottom-right-radius: @border-radius-50;
+    border-bottom-left-radius: @border-radius-50;
   }
 
   .about__wrapper {
-    min-height: 670px;
+    min-height: 680px;
     padding-top: 40px;
     padding-right: 385px;
+
+    background: transparent url("../img/about-tablet@1x.png") right 8px top 45px no-repeat;
 
     &::before {
       .decorative-block;
@@ -45,23 +59,46 @@
     }
   }
 
+  .about-heading {
+    margin-bottom: 40px;
+  }
+
+  .about__text {
+    width: 300px;
+    margin-bottom: 31px;
+  }
+
+  .about__text-mobile-br {
+    display: none;
+  }
+
+  .about__text-tablet-br {
+    display: block;
+  }
+
   .about__button {
     display: block;
+    width: 274px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .about {
+    z-index: -1;
+    margin-top: -80px;
     padding-top: 70px;
   }
 
   .about__wrapper {
-    min-height: 680px;
-    padding-top: 60px;
+    min-height: 760px;
+    padding-top: 140px;
     padding-right: 690px;
+
+    background: transparent url("../img/about-desktop@1x.png") right 60px top 95px no-repeat;
 
     &::before {
       .decorative-block;
+      top: 80px;
       left: 60px;
       width: 213px;
       height: 213px;
@@ -69,5 +106,23 @@
       border-top-left-radius: 30px;
       border-bottom-left-radius: 30px;
     }
+  }
+
+  .about-heading {
+    margin-bottom: 60px;
+  }
+
+  .about__text {
+    width: 620px;
+    margin-bottom: 37px;
+
+    &--bold {
+      width: 415px;
+      margin-bottom: 85px;
+    }
+  }
+
+  .about__text-tablet-br {
+    display: none;
   }
 }

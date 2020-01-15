@@ -1,12 +1,16 @@
 .countries-wanted {
   width: 100%;
+  min-height: 100px;
+}
+
+.travelmate-info:nth-child(3) .countries-wanted {
+  margin-bottom: 2px;
 }
 
 .countries-wanted__list {
   .list-clear;
-  margin-top: 15px;
-  margin-bottom: 10px;
-  padding-left: 5px;
+  margin-top: 19px;
+  padding-left: 45px;
 }
 
 .countries-wanted__item {
@@ -15,5 +19,45 @@
   font-size: 15px;
   line-height: 18px;
   font-weight: 500;
+  text-transform: uppercase;
   color: @travelmate-page-blue;
+}
+
+@media (min-width: @tablet-width) {
+  .countries-wanted {
+    min-height: 50px;
+    order: 2;
+  }
+
+  .countries-wanted__list {
+    display: flex;
+    padding: 0;
+  }
+
+  .countries-wanted__item {
+    margin-right: 28px;
+    padding-left: 46px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .countries-wanted {
+    height: 182px;
+    order: 0;
+  }
+
+  .countries-wanted__list {
+    flex-direction: column;
+    padding-top: 30px;
+    padding-left: 98px;
+  }
+
+  .countries-wanted__item {
+    margin: 0;
+    margin-bottom: 7px;
+    padding: 0;
+  }
 }

@@ -1,6 +1,5 @@
 .instructions {
   min-height: 330px;
-  padding-top: 5px;
   padding-right: 25px;
   padding-bottom: 35px;
   padding-left: 25px;
@@ -10,14 +9,17 @@
 .instructions__list {
   .list-clear;
   counter-reset: instuctionCounter;
+
+  padding-top: 20px;
 }
 
 .instructions__item {
   display: block;
   box-sizing: border-box;
-  min-height: 80px;
-  padding-top: 20px;
-  padding-right: 20px;
+  min-height: 100px;
+  margin-top: -20px;
+  padding-top: 22px;
+  padding-right: 90px;
   padding-left: 25px;
   padding-bottom: 20px;
 
@@ -25,6 +27,8 @@
   line-height: 18px;
   font-weight: 700;
   color: @dark-blue;
+
+  border-radius: 10px;
 
   &::after {
     counter-increment: instuctionCounter;
@@ -45,6 +49,7 @@
   }
 
   &--fourth {
+    min-height: 80px;
     background-color: #ffd74b;
   }
 }
@@ -62,22 +67,77 @@
   .instructions__list {
     display: flex;
     flex-wrap: wrap;
+    padding-top: 0;
   }
 
   .instructions__item {
     box-sizing: border-box;
-    width: 344px;
+    width: 359px;
+    min-height: 140px;
+    margin-top: 0;
+    padding-top: 30px;
+    padding-right: 35px;
+    padding-left: 33px;
+
+    font-size: 24px;
+    line-height: 24px;
+
+    border-radius: 0;
+
+    &--first {
+      border-top-left-radius: @border-radius-17;
+    }
+
+    &--second {
+      width: 344px;
+      margin-left: -15px;
+
+      border-top-right-radius: @border-radius-17;
+      border-top-left-radius: @border-radius-17;
+    }
+
+    &--third {
+      border-bottom-left-radius: @border-radius-17;
+    }
+
+    &--fourth {
+      width: 344px;
+      margin-left: -15px;
+
+      border-bottom-right-radius: @border-radius-17;
+      border-bottom-left-radius: @border-radius-17;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
   .instructions {
-    min-height: 110px;
+    min-height: 108px;
     padding-right: 60px;
     padding-left: 60px;
   }
 
   .instructions__item {
-    width: 330px;
+    width: 345px;
+    min-height: 108px;
+    border-radius: @border-radius-17;
+    margin-left: -30px;
+
+    &--first {
+      width: 344px;
+      margin-left: 0;
+    }
+
+    &--second {
+      width: 375px;
+    }
+
+    &--third {
+      width: 375px;
+    }
+
+    &--fourth {
+      width: 315px;
+    }
   }
 }

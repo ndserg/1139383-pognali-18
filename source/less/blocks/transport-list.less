@@ -1,6 +1,92 @@
-
 .transport-list {
   .list-clear;
   display: flex;
+  padding-top: 15px;
   padding-left: 5px;
+}
+
+.transport-list__item {
+  width: 32px;
+  height: 32px;
+
+  line-height: 32px;
+  text-align: center;
+
+  background-color: #edeff6;
+  border-radius: 50%;
+
+  & svg {
+    vertical-align: middle;
+  }
+
+  &--avia svg {
+    width: 14px;
+    height: 16px;
+  }
+
+  &--bus svg {
+    width: 13px;
+    height: 16px;
+  }
+
+  &--bike svg {
+    width: 19px;
+    height: 17px;
+  }
+
+  &--walk svg {
+    width: 15px;
+    height: 17px;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .transport-list {
+    flex-direction: column;
+    align-items: center;
+    margin-top: -2px;
+    padding: 0;
+  }
+
+  .transport-list__item {
+    width: 32px;
+    height: 32px;
+
+    background-color: transparent;
+    border: none;
+
+    &--avia svg {
+      width: 19px;
+      height: 21px;
+    }
+
+    &--bus svg {
+      width: 17px;
+      height: 21px;
+    }
+
+    &--bike svg {
+      width: 24px;
+      height: 21px;
+    }
+
+    &--walk svg {
+      width: 20px;
+      height: 21px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .transport-list {
+    flex-direction: row;
+  }
+
+  .transport-list__item {
+    margin-right: 14px;
+  }
 }

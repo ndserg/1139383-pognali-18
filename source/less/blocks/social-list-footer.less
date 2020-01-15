@@ -1,0 +1,30 @@
+.social-list-footer {
+  .list-clear;
+  display: flex;
+  justify-content: center;
+  margin-top: 37px;
+  margin-bottom: 35px;
+}
+
+.social-list-footer__item {
+  width: 45px;
+  height: 45px;
+
+  font-size: 0;
+  line-height: 0;
+
+  border-radius: 50%;
+  background-color: #ffd74b;
+}
+
+@media (min-width: @tablet-width) {
+  .social-list-footer {
+    justify-content: flex-start;
+    margin: 0;
+  }
+
+  .social-list-footer__item {
+    width: 60px;
+    height: 60px;
+  }
+}

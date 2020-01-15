@@ -1,42 +1,54 @@
 .countries {
+  position: relative;
+  z-index: 6;
+
+  margin-top: -30px;
+
   background-color: @light-blue;
+  border-bottom-right-radius: @border-radius-30;
+  border-bottom-left-radius: @border-radius-30;
   opacity: 0.99;
 }
 
 .countries__wrapper {
-  min-height: 1050px;
-  padding-top: 70px;
+  min-height: 1020px;
+  padding-top: 103px;
 }
 
 .countries__text {
   color: @medium-blue;
+  padding-right: 20px;
 }
 
 .countries__list {
   .list-clear;
   margin-top: 40px;
-  margin-bottom: 25px;
-  padding-top: 10px;
+  margin-bottom: 24px;
+  padding-top: 9px;
 }
 
 .countries__item {
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
 
   box-sizing: border-box;
-  min-height: 90px;
-  padding-top: 25px;
+  padding-top: 26px;
   padding-right: 20px;
-  padding-bottom: 25px;
+  padding-bottom: 20px;
   padding-left: 25px;
 
   background-color: #ffffff;
-  border-radius: 15px;
+  border-radius: 10px;
   margin-top: 110px;
   margin-bottom: 10px;
 }
 
 .countries__name {
   margin: 0;
+  flex-grow: 1;
 
   font-size: 21px;
   line-height: 21px;
@@ -52,6 +64,11 @@
   color: rgba(68, 68, 68, 0.3);
 }
 
+.countries__tourists-total {
+  margin-right: 5px;
+  line-height: 21px;
+}
+
 .countries__image {
   position: absolute;
   top: -100px;
@@ -60,6 +77,40 @@
 }
 
 @media (min-width: @tablet-width) {
+  .countries {
+    margin-top: -50px;
+    border-bottom-right-radius: @border-radius-50;
+    border-bottom-left-radius: @border-radius-50;
+  }
+
+  .countries__wrapper {
+    position: relative;
+
+    padding-top: 125px;
+    padding-bottom: 80px;
+
+    background: transparent url("../img/flags-back@1x.png") right 40px top 132px no-repeat;
+
+    &::after {
+      position: absolute;
+      top: 460px;
+      left: 40px;
+      z-index: -1;
+
+      display: block;
+      content: "";
+      width: 141px;
+      height: 141px;
+
+      background-color: #e2e5f2;
+      border-radius: 20px;
+    }
+  }
+
+  .countries__heading {
+    margin-bottom: 59px;
+  }
+
   .countries__text {
     width: 345px;
     margin-bottom: 85px;
@@ -67,19 +118,43 @@
 
   .countries__list {
     margin-bottom: 45px;
+    padding-top: 8px;
   }
 
   .countries__item {
-    display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
     min-height: 140px;
     margin-top: 10px;
     padding-top: 30px;
+    padding-bottom: 10px;
     padding-left: 30px;
+
+    border-radius: 20px;
+  }
+
+  .countries__name {
+    flex-grow: 0;
+    margin-bottom: 4px;
+
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .countries__description {
+    margin-bottom: 16px;
+
+    font-size: 20px;
+    line-height: 20px;
   }
 
   .countries__tourists-total {
     order: 2;
+    padding-left: 30px;
+
+    font-size: 20px;
+    line-height: 30px;
   }
 
   .countries__image {
@@ -89,22 +164,38 @@
     width: 186px;
     height: 140px;
   }
+
+  .countries__button {
+    margin-top: 48px;
+  }
 }
 
 @media (min-width: @desktop-width) {
+  .countries {
+    z-index: -2;
+  }
+
   .countries__wrapper {
     min-height: 0;
-    height: 740px;
-    padding-top: 160px;
+    height: 800px;
+    padding-top: 210px;
     padding-bottom: 140px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-content: flex-start;
+
+    background-position: right 60px top 138px;
+
+    &::after {
+      top: 140px;
+      left: 60px;
+    }
   }
 
   .countries__heading {
     width: 400px;
+    margin-top: 5px;
   }
 
   .countries__list {
@@ -117,5 +208,21 @@
 
   .countries__item {
     margin-top: 0;
+    padding-top: 25px;
+    padding-left: 32px;
+  }
+
+  .countries__description {
+    margin-bottom: 20px;
+  }
+
+  .countries__text {
+    margin-bottom: 95px;
+  }
+
+  .countries__button {
+    width: 274px;
+    margin: 0;
+    margin-left: 5px;
   }
 }

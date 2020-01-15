@@ -1,11 +1,15 @@
 .inner-page {
+  position: relative;
+
   background-color: @dark-blue;
+  border-bottom-right-radius: @border-radius-30;
+  border-bottom-left-radius: @border-radius-30;
 }
 
 .inner-page__heading {
   margin: 0;
-  margin-top: 60px;
-  margin-bottom: 15px;
+  margin-top: 52px;
+  margin-bottom: 11px;
 
   font-size: 36px;
   line-height: 40px;
@@ -16,27 +20,38 @@
 .inner-page__top-menu {
   display: flex;
   flex-wrap: wrap;
-
   align-items: baseline;
-  min-height: 145px;
-  padding-top: 25px;
+  padding-top: 17px;
 }
 
 @media (min-width: @tablet-width) {
   .inner-page__top-menu {
+    padding-top: 43px;
     padding-left: 40px;
     padding-right: 40px;
   }
 
   .inner-page__heading {
+    margin-top: 129px;
+    margin-bottom: 20px;
     margin-left: 35px;
+
+    font-size: 60px;
+    line-height: 70px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .inner-page__top-menu {
+    padding: 0;
+  }
+
   .inner-page__heading {
     position: absolute;
-    left: 90px;
-    bottom: 90px;
+    left: 91px;
+    bottom: 41px;
+
+    font-size: 60px;
+    line-height: 70px;
   }
 }

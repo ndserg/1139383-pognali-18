@@ -41,7 +41,7 @@
   padding-left: 25px;
 
   background-color: #ffffff;
-  border-radius: 10px;
+  border-radius: @border-radius-10;
   margin-top: 110px;
   margin-bottom: 10px;
 }
@@ -54,6 +54,93 @@
   line-height: 21px;
   font-weight: 700;
   color: @dark-blue;
+
+  &::before {
+    position: absolute;
+    z-index: 1;
+    top: -13px;
+    left: 25px;
+
+    display: block;
+    content: "";
+    width: 35px;
+    height: 24px;
+
+    background-repeat: no-repeat;
+    background-size: 35px 24px;
+  }
+
+  &--australia {
+    &::before {
+      background-image: url("../img/flag-australia.svg");
+    }
+  }
+
+  &--belgium {
+    &::before {
+      background-image: url("../img/flag-belgium.svg");
+    }
+  }
+
+  &--bosnia {
+    &::before {
+      background-image: url("../img/flag-bosnia.svg");
+    }
+  }
+
+  &--czech {
+    &::before {
+      background-image: url("../img/flag-czech.svg");
+    }
+  }
+
+  &--dominica {
+    &::before {
+      background-image: url("../img/flag-dominica.svg");
+    }
+  }
+
+  &--france {
+    &::before {
+      background-image: url("../img/flag-france.svg");
+    }
+  }
+
+  &--germany {
+    &::before {
+      background-image: url("../img/flag-germany.svg");
+    }
+  }
+
+  &--seychelles {
+    &::before {
+      background-image: url("../img/flag-seychelles.svg");
+    }
+  }
+
+  &--srilanka {
+    &::before {
+      background-image: url("../img/flag-sri-lanka.svg");
+    }
+  }
+
+  &--thailand {
+    &::before {
+      background-image: url("../img/flag-thailand.svg");
+    }
+  }
+
+  &--united-kingdom {
+    &::before {
+      background-image: url("../img/flag-united-kingdom.svg");
+    }
+  }
+
+  &--usa {
+    &::before {
+      background-image: url("../img/flag-usa.svg");
+    }
+  }
 }
 
 .countries__description,
@@ -78,9 +165,15 @@
 
 .countries__image {
   position: absolute;
+  z-index: -1;
   top: -100px;
   right: 0;
-  z-index: -1;
+
+  width: 270px;
+  height: 110px;
+
+  border-top-right-radius: @border-radius-10;
+  border-top-left-radius: @border-radius-10;
 }
 
 @media (min-width: @tablet-width) {
@@ -110,7 +203,7 @@
       height: 141px;
 
       background-color: #e2e5f2;
-      border-radius: 20px;
+      border-radius: @border-radius-20;
     }
   }
 
@@ -139,7 +232,7 @@
     padding-bottom: 10px;
     padding-left: 30px;
 
-    border-radius: 20px;
+    border-radius: @border-radius-20;
   }
 
   .countries__name {
@@ -148,6 +241,18 @@
 
     font-size: 24px;
     line-height: 24px;
+
+    &::before {
+      z-index: 2;
+      top: 17px;
+      right: 150px;
+      left: auto;
+
+      width: 70px;
+      height: 47px;
+
+      background-size: 70px 47px;
+    }
   }
 
   .countries__description {
@@ -169,11 +274,16 @@
   }
 
   .countries__image {
+    z-index: 1;
     top: 0;
     right: 0;
 
     width: 186px;
     height: 140px;
+
+    border-radius: 0;
+    border-top-right-radius: @border-radius-20;
+    border-bottom-right-radius: @border-radius-20;
   }
 }
 
@@ -214,6 +324,12 @@
     margin-top: 0;
     padding-top: 25px;
     padding-left: 32px;
+  }
+
+  .countries__name {
+    &::before {
+      top: 27px;
+    }
   }
 
   .countries__description {

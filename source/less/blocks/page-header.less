@@ -1,6 +1,9 @@
 .page-header {
   position: relative;
   z-index: 2;
+
+  min-height: 73px;
+
   background-color: @dark-blue;
 
   &--js,
@@ -30,9 +33,24 @@
   padding-left: 25px;
 }
 
-.page-header__logo-img {
+.page-header__logo {
   width: 100px;
   height: 19px;
+
+  background-size: 100px 19px;
+  background-repeat: no-repeat;
+
+  &--js {
+    & img {
+      display: none;
+    }
+
+    background-image: url("../img/logo-mobile-white@1x.png");
+
+    @media (min-resolution: @retina-dppx) {
+      background-image: url("../img/logo-mobile-white@2.png");
+    }
+  }
 }
 
 .page-header__home-link {
@@ -66,9 +84,20 @@
     padding-left: 40px;
   }
 
-  .page-header__logo-img {
+  .page-header__logo {
     width: 166px;
     height: 42px;
+
+    background-size: 166px 42px;
+    background-repeat: no-repeat;
+
+    &--js {
+      background-image: url("../img/logo-tablet-white@1x.png");
+
+      @media (min-resolution: @retina-dppx) {
+        background-image: url("../img/logo-tablet-white@2x.png");
+      }
+    }
   }
 
   .page-header__home-link {
@@ -119,9 +148,30 @@
     padding-left: 60px;
   }
 
-  .page-header__logo-img {
+  .page-header__logo {
     width: 200px;
     height: 52px;
+
+    background-size: 200px 52px;
+    background-repeat: no-repeat;
+
+    &--js {
+      & img {
+        display: block;
+      }
+    }
+
+    &--scroll {
+      & img {
+        display: none;
+      }
+
+      background-image: url("../img/logo-desktop-blue@1x.png");
+
+      @media (min-resolution: @retina-dppx) {
+        background-image: url("../img/logo-desktop-blue@2x.png");
+      }
+    }
   }
 
   .page-header__home-link {

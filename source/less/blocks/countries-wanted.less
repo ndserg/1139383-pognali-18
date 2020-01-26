@@ -14,6 +14,8 @@
 }
 
 .countries-wanted__item {
+  position: relative;
+
   margin-bottom: 10px;
 
   font-size: 15px;
@@ -21,6 +23,92 @@
   font-weight: 500;
   text-transform: uppercase;
   color: @travelmate-page-blue;
+
+  &::before {
+    position: absolute;
+    top: -2px;
+    left: -40px;
+
+    display: block;
+    content: "";
+    width: 26px;
+    height: 18px;
+
+    background-repeat: no-repeat;
+    background-size: 26px 18px;
+  }
+
+  &--australia {
+    &::before {
+      background-image: url("../img/flag-australia.svg");
+    }
+  }
+
+  &--belgium {
+    &::before {
+      background-image: url("../img/flag-belgium.svg");
+    }
+  }
+
+  &--bosnia {
+    &::before {
+      background-image: url("../img/flag-bosnia.svg");
+    }
+  }
+
+  &--czech {
+    &::before {
+      background-image: url("../img/flag-czech.svg");
+    }
+  }
+
+  &--dominica {
+    &::before {
+      background-image: url("../img/flag-dominica.svg");
+    }
+  }
+
+  &--france {
+    &::before {
+      background-image: url("../img/flag-france.svg");
+    }
+  }
+
+  &--germany {
+    &::before {
+      background-image: url("../img/flag-germany.svg");
+    }
+  }
+
+  &--seychelles {
+    &::before {
+      background-image: url("../img/flag-seychelles.svg");
+    }
+  }
+
+  &--srilanka {
+    &::before {
+      background-image: url("../img/flag-sri-lanka.svg");
+    }
+  }
+
+  &--thailand {
+    &::before {
+      background-image: url("../img/flag-thailand.svg");
+    }
+  }
+
+  &--united-kingdom {
+    &::before {
+      background-image: url("../img/flag-united-kingdom.svg");
+    }
+  }
+
+  &--usa {
+    &::before {
+      background-image: url("../img/flag-usa.svg");
+    }
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -40,6 +128,16 @@
 
     font-size: 20px;
     line-height: 30px;
+
+    &::before {
+      top: 0;
+      left: 0;
+
+      width: 35px;
+      height: 24px;
+
+      background-size: 35px 24px;
+    }
   }
 }
 
@@ -60,5 +158,10 @@
     margin: 0;
     margin-bottom: 7px;
     padding: 0;
+
+    &::before {
+      top: 3px;
+      left: -54px;
+    }
   }
 }

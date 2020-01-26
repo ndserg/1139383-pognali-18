@@ -1,6 +1,276 @@
+.range-filter {
+  margin-top: 10px;
+  margin-bottom: 12px;
+}
+
+.range-filter__numbers {
+  position: relative;
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  &::after {
+    position: absolute;
+    z-index: 1;
+    top: 12px;
+    left: 0;
+    right: 0;
+
+
+    display: block;
+    width: 16px;
+    height: 11px;
+    margin: auto;
+    content: "";
+
+    background: #ffffff url("../img/qty-minus.svg") 50% no-repeat;
+  }
+}
+
 .range-filter__value {
+  position: relative;
+  box-sizing: border-box;
+  width: 110px;
+  height: 35px;
+  margin: 0;
+  padding: 0;
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-left: 8px;
+
   font-size: 15px;
-  line-height: 13.5px;
+  line-height: 15px;
   font-weight: 500;
+  text-align: center;
   color: @button-text-color;
+
+  border: 1px solid #cbced9;
+
+  &--min {
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+
+    &:hover {
+      z-index: 1;
+    }
+
+    &:active {
+      z-index: 1;
+    }
+
+    &:focus {
+      z-index: 1;
+    }
+  }
+
+  &--max {
+    margin-left: -1px;
+
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+
+  &:hover {
+    border-color: #959bb2;
+  }
+
+  &:active {
+    border-color: #161c35;
+  }
+
+  &:focus {
+    border-color: #161c35;
+  }
+
+  appearance: textfield;
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    appearance: none;
+  }
+}
+
+.range-filter__triggers {
+  position: relative;
+
+  display: flex;
+  width: 100%;
+  height: 10px;
+  margin: 0;
+  margin-top: 20px;
+  padding: 0;
+
+  font-size: 0;
+  line-height: 0;
+
+  &::before {
+    position: absolute;
+    top: 4px;
+    display: block;
+    width: 100%;
+    height: 2px;
+    content: "";
+
+    background-color: rgba(29, 46, 91, 0.2);
+  }
+
+  &::after {
+    display: block;
+    flex-grow: 2;
+    height: 2px;
+    margin-top: 4px;
+    content: "";
+
+    background-color: rgba(29, 46, 91, 1);
+  }
+}
+
+.range-filter__trigger {
+  display: block;
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+
+  background-color: @travelmate-page-blue;
+  border-radius: 50%;
+
+  &:hover {
+    margin-top: -3px;
+    width: 16px;
+    height: 16px;
+  }
+
+  &:active {
+    box-shadow: 0 3px 7px 0 rgba(29, 46, 91, 0.35);
+  }
+
+  &--min {
+    @min-range-margin: 66px;
+    margin-left: @min-range-margin;
+
+    &:hover {
+      margin-left: (@min-range-margin - 3px);
+    }
+  }
+
+  &--max {
+    order: 2;
+    @max-range-margin: 0;
+    margin-right: @max-range-margin;
+
+    &:hover {
+      margin-right: (@max-range-margin - 3px);
+    }
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .range-filter {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -41px;
+    margin-left: 125px;
+  }
+
+  .range-filter__value {
+    width: 75px;
+    height: 46px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .range-filter__triggers {
+    width: 282px;
+    margin-top: 17px;
+    order: -1;
+
+    &::before {
+      top: 4px;
+      height: 3px;
+    }
+  }
+
+  .range-filter__trigger {
+    margin-top: -1px;
+    width: 13px;
+    height: 13px;
+
+    &:hover {
+      margin-top: -3px;
+      width: 19px;
+      height: 19px;
+    }
+
+    &--min {
+      @min-range-margin: 69px;
+      margin-left: @min-range-margin;
+
+      &:hover {
+        margin-left: (@min-range-margin - 3px);
+      }
+    }
+
+    &--max {
+      order: 2;
+      @max-range-margin: 0;
+      margin-right: @max-range-margin;
+
+      &:hover {
+        margin-right: (@max-range-margin - 3px);
+      }
+    }
+  }
+
+  .range-filter__numbers {
+    &::after {
+      top: 16px;
+
+      width: 21px;
+      height: 15px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .range-filter {
+    margin: 0;
+    flex-direction: column;
+  }
+
+  .range-filter__value {
+    width: 95px;
+    padding-top: 3px;
+  }
+
+  .range-filter__triggers {
+    width: 191px;
+    margin-top: 31px;
+    order: 1;
+  }
+
+  .range-filter__trigger {
+    &--min {
+      @min-range-margin: 58px;
+      margin-left: @min-range-margin;
+
+      &:hover {
+        margin-left: (@min-range-margin - 3px);
+      }
+    }
+
+    &--max {
+      order: 2;
+    }
+  }
+
+  .range-filter__numbers {
+    &::after {
+      top: 16px;
+      left: -5px;
+
+      width: 21px;
+      height: 15px;
+    }
+  }
 }

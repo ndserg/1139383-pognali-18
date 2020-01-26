@@ -7,124 +7,147 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
 
-  <body>
-
-    <header class="page-header inner-page">
-      <div class="page-header__wrapper">
-        <section class="page-header__top-menu inner-page__top-menu top-menu top-menu--scroll wrapper">
-          <h1 class="inner-page__heading">Попутчики</h1>
-          <a class="top-menu__logo top-menu__logo--scroll" href="index.html">
-            <img class="top-menu__logo-img top-menu__logo-img--scroll" src="https://via.placeholder.com/150x150" width="100" height="19" alt="Логотип сайта Погнали">
-          </a>
-          <a class="top-menu__home-link" href="index.html">На главную</a>
-        </section>
-
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">Открыть/закрыть меню</button>
-          <div class="main-nav__wrapper nav-show wrapper">
-            <ul class="main-nav__list site-list">
-              <li class="site-list__item">
-                <a class="site-list__link" href="#">О сервисе</a>
+  <body class="catalog">
+    <header class="page-header page-header--nojs inner-page">
+      <div class="page-header__wrapper inner-page__wrapper">
+        <h1 class="inner-page__heading">Попутчики</h1>
+        <a href="index.html" class="page-header__logo">
+          <img class="page-header__logo-img" src="https://via.placeholder.com/150x150" width="100" height="19" alt="Логотип сайта Погнали">
+        </a>
+        <nav class="header-nav">
+          <button class="header-nav__toggle" type="button">Открыть/Закрыть меню</button>
+          <div class="header-nav__wrapper wrapper">
+            <ul class="header-nav__list header-site-list">
+              <li class="header-site-list__item">
+                <a class="header-site-list__link" href="index.html" data-hover="О сервисе">О сервисе</a>
               </li>
-              <li class="site-list__item">
-                <a class="site-list__link" href="form.html">Направления</a>
+              <li class="header-site-list__item">
+                <a class="header-site-list__link" href="form.html" data-hover="Направления">Направления</a>
               </li>
-              <li class="site-list__item">
-                <a class="site-list__link" href="catalog.html">Попутчики</a>
+              <li class="header-site-list__item">
+                <a class="header-site-list__link" href="catalog.html" data-hover="Попутчики">Попутчики</a>
               </li>
             </ul>
-            <ul class="main-nav__list user-list user-list--tablet">
-              <li class="user-list__item">
-                <a class="user-list__login" href="login.html">Авторизация</a>
+            <ul class="header-nav__list header-user-list">
+              <li class="header-user-list__item">
+                <a class="header-user-list__login" href="login.html">Авторизация</a>
               </li>
             </ul>
-            <ul class="main-nav__list top-contacts-list">
-              <li class="top-contacts-list__item top-contacts-list__item--phone">
-                <a class="top-contacts-list__link top-contacts-list__link" href="tel:8-800-555-86-28">8 800 555-86-28</a>
+            <ul class="header-nav__list header-contacts-list">
+              <li class="header-contacts-list__item">
+                <a class="header-contacts-list__link header-contacts-list__link--phone" href="tel:8-800-555-86-28">8 800 555-86-28</a>
               </li>
-              <li class="top-contacts-list__item top-contacts-list__item--email">
-                <a class="top-contacts-list__link top-contacts-list__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+              <li class="header-contacts-list__item">
+                <a class="header-contacts-list__link header-contacts-list__link--email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
               </li>
-            </ul>
-            <ul class="main-nav__list social-list">
-              <li class="social-list__item social-list__item--fb"><a href="facbook.com">Фэйсбук</a></li>
-              <li class="social-list__item social-list__item--vk"><a href="vk.com">Вконтакте</a></li>
-              <li class="social-list__item social-list__item--inst"><a href="instagram.com">Инстаграм</a></li>
             </ul>
           </div>
         </nav>
+        <a class="page-header__home-link" href="index.html">На главную</a>
       </div>
     </header>
+
+    <nav class="main-nav">
+      <div class="main-nav__wrapper wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">О сервисе</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="form.html">Направления</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="catalog.html">Попутчики</a>
+          </li>
+        </ul>
+        <ul class="main-nav__list user-list">
+          <li class="user-list__item">
+            <a class="user-list__login" href="login.html">Авторизация</a>
+          </li>
+        </ul>
+        <ul class="main-nav__list main-nav-contacts-list">
+          <li class="main-nav-contacts-list__item">
+            <a class="main-nav-contacts-list__link main-nav-contacts-list__link--phone" href="tel:8-800-555-86-28">8 800 555-86-28</a>
+          </li>
+          <li class="main-nav-contacts-list__item">
+            <a class="main-nav-contacts-list__link main-nav-contacts-list__link--email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </li>
+        </ul>
+        <ul class="main-nav__list social-list">
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--fb" href="facbook.com">Фэйсбук</a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--vk" href="vk.com">Вконтакте</a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--inst" href="instagram.com">Инстаграм</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
     <main class="page-main page-travelmates">
       <div class="page-travelmates__wrapper wrapper">
         <section class="page-travelmates__filter-form travelmates-filter">
           <h2 class="page-travelmates__heading travelmates-filter__heading">Подберите идеального попутчика</h2>
           <form class="travelmates-filter__form" action="https://echo.htmlacademy.ru" method="post">
-            <fieldset class="travelmates-filter__group travelmates-filter__group--expanded filter-group">
-              <legend class="filter-group__heading">Хобби</legend>
-              <button class="filter-group__button filter-group__button--expand visually-hidden" type="button">Развернуть</button>
-              <button class="filter-group__button filter-group__button--collapse" type="button">Свернуть</button>
-              <ul class="filter-group__list filter-group__list--mobile-collapsed">
+            <fieldset class="travelmates-filter__group filter-group filter-group--collapsed">
+                <button class="filter-group__toggle filter-group__toggle--expand" type="button">Хобби</button>
+              <ul class="filter-group__list filter-group__list--collapsed">
                 <li class="filter-group__item">
-                  <input class="filter-group__checkbox" type="checkbox" name="hobby" value="Спортзал" id="gym" checked>
+                  <input class="filter-group__checkbox visually-hidden" type="checkbox" name="hobby" value="Спортзал" id="gym" checked>
                   <label class="filter-group__checkbox-label" for="gym">Спортзал</label>
                 </li>
                 <li class="filter-group__item">
-                  <input class="filter-group__checkbox" type="checkbox" name="hobby" value="Кальян" id="Hookah">
+                  <input class="filter-group__checkbox visually-hidden" type="checkbox" name="hobby" value="Кальян" id="Hookah">
                   <label class="filter-group__checkbox-label" for="Hookah">Кальян</label>
                 </li>
                 <li class="filter-group__item">
-                  <input class="filter-group__checkbox" type="checkbox" name="hobby" value="Диван" id="sofa">
+                  <input class="filter-group__checkbox visually-hidden" type="checkbox" name="hobby" value="Диван" id="sofa">
                   <label class="filter-group__checkbox-label" for="sofa">Диван</label>
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="travelmates-filter__group travelmates-filter__group--expanded filter-group">
-              <legend class="filter-group__heading">Музыка</legend>
-              <button class="filter-group__button filter-group__button--expand visually-hidden" type="button">Развернуть</button>
-              <button class="filter-group__button filter-group__button--collapse" type="button">Свернуть</button>
+            <fieldset class="travelmates-filter__group filter-group">
+              <button class="filter-group__toggle filter-group__toggle--collapse" type="button">Музыка</button>
                 <ul class="filter-group__list">
                   <li class="filter-group__item">
-                    <input class="filter-group__checkbox" type="checkbox" name="music" value="Тяжелый рок" id="hardrock" checked>
+                    <input class="filter-group__checkbox visually-hidden" type="checkbox" name="music" value="Тяжелый рок" id="hardrock" checked>
                     <label class="filter-group__checkbox-label" for="hardrock">Тяжелый рок</label>
                   </li>
                   <li class="filter-group__item">
-                    <input class="filter-group__checkbox" type="checkbox" name="music" value="Русский рэп" id="russianrap">
+                    <input class="filter-group__checkbox visually-hidden" type="checkbox" name="music" value="Русский рэп" id="russianrap">
                     <label class="filter-group__checkbox-label" for="russianrap">Русский рэп</label>
                   </li>
                   <li class="filter-group__item">
-                    <input class="filter-group__checkbox" type="checkbox" name="music" value="Евроденс" id="eurodance">
+                    <input class="filter-group__checkbox visually-hidden" type="checkbox" name="music" value="Евроденс" id="eurodance">
                     <label class="filter-group__checkbox-label" for="eurodance">Евроденс</label>
                   </li>
                 </ul>
             </fieldset>
-            <fieldset class="travelmates-filter__group travelmates-filter__group--expanded filter-group">
-              <legend class="filter-group__heading">Еда</legend>
-              <button class="filter-group__button filter-group__button--expand visually-hidden" type="button">Развернуть</button>
-              <button class="filter-group__button filter-group__button--collapse" type="button">Свернуть</button>
-              <ul class="filter-group__list filter-group__list--mobile-collapsed">
+            <fieldset class="travelmates-filter__group filter-group filter-group--collapsed">
+              <button class="filter-group__toggle filter-group__toggle--expand" type="button">Еда</button>
+              <ul class="filter-group__list filter-group__list--collapsed">
                 <li class="filter-group__item">
-                  <input class="filter-group__checkbox" type="checkbox" name="food" value="Мясоед" id="meat" checked>
+                  <input class="filter-group__checkbox visually-hidden" type="checkbox" name="food" value="Мясоед" id="meat" checked>
                   <label class="filter-group__checkbox-label" for="meat">Мясоед</label>
                 </li>
                 <li class="filter-group__item">
-                  <input class="filter-group__checkbox" type="checkbox" name="food" value="Сидит на ПП" id="proper-nutrition">
+                  <input class="filter-group__checkbox visually-hidden" type="checkbox" name="food" value="Сидит на ПП" id="proper-nutrition">
                   <label class="filter-group__checkbox-label" for="proper-nutrition">Сидит на ПП</label>
                 </li>
                 <li class="filter-group__item">
-                  <input class="filter-group__checkbox" type="checkbox" name="food" value="Веган-сыроед" id="vegan">
+                  <input class="filter-group__checkbox visually-hidden" type="checkbox" name="food" value="Веган-сыроед" id="vegan">
                   <label class="filter-group__checkbox-label" for="vegan">Веган-сыроед</label>
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="travelmates-filter__group travelmates-filter__group--expanded filter-group">
-              <legend class="filter-group__heading">Транспорт</legend>
-              <button class="filter-group__button filter-group__button--expand visually-hidden" type="button">Развернуть</button>
-              <button class="filter-group__button filter-group__button--collapse" type="button">Свернуть</button>
-              <ul class="filter-group__list">
-                <li class="filter-group__item">
-                  <input class="filter-group__transport" type="checkbox" name="transport" value="Авиаперелет" id="plane" checked>
+            <fieldset class="travelmates-filter__group filter-group">
+              <button class="filter-group__toggle filter-group__toggle--transport filter-group__toggle--collapse" type="button">Транспорт</button>
+              <ul class="filter-group__list filter-group__list--transport">
+                <li class="filter-group__item filter-group__item--plane">
+                  <input class="filter-group__transport visually-hidden" type="checkbox" name="transport" value="Авиаперелет" id="plane" checked>
                   <label class="filter-group__transport-label filter-group__transport-label--plane" for="plane">
                   <span class="visually-hidden">Авиаперелет</span>
                   <svg x="0px" y="0px" width="14" height="16" viewBox="0 0 19 21" style="enable-background:new 0 0 19 21;" xml:space="preserve">
@@ -138,8 +161,8 @@
                   </svg>
                   </label>
                 </li>
-                <li class="filter-group__item">
-                  <input class="filter-group__transport" type="checkbox" name="transport" value="Автотранспорт" id="bus" checked>
+                <li class="filter-group__item filter-group__item--bus">
+                  <input class="filter-group__transport visually-hidden" type="checkbox" name="transport" value="Автотранспорт" id="bus" checked>
                   <label class="filter-group__transport-label filter-group__transport-label--bus" for="bus">
                     <span class="visually-hidden">Автотранспорт</span>
                     <svg  x="0px" y="0px" width="13" height="16" viewBox="0 0 17 21" style="enable-background:new 0 0 17 21;" xml:space="preserve">
@@ -151,8 +174,8 @@
                     </svg>
                   </label>
                 </li>
-                <li class="filter-group__item">
-                  <input class="filter-group__transport" type="checkbox" name="transport" value="Велосипед" id="bike">
+                <li class="filter-group__item filter-group__item--bike">
+                  <input class="filter-group__transport visually-hidden" type="checkbox" name="transport" value="Велосипед" id="bike">
                   <label class="filter-group__transport-label filter-group__transport-label--bike" for="bike">
                     <span class="visually-hidden">Велосипед</span>
                     <svg x="0px" y="0px" width="19" height="17" viewBox="0 0 24 21" style="enable-background:new 0 0 24 21;" xml:space="preserve">
@@ -164,8 +187,8 @@
                     </svg>
                   </label>
                 </li>
-                <li class="filter-group__item">
-                  <input class="filter-group__transport" type="checkbox" name="transport" value="Пешком" id="run" checked>
+                <li class="filter-group__item filter-group__item--run">
+                  <input class="filter-group__transport visually-hidden" type="checkbox" name="transport" value="Пешком" id="run" checked>
                   <label class="filter-group__transport-label filter-group__transport-label--run" for="run">
                     <span class="visually-hidden">Пешком</span>
                     <svg x="0px" y="0px" width="15" height="17" viewBox="0 0 20 21" style="enable-background:new 0 0 20 21;" xml:space="preserve">
@@ -182,22 +205,18 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="travelmates-filter__group travelmates-filter__group--expanded filter-group">
-              <legend class="filter-group__heading">Левел</legend>
-              <button class="filter-group__button filter-group__button--expand visually-hidden" type="button">Развернуть</button>
-              <button class="filter-group__button filter-group__button--collapse" type="button">Свернуть</button>
-              <ul class="filter-group__list">
-                <li class="filter-group__item">
-                  <p class="filter-group__range range-filter">
-                    <input class="range-filter__value range-filter__value--min" type="number" name="min-level" value="30" min="0" max="100" id="min-level">
-                    <input class="range-filter__value range-filter__value--max" type="number" name="max-level" value="100" min="1" max="100" id="max-level">
-                  </p>
-                  <p class="filter-group__range-triggers range-triggers">
-                    <label class="range-triggers__label range-triggers__label--min" for="min-level">Минимальный уровень</label>
-                    <label class="range-triggers__label range-triggers__label--max" for="max-level">Максимальный уровень</label>
-                  </p>
-                </li>
-              </ul>
+            <fieldset class="travelmates-filter__group filter-group">
+              <button class="filter-group__toggle filter-group__toggle--triggers filter-group__toggle--collapse" type="button">Левел</button>
+              <div class="filter-group__range range-filter">
+                <p class="range-filter__numbers">
+                  <input class="range-filter__value range-filter__value--min" type="number" name="min-level" value="30" min="0" max="100" id="min-level">
+                  <input class="range-filter__value range-filter__value--max" type="number" name="max-level" value="100" min="1" max="100" id="max-level">
+                </p>
+                <p class="range-filter__triggers">
+                  <label class="range-filter__trigger range-filter__trigger--min" for="min-level">Минимальный уровень</label>
+                  <label class="range-filter__trigger range-filter__trigger--max" for="max-level">Максимальный уровень</label>
+                </p>
+              </div>
             </fieldset>
             <button class="travelmates-filter__button" type="button">Показать</button>
           </form>
@@ -206,16 +225,20 @@
         <ul class="page-travelmates__list">
           <li class="page-travelmates__item travelmate-info">
             <div class="travelmate-info__personal">
-              <a class="travelmate-info__link-foto" href="#">
+              <a class="travelmate-info__link-foto" href="catalog/tanjafirsova.html">
                 <img class="travelmate-info__foto" src="https://via.placeholder.com/150x150" width="70" height="70" alt="Таня Фирсова">
               </a>
-              <a class="travelmate-info__link-name" href="#">Таня Фирсова</a>
+              <a class="travelmate-info__link-name" href="catalog/tanjafirsova.html">Таня Фирсова</a>
               <p class="travelmate-info__likes">
                 <button class="travelmate-info__button-like travelmate-info__button-like--active">
-                  <svg x="0px" y="0px" width="13" height="11" viewBox="0 0 20 17" style="enable-background:new 0 0 20 17;" xml:space="preserve">
+                  <svg id="heart" class="heart-ico" x="0px" y="0px" width="13" height="11" viewBox="0 0 20 17" style="enable-background:new 0 0 20 17;" xml:space="preserve">
                     <path d="M18.5,1.5c-2-2-5.3-2-7.3,0L10,2.7L8.8,1.5c-2-2-5.3-2-7.3,0c-2,2-2,5.2,0,7.2l1.2,1.2L10,17l7.3-7.2l1.2-1.2
                     C20.5,6.7,20.5,3.5,18.5,1.5z M14.9,9.8L10,14.6L5.1,9.8L2.7,7.5C1.4,6.1,1.4,4,2.7,2.7c1.3-1.3,3.5-1.3,4.9,0L10,5.1l2.4-2.4
                     c1.3-1.3,3.5-1.3,4.9,0c1.3,1.3,1.3,3.5,0,4.8L14.9,9.8z"/>
+                  </svg>
+                  <svg id="heart-active" class="heart-active-ico" x="0px" y="0px" viewBox="0 0 13 11" style="enable-background:new 0 0 13 11;" xml:space="preserve">
+                  <path d="M12,1c-1.3-1.3-3.4-1.3-4.7,0L6.5,1.7L5.7,1C4.4-0.3,2.3-0.3,1,1c-1.3,1.3-1.3,3.4,0,4.6l0.8,0.8L6.5,11l4.7-4.6L12,5.6
+                    C13.3,4.3,13.3,2.2,12,1z"/>
                   </svg>
                 </button>
                 <span class="travelmate-info__raiting">1,5 M</span>
@@ -282,17 +305,20 @@
             </div>
             <div class="travelmate-info__level">
               <span class="travelmate-info__level-heading">левел:</span>
-              <b class="travelmate-info__level-value">99</b>
+              <p class="travelmate-info__level-value">
+                <span class="travelmate-info__level-number">99</span>
+                <span class="travelmate-info__level-text">level</span>
+              </p>
             </div>
-            <a class="travelmate-info__button button" href="travelmate.html">Позвать!</a>
+            <a class="travelmate-info__button" href="travelmate.html">Позвать!</a>
           </li>
 
           <li class="page-travelmates__item travelmate-info">
             <div class="travelmate-info__personal">
-              <a class="travelmate-info__link-foto" href="#">
+              <a class="travelmate-info__link-foto" href="catalog/petrdemin.html">
                 <img class="travelmate-info__foto" src="https://via.placeholder.com/150x150" width="70" height="70" alt="Петя Демин">
               </a>
-              <a class="travelmate-info__link-name" href="#">Петя Демин</a>
+              <a class="travelmate-info__link-name" href="catalog/petrdemin.html">Петя Демин</a>
               <p class="travelmate-info__likes">
                 <button class="travelmate-info__button-like">
                   <svg x="0px" y="0px" width="13" height="11" viewBox="0 0 20 17" style="enable-background:new 0 0 20 17;" xml:space="preserve">
@@ -364,17 +390,20 @@
             </div>
             <div class="travelmate-info__level">
               <span class="travelmate-info__level-heading">левел:</span>
-              <b class="travelmate-info__level-value">80</b>
+              <p class="travelmate-info__level-value">
+                <span class="travelmate-info__level-number">80</span>
+                <span class="travelmate-info__level-text">level</span>
+              </p>
             </div>
-            <a class="travelmate-info__button button" href="travelmate.html">Позвать!</a>
+            <a class="travelmate-info__button" href="travelmate.html">Позвать!</a>
           </li>
 
           <li class="page-travelmates__item travelmate-info">
             <div class="travelmate-info__personal">
-              <a class="travelmate-info__link-foto" href="#">
+              <a class="travelmate-info__link-foto" href="catalog/marksmolov.html">
                 <img class="travelmate-info__foto" src="https://via.placeholder.com/150x150" width="70" height="70" alt="Марк Смолов">
               </a>
-              <a class="travelmate-info__link-name" href="#">Марк Смолов</a>
+              <a class="travelmate-info__link-name" href="catalog/marksmolov.html">Марк Смолов</a>
               <p class="travelmate-info__likes">
                 <button class="travelmate-info__button-like">
                   <svg x="0px" y="0px" width="13" height="11" viewBox="0 0 20 17" style="enable-background:new 0 0 20 17;" xml:space="preserve">
@@ -447,17 +476,20 @@
             </div>
             <div class="travelmate-info__level">
               <span class="travelmate-info__level-heading">левел:</span>
-              <b class="travelmate-info__level-value">25</b>
+              <p class="travelmate-info__level-value">
+                <span class="travelmate-info__level-number">25</span>
+                <span class="travelmate-info__level-text">level</span>
+              </p>
             </div>
-            <a class="travelmate-info__button button" href="travelmate.html">Позвать!</a>
+            <a class="travelmate-info__button" href="travelmate.html">Позвать!</a>
           </li>
 
           <li class="page-travelmates__item page-travelmates__item--online travelmate-info">
             <div class="travelmate-info__personal">
-              <a class="travelmate-info__link-foto" href="#">
+              <a class="travelmate-info__link-foto" href="catalog/larisarogovaja.html">
                 <img class="travelmate-info__foto" src="https://via.placeholder.com/150x150" width="70" height="70" alt="Лариса Роговая">
               </a>
-              <a class="travelmate-info__link-name" href="#">Лариса Роговая</a>
+              <a class="travelmate-info__link-name travelmate-info__link-name--online" href="catalog/larisarogovaja.html">Лариса Роговая</a>
               <p class="travelmate-info__likes">
                 <button class="travelmate-info__button-like">
                   <svg x="0px" y="0px" width="13" height="11" viewBox="0 0 20 17" style="enable-background:new 0 0 20 17;" xml:space="preserve">
@@ -529,25 +561,28 @@
             </div>
             <div class="travelmate-info__level">
               <span class="travelmate-info__level-heading">левел:</span>
-              <b class="travelmate-info__level-value">50</b>
+              <p class="travelmate-info__level-value">
+                <span class="travelmate-info__level-number">50</span>
+                <span class="travelmate-info__level-text">level</span>
+              </p>
             </div>
-            <a class="travelmate-info__button button" href="travelmate.html">Позвать!</a>
+            <a class="travelmate-info__button" href="travelmate.html">Позвать!</a>
           </li>
         </ul>
         <a class="page-travelmates__button-more" href="travelmates.html">Показать еще</a>
         <div class="page-travelmates__pagination travelmates-pagination">
           <ul class="travelmates-pagination__list">
             <li class="travelmates-pagination__item">
-              <a href="" class="travelmates-pagination__link">1</a>
+              <a class="travelmates-pagination__link travelmates-pagination__link--active">1</a>
             </li>
             <li class="travelmates-pagination__item">
-              <a href="" class="travelmates-pagination__link">2</a>
+              <a href="#" class="travelmates-pagination__link">2</a>
             </li>
             <li class="travelmates-pagination__item">
-              <a href="" class="travelmates-pagination__link">3</a>
+              <a href="#" class="travelmates-pagination__link">3</a>
             </li>
             <li class="travelmates-pagination__item">
-              <a href="" class="travelmates-pagination__link">4</a>
+              <a href="#" class="travelmates-pagination__link">4</a>
             </li>
           </ul>
           <button class="travelmates-pagination__button travelmates-pagination__button--prev" type="button">Назад</button>
@@ -558,13 +593,19 @@
 
     <footer class="page-footer">
       <div class="page-footer__wrapper wrapper">
-        <a class="page-footer__logo" href="index.html">
+        <a href="index.html" class="page-footer__logo">
           <img class="page-footer__logo-img" src="https://via.placeholder.com/150x150" width="100" height="19" alt="Логотип сайта Погнали">
         </a>
         <ul class="page-footer__social social-list-footer">
-          <li class="social-list-footer__item social-list-footer__item--fb"><a href="facbook.com">Фэйсбук</a></li>
-          <li class="social-list-footer__item social-list-footer__item--vk"><a href="vk.com">Вконтакте</a></li>
-          <li class="social-list-footer__item social-list-footer__item--inst"><a href="instagram.com">Инстаграм</a></li>
+          <li class="social-list-footer__item">
+            <a class="social-list-footer__link social-list-footer__link--fb" href="facbook.com">Фэйсбук</a>
+          </li>
+          <li class="social-list-footer__item">
+            <a class="social-list-footer__link social-list-footer__link--vk" href="vk.com">Вконтакте</a>
+          </li>
+          <li class="social-list-footer__item">
+            <a class="social-list-footer__link social-list-footer__link--inst" href="instagram.com">Инстаграм</a>
+          </li>
         </ul>
         <a class="page-footer__copyrytes htmlacademy-logo" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="htmlacademy-logo__text">Разработано</span>
@@ -573,13 +614,13 @@
       </div>
     </footer>
 
-    <section class="countries-filter">
+    <section class="countries-filter countries-filter--closed">
       <div class="countries-filter__top-wrapper wrapper">
         <h2 class="countries-filter__heading">Фильтрация по странам</h2>
         <button class="countries-filter__button-toggle countries-filter__button-toggle--open" type="button">Показать все</button>
-        <button class="countries-filter__button-toggle countries-filter__button-toggle--close visually-hidden" type="button">Скрыть</button>
+        <button class="countries-filter__button-toggle countries-filter__button-toggle--active countries-filter__button-toggle--close" type="button">Свернуть</button>
       </div>
-      <div class="countries-filter__wrapper wrapper countries-filter__wrapper--opened countries-filter__wrapper--closed">
+      <div class="countries-filter__wrapper countries-filter__wrapper--closed wrapper">
         <ul class="countries-filter__list continens-list">
           <li class="continens-list__item">
             <a class="continens-list__link continens-list__link--selected" href="europe.html">Европа</a>
@@ -631,7 +672,7 @@
             <td class="table-abc__letter">Я</td>
           </tr>
         </table>
-        <ul class="countries-filter__list countries-filter__list-mobile countries-filter-list">
+        <ul class="countries-filter__list countries-filter-list countries-filter-list--mobile">
           <li class="countries-filter-list__initial-letter">А</li>
           <li class="countries-filter-list__item">
             <a class="countries-filter-list__link" href="/asia/afganistan.html">Австралия</a>
@@ -1223,6 +1264,6 @@
       </div>
     </section>
 
-  <script src="js/popups.js"></script>
+  <script src="js/mainnav.js"></script>
   </body>
 </html>

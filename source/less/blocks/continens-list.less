@@ -1,7 +1,12 @@
 .continens-list {
   .list-clear;
-  margin-top: 40px;
-  margin-bottom: 10px;
+  display: block;
+  margin-top: 8px;
+  margin-bottom: 19px;
+}
+
+.continens-list__item {
+  margin-bottom: 3px;
 }
 
 .continens-list__link {
@@ -14,6 +19,14 @@
 
   opacity: 0.3;
 
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 1;
+  }
+
   &--selected {
     opacity: 1;
   }
@@ -24,6 +37,7 @@
     display: flex;
     width: 400px;
     margin-top: 0;
+    margin-bottom: 10px;
     padding: 0;
   }
 
@@ -39,8 +53,12 @@
 
 @media (min-width: @desktop-width) {
   .continens-list {
+    position: absolute;
+    top: -25px;
+
     width: 390px;
-    margin-left: 310px;
     padding-right: 240px;
+    margin-left: 310px;
+    margin-bottom: 48px;
   }
 }

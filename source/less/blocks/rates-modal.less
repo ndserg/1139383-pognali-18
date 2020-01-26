@@ -1,0 +1,152 @@
+.rates-modal {
+  position: fixed;
+  z-index: 100;
+  top: 50%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+
+  box-sizing: border-box;
+  width: 270px;
+  height: 443px;
+  margin: auto;
+  margin-top: -221px;
+  padding-top: 33px;
+
+  background-color: #ffffff;
+  border-radius: @border-radius-17;
+}
+
+.rates-modal__heading {
+  margin: 0;
+
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+  color: @heading-orange;
+  text-align: center;
+}
+
+.rates-modal__list {
+  .list-clear;
+  margin-top: 28px;
+  margin-bottom: 35px;
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+.rates-modal__item {
+  padding-top: 12px;
+  padding-bottom: 9px;
+
+  font-weight: 300;
+  color: @grey;
+
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+
+  &:last-child {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  }
+}
+
+.rates-modal__price {
+  display: block;
+}
+
+.rates-modal__button-close {
+  display: block;
+  height: 60px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  cursor: pointer;
+
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: @button-text-color;
+
+  background-color: #f3f4f8;
+  border: none;
+  border-bottom-right-radius: @border-radius-17;
+  border-bottom-left-radius: @border-radius-17;
+
+  &:hover {
+    background-color: #edeff6;
+  }
+
+  &:active {
+    color: @button-text-color-active;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .rates-modal {
+    right: 5px;
+
+    width: 688px;
+    height: 526px;
+    margin-top: -263px;
+    padding-top: 52px;
+
+    border-radius: @border-radius-30;
+  }
+
+  .rates-modal__heading {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 45px;
+    margin-left: 0;
+
+    font-size: 45px;
+    line-height: 45px;
+  }
+
+  .rates-modal__list {
+    margin-bottom: 50px;
+    padding-right: 93px;
+    padding-left: 90px;
+
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+
+  .rates-modal__item {
+    display: flex;
+    justify-content: space-between;
+
+    padding-top: 14px;
+    padding-bottom: 13px;
+  }
+
+  .rates-modal__price {
+    display: inline-block;
+  }
+
+  .rates-modal__button-close {
+    height: 109px;
+    padding-right: 3px;
+
+    font-size: 24px;
+    text-transform: none;
+
+    border-bottom-right-radius: @border-radius-30;
+    border-bottom-left-radius: @border-radius-30;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .rates-modal {
+    right: 0;
+
+    width: 750px;
+    height: 526px;
+  }
+
+  .rates-modal__list {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+}

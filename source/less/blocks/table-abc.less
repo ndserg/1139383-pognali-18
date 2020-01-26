@@ -1,12 +1,14 @@
 .table-abc {
-  margin-bottom: 50px;
+  margin-bottom: 46px;
 
   border-collapse: collapse;
 }
 
 .table-abc__letter {
-  width: 39px;
-  height: 38px;
+  width: 43px;
+  height: 40px;
+  padding: 0;
+  cursor: pointer;
 
   font-size: 14px;
   line-height: 18px;
@@ -18,6 +20,10 @@
   border: 1px solid #cbced9;
   background-color: #ffffff;
 
+  &:hover {
+    outline: 1px solid @travelmate-page-blue;
+  }
+
   &--selected {
     color: #ffffff;
 
@@ -27,12 +33,14 @@
 
 @media (min-width: @tablet-width) {
   .table-abc {
+    margin-top: 35px;
+    margin-bottom: 52px;
     margin-left: -21px;
   }
 
   .table-abc__letter {
-    width: 76px;
-    height: 76px;
+    width: 77px;
+    height: 83px;
 
     font-size: 60px;
     line-height: 60px;

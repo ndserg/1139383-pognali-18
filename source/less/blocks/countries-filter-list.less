@@ -1,6 +1,13 @@
 .countries-filter-list {
   .list-clear;
+  display: none;
   margin-bottom: 40px;
+
+  &--mobile {
+    display: block;
+    .list-clear;
+    margin-bottom: 40px;
+  }
 }
 
 .countries-filter-list__initial-letter {
@@ -22,22 +29,40 @@
 
 @media (min-width: @tablet-width) {
   .countries-filter-list {
-    width: 180px;
+    width: 175px;
+    margin-top: 41px;
+  }
+
+  .countries-filter-list__link {
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .countries-filter-list {
-    width: 250px;
+    display: block;
+    width: 200px;
+    margin-top: 47px;
+    margin-right: 53px;
+    margin-bottom: 8px;
+
+    &:nth-child(6),
+    &:nth-child(11),
+    &:nth-child(16),
+    &:nth-child(21) {
+      margin-right: 42px;
+    }
   }
 
   .countries-filter-list__initial-letter {
     display: block;
-    margin-bottom: 50px;
+    margin-bottom: 27px;
 
     font-size: 60px;
     line-height: 60px;
     font-weight: 700;
     color: @medium-blue;
+    text-indent: 0;
   }
 }

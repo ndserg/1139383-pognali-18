@@ -1,6 +1,7 @@
 .dropdown-table-abc {
   width: 100%;
-  margin-bottom: 50px;
+  margin-top: -1px;
+  margin-bottom: 54px;
 
   border-collapse: collapse;
 }
@@ -8,6 +9,7 @@
 .dropdown-table-abc__letter {
   width: 39px;
   height: 38px;
+  cursor: pointer;
 
   font-size: 14px;
   line-height: 18px;
@@ -19,19 +21,51 @@
   border: 1px solid #cbced9;
   background-color: #ffffff;
 
+  &:first-child {
+    border-left: none;
+  }
+
+  &:last-child {
+    border-right: none;
+  }
+
   &--selected {
     background-color: @light-blue;
+  }
+
+  &:hover {
+    border-color: #959bb2;
+  }
+
+  &:active {
+    color: #ffffff;
+
+    background-color: @button-text-color;
   }
 }
 
 @media (min-width: @tablet-width) {
   .dropdown-table-abc {
     width: auto;
+    margin-top: 4px;
+    margin-bottom: 0;
+    margin-left: 25px;
   }
 
   .dropdown-table-abc__letter {
-    width: 52px;
-    height: 70px;
+    width: 49px;
+    height: 66px;
+
+    font-size: 20px;
+    line-height: 20px;
+
+    &:first-child {
+      border: 1px solid #cbced9;
+    }
+
+    &:last-child {
+      border: 1px solid #cbced9;
+    }
 
     &--selected {
       color: #ffffff;
@@ -43,13 +77,15 @@
 
 @media (min-width: @desktop-width) {
   .dropdown-table-abc {
-    margin-top: -15px;
+    margin-top: -10px;
+    margin-left: 12px;
 
     border-collapse: separate;
     border-spacing: 15px;
   }
 
   .dropdown-table-abc__letter {
+    box-sizing: border-box;
     width: 60px;
     height: 70px;
 

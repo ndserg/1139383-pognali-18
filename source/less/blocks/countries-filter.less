@@ -1,9 +1,10 @@
 .countries-filter {
   position: absolute;
-  z-index: -1;
+  z-index: 1;
   top: 90px;
   left: 0;
   right: 0;
+  width: 100%;
   padding-top: 70px;
   padding-bottom: 15px;
 
@@ -13,36 +14,56 @@
 }
 
 .countries-filter__wrapper {
-  display: none;
   position: relative;
   padding-top: 20px;
   padding-right: 50px;
-  padding-bottom: 30px;
+  padding-bottom: 12px;
   padding-left: 50px;
+
+  &--closed {
+    display: none;
+  }
 }
 
 .countries-filter__top-wrapper {
   position: relative;
-}
-
-.countries-filter__list {
-  display: none;
-}
-
-.countries-filter__list-mobile {
-  display: block;
+  display: flex;
 }
 
 .countries-filter__button-toggle {
-  position: absolute;
-  top: 0;
-  right: 0;
+  display: none;
+  width: 26px;
+  height: 18px;
+  margin-left: auto;
+  cursor: pointer;
 
   font-size: 0;
   line-height: 0;
 
   background: none;
   border: none;
+
+  &--open {
+    background: transparent url("../img/dots-mobile@1k.svg") 50% 50% no-repeat;
+    background-size: 17px 3px;
+  }
+
+  &--close {
+    background: transparent url("../img/filter-close-mobile@1x.svg") 50% 50% no-repeat;
+    background-size: 12px 12px;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &--active {
+    display: block;
+  }
 }
 
 .countries-filter__heading {
@@ -55,13 +76,21 @@
   font-weight: 700;
   text-transform: uppercase;
   color: @medium-blue;
+
+  background: transparent url("../img/filter.svg") left 5px no-repeat;
+  background-size: 15px 10px;
 }
 
 .countries-filter__button-minimize {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+
   width: 270px;
   margin-left: -25px;
   padding-top: 7px;
   padding-bottom: 4px;
+  padding-left: 4px;
 
   font-size: 16.7px;
   line-height: 29.5px;
@@ -69,13 +98,40 @@
   text-transform: uppercase;
   color: @dark-blue;
 
-  border: none;
   background-color: #d6daed;
+  border: none;
+  border-radius: @border-radius-17;
+
+
+  &::before {
+    display: block;
+    content: "";
+    width: 12px;
+    height: 12px;
+    margin-right: 14px;
+
+    background: transparent url("../img/filter-close-mobile@1x.svg") no-repeat;
+    background-size: 12px 12px;
+  }
+
+  &:hover {
+    background-color: #c8cee8;
+  }
+
+  &:active {
+    color: @button-text-color-active;
+
+    &::before {
+      opacity: 0.3;
+    }
+  }
 }
 
 @media (min-width: @tablet-width) {
   .countries-filter {
     top: 300px;
+    padding-bottom: 27px;
+
     border-bottom-right-radius: @border-radius-50;
     border-bottom-left-radius: @border-radius-50;
   }
@@ -87,7 +143,12 @@
     min-height: 225px;
     padding-top: 40px;
     padding-right: 75px;
+    padding-bottom: 14px;
     padding-left: 75px;
+
+    &--opened {
+      padding-bottom: 37px;
+    }
 
     &--closed {
       min-height: 25px;
@@ -122,44 +183,93 @@
   }
 
   .countries-filter__button-toggle {
+    position: absolute;
+    z-index: 2;
     top: 40px;
-    right: 115px;
+    right: 75px;
 
+    width: 183px;
     font-size: 20px;
     line-height: 24px;
     font-weight: 700;
     color: @medium-blue;
+    text-align: left;
     text-transform: uppercase;
+
+    background-size: 27px 5px;
+    background-position: right 50%;
+
+    &--close {
+      right: 78px;
+
+      width: 178px;
+
+      background-size: 18px 18px;
+    }
   }
 
   .countries-filter__button-minimize {
     width: 100%;
+    height: 100px;
     margin-left: 0;
+    padding-left: 4px;
+
+    font-size: 20px;
+    line-height: 30px;
+
+    &::before {
+      width: 18px;
+      height: 18px;
+
+      margin-right: 22px;
+
+      background-size: 18px 18px;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
+  .countries-filter {
+    position: static;
+    margin-top: -50px;
+    margin-bottom: 57px;
+    padding-bottom: 15px;
+    order: -1;
+
+    &--opened {
+      margin-bottom: 93px;
+      background-color: @light-blue;
+    }
+  }
+
   .countries-filter__wrapper {
     justify-content: flex-start;
     align-items: baseline;
-    padding-right: 95px;
+    padding-top: 24px;
+    padding-right: 60px;
+    padding-bottom: 48px;
     padding-left: 95px;
+
+    &--opened {
+      background-color: @light-blue;
+    }
   }
 
-  .countries-filter__list {
-    display: block;
+  .countries-filter__top-wrapper {
+    min-height: 65px;
   }
 
   .countries-filter__heading {
     position: absolute;
     top: 40px;
-    left: 124px;
+    left: 80px;
 
     width: auto;
     height: auto;
     margin: 0;
     margin-right: 35px;
     padding: 0;
+    padding-left: 44px;
     overflow: auto;
 
     font-size: 20px;
@@ -167,11 +277,37 @@
     color: #000000;
     white-space: normal;
 
+    background-size: 23px 15px;
+    background-position: 0 1px;
     clip: auto;
     clip-path: none;
   }
 
   .countries-filter__button-toggle {
-    padding-right: 55px;
+    top: 38px;
+    right: 123px;
+
+    padding-right: 40px;
+
+    &--close {
+      right: 128px;
+    }
+  }
+
+  .countries-filter__button-minimize {
+    width: 1320px;
+    height: 100px;
+    margin-top: 55px;
+    margin-left: -35px;
+    padding-left: 6px;
+
+    font-size: 20px;
+    line-height: 30px;
+
+    &::before {
+      margin-right: 22px;
+
+      background-size: 18px 18px;
+    }
   }
 }

@@ -5,11 +5,25 @@
 }
 
 .travelmates-transport__item {
+  position: relative;
+
   width: 24px;
   height: 24px;
   margin-right: 10px;
 
   text-align: center;
+
+
+  & svg {
+    fill: #1d2e5b;
+    opacity: 0.15;
+  }
+
+  &--used {
+    & svg {
+      opacity: 1;
+    }
+  }
 
   &--avia svg {
     width: 19px;
@@ -34,7 +48,47 @@
   &:last-child {
     margin-right: 0;
   }
+
+  &:hover {
+    &::before {
+      position: absolute;
+      z-index: 2;
+      bottom: -15px;
+      left: 3px;
+
+      display: block;
+      content: "";
+      width: 0;
+      height: 0;
+
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 8px solid #101d41;
+    }
+
+    &::after {
+      position: absolute;
+      z-index: 2;
+      bottom: -70px;
+      left: -70px;
+
+      display: block;
+      content: attr(data-tooltip);
+      width: 170px;
+      height: 57px;
+
+      font-size: 20px;
+      line-height: 57px;
+      color: #ffffff;
+      text-align: center;
+      vertical-align: middle;
+
+      background-color: #101d41;
+      border-radius: 4px;
+    }
+  }
 }
+
 
 @media (min-width: @tablet-width) {
   .travelmates__transport {

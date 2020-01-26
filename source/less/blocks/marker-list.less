@@ -1,3 +1,59 @@
 .marker-list {
   .list-clear;
+  display: none;
+}
+
+@media (min-width: @desktop-width) {
+  .marker-list {
+    position: absolute;
+    top: 106px;
+    right: 206px;
+
+    display: block;
+  }
+
+  .marker-list__item {
+    margin-bottom: 24px;
+  }
+
+  .marker-list__link {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    line-height: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1.9px;
+    color: #1d2e5b;
+
+    opacity: 0.6;
+
+    &::before {
+      display: block;
+      content: "";
+      width: 5px;
+      height: 5px;
+      margin-right: 38px;
+
+      border-radius: 50%;
+      background-color: @button-text-color;
+      opacity: 0.3;
+    }
+
+    &--current {
+      opacity: 1;
+
+      &::before {
+        opacity: 1;
+      }
+    }
+
+    &:hover {
+      opacity: 0.3;
+    }
+
+    &:active {
+      opacity: 0.1;
+    }
+  }
 }

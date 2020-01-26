@@ -1,35 +1,338 @@
 .filter-group {
+  position: relative;
+
   margin: 0;
-  margin-top: 15px;
   padding: 0;
-  padding-bottom: 15px;
+  padding-bottom: 9px;
+  padding-left: 1px;
 
   border: none;
-}
-
-.filter-group__heading {
-  line-height: 18px;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: @travelmate-page-blue;
 }
 
 .filter-group__list {
   .list-clear;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  margin-top: 15px;
 
-  &--mobile-collapsed {
+  font-size: 15px;
+
+  &--transport {
+    flex-direction: row;
+  }
+
+  &--collapsed {
     display: none;
+  }
+
+  &--range {
+    margin-top: 0;
+  }
+}
+
+.filter-group__item {
+  margin-bottom: 12px;
+
+  &:last-child {
+    margin-bottom: 10px;
+  }
+}
+
+.filter-group__checkbox-label {
+  position: relative;
+
+  display: block;
+  height: 18px;
+  padding-left: 25px;
+
+  line-height: 18px;
+  vertical-align: middle;
+
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.filter-group__checkbox + label {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+    width: 18px;
+    height: 18px;
+
+    background-color: #ffffff;
+    border-radius: 3px;
+  }
+}
+
+.filter-group__checkbox:checked + label {
+  &::before {
+    background-image: url("../img/tick-mobile@1x.svg");
+    background-size: 9px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-clip: content-box;
+  }
+}
+
+.filter-group__transport-label {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+
+  background-color: #ffffff;
+  border-radius: 50%;
+
+  & svg {
+    fill: #1d2e5b;
+  }
+
+  &--plane {
+    padding-top: 2px;
+    padding-right: 2px;
+  }
+}
+
+.filter-group__transport + label {
+  & svg {
+    opacity: 0.3;
+  }
+}
+
+.filter-group__transport:checked + label {
+  & svg {
+    opacity: 1;
+  }
+}
+
+.filter-group__toggle {
+  position: relative;
+
+  width: 100%;
+  padding: 0;
+  padding-top: 12px;
+
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  text-align: left;
+  text-transform: uppercase;
+  color: @travelmate-page-blue;
+
+  background: none;
+  border: none;
+  border-top: 1px solid #f3c72b;
+
+  &--triggers {
+    padding-top: 11px;
+  }
+
+  &::after {
+    position: absolute;
+    top: 19px;
+    right: 0;
+
+    display: block;
+    content: "";
+    width: 8px;
+    height: 4px;
+
+    background: transparent url("../img/dropdown.svg") 50% no-repeat;
+    background-size: 8px 4px;
+  }
+
+  &--collapse {
+    &::after {
+      transform: rotate(180deg);
+    }
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
 @media (min-width: @tablet-width) {
   .filter-group {
-    display: flex;
+    padding-bottom: 6px;
+
+    &:last-of-type {
+      border-bottom: 1px solid #f3c72b;
+    }
   }
 
   .filter-group__list {
-    display: flex;
+    flex-direction: row;
+    width: 375px;
+    margin-top: -28px;
+    margin-left: 125px;
+
+    font-size: 20px;
+    line-height: 20px;
+
+    &--transport {
+      margin-top: -40px;
+      margin-left: 120px;
+    }
+
+    &--collapsed {
+      display: flex;
+    }
+  }
+
+  .filter-group__item {
+    &--plane svg {
+      width: 19px;
+      height: 21px;
+    }
+
+    &--bus svg {
+      width: 17px;
+      height: 21px;
+    }
+
+    &--bike svg {
+      width: 24px;
+      height: 21px;
+    }
+
+    &--run svg {
+      width: 20px;
+      height: 21px;
+    }
+
+    &:nth-child(2) .filter-group__checkbox-label {
+      width: 128px;
+    }
+  }
+
+  .filter-group__checkbox-label {
+    width: 122px;
+    margin-right: 10px;
+    padding-left: 36px;
+
+    line-height: 24px;
+  }
+
+  .filter-group__toggle {
+    width: 120px;
+
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+
+    border: none;
+
+    &--transport {
+      padding-top: 20px;
+    }
+
+    &--triggers {
+      padding-top: 7px;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .filter-group__checkbox + label {
+    &::before {
+      width: 24px;
+      height: 24px;
+
+      border-radius: 3px;
+    }
+  }
+
+  .filter-group__checkbox:checked + label {
+    &::before {
+      background-size: 12px;
+    }
+  }
+
+  .filter-group__transport-label {
+    width: 43px;
+    height: 43px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .filter-group {
+    padding: 0;
+
+    &:last-of-type {
+      border: none;
+    }
+  }
+
+  .filter-group__toggle {
+    width: 100%;
+
+    &--transport {
+      padding-top: 12px;
+    }
+
+    &--triggers {
+      margin-bottom: 13px;
+      padding-top: 13px;
+    }
+
+    &::after {
+      top: 22px;
+      right: 7px;
+
+      width: 10px;
+      height: 5px;
+
+      display: block;
+
+      background-size: 10px 5px;
+    }
+  }
+
+  .filter-group__list {
+    flex-direction: column;
+    width: auto;
+    margin: 0;
+    margin-top: 17px;
+    margin-bottom: 10px;
+
+    &--collapsed {
+      display: none;
+    }
+
+    &--transport {
+      margin-top: 14px;
+      margin-bottom: 7px;
+      margin-left: -2px;
+      flex-direction: row;
+
+      & li {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .filter-group__item {
+    margin-bottom: 23px;
   }
 }

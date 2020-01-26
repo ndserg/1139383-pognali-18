@@ -2,15 +2,25 @@
   position: absolute;
   z-index: 1;
 
-  width: 220px;
+  width: 218px;
+  margin-top: -131px;
 
   background-color: #ffffff;
+  border: 1px solid #cbced9;
+  border-radius: @border-radius-10;
+  box-shadow: 0 20px 50px 0 rgba(29, 46, 91, 0.1);
+
+  &--closed {
+    display: none;
+  }
 }
 
 .countries-dropdown__heading {
-  padding-top: 11px;
+  margin: 0;
+  padding: 0;
+  padding-top: 12px;
   padding-bottom: 11px;
-  padding-left: 15px;
+  padding-left: 12px;
 
 
   font-size: 14px;
@@ -18,8 +28,38 @@
   font-weight: 500;
   color: #ffffff;
   text-transform: uppercase;
+  letter-spacing: 1.3px;
 
   background-color: @travelmate-page-blue;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+}
+
+.countries-dropdown__button-close {
+  position: absolute;
+  z-index: 2;
+  top: 15px;
+  right: 15px;
+
+  width: 9px;
+  height: 9px;
+  margin: 0;
+  padding: 0;
+
+  font-size: 0;
+
+  border: none;
+  background: transparent url("../img/small-cross-countries.svg") no-repeat;
+  background-size: 9px 9px;
+  opacity: 0.3;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -27,33 +67,84 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 578px;
+    width: 573px;
+    margin-top: 468px;
+    padding-top: 31px;
+    padding-bottom: 36px;
 
-    background: linear-gradient(to bottom, transparent, transparent 70px, #ffffff 70px, #ffffff 100%);
+    background-color: #ffffff;
+    border: none;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      right: 205px;
+
+      display: block;
+      content: "";
+      width: 1px;
+      height: 100%;
+
+      background-color: #eaecf2;
+    }
+
+    &--closed {
+      display: none;
+    }
   }
 
   .countries-dropdown__heading {
+    position: absolute;
+    top: -70px;
+
+    box-sizing: border-box;
     width: 369px;
     margin: 0;
     padding: 0;
+    padding-top: 28px;
+    padding-left: 25px;
     height: 70px;
 
-    line-height: 70px;
-    vertical-align: middle;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 1.8px;
+  }
+
+  .countries-dropdown__button-close {
+    top: -43px;
+    right: 231px;
+
+    width: 18px;
+    height: 18px;
+
+    background-size: 18px 18px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .countries-dropdown {
-    width: 670px;
-    padding-right: 30px;
-    padding-left: 30px;
+    width: 730px;
+    margin-top: 405px;
+    padding: 0;
+    padding-bottom: 17px;
 
-    background: linear-gradient(to bottom, @travelmate-page-blue 0, @travelmate-page-blue 70px, #ffffff 70px, #ffffff 100%);
+    &::before {
+      top: 70px;
+      right: 240px;
+    }
   }
 
   .countries-dropdown__heading {
-    width: 500px;
+    position: static;
+
+    width: 100%;
     margin-bottom: 30px;
+  }
+
+  .countries-dropdown__button-close {
+    top: 27px;
+    right: 27px;
   }
 }

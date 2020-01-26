@@ -1,34 +1,132 @@
 .page-header {
+  position: relative;
+  z-index: 2;
   background-color: @dark-blue;
+
+  &--js,
+  &--nojs {
+    background-color: #ffffff;
+
+    &.inner-page {
+      background-color: #ffffff;
+    }
+  }
+
+  &--scroll {
+    background-color: #ffffff;
+  }
 }
 
 .page-header__wrapper {
-  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   width: @mobile-width;
   margin: 0 auto;
+  padding-top: 25px;
+  padding-right: 25px;
+  padding-bottom: 24px;
+  padding-left: 25px;
+}
+
+.page-header__logo-img {
+  width: 100px;
+  height: 19px;
+}
+
+.page-header__home-link {
+  display: none;
 }
 
 @media (min-width: @tablet-width) {
   .page-header {
     background-color: #182044;
+
+    &--js,
+    &--nojs {
+      background-color: #ffffff;
+
+      &.inner-page {
+        background-color: #ffffff;
+      }
+    }
+
+    &--scroll {
+      background-color: #ffffff;
+    }
   }
 
   .page-header__wrapper {
+    align-items: flex-end;
     width: @tablet-width;
-    padding-bottom: 40px;
+    padding-top: 40px;
+    padding-right: 0;
+    padding-bottom: 42px;
+    padding-left: 40px;
+  }
+
+  .page-header__logo-img {
+    width: 166px;
+    height: 42px;
+  }
+
+  .page-header__home-link {
+    display: inline-block;
+    margin-right: 75px;
+    margin-bottom: 20px;
+    padding-right: 60px;
+    order: 3;
+
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    background: transparent url("../img/return.svg") right 1px no-repeat;
+    background-size: 32px 16px;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
   .page-header {
+    order: -2;
+
     background-color: @dark-blue;
+
+    &--scroll {
+      background-color: #ffffff;
+    }
   }
 
   .page-header__wrapper {
+    justify-content: flex-start;
+    align-items: flex-start;
     width: @desktop-width;
-    display: flex;
     min-height: 50px;
-    padding-top: 50px;
-    padding-bottom: 10px;
+    padding-top: 45px;
+    padding-bottom: 15px;
+    padding-left: 60px;
+  }
+
+  .page-header__logo-img {
+    width: 200px;
+    height: 52px;
+  }
+
+  .page-header__home-link {
+    margin-top: auto;
+    margin-right: 123px;
+    margin-left: auto;
   }
 }

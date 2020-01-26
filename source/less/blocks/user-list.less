@@ -1,67 +1,42 @@
 .user-list {
-  margin-bottom: 50px;
+  margin-bottom: 52px;
 }
 
 .user-list__login {
+  box-sizing: border-box;
   display: block;
   width: 100%;
   height: 50px;
+  padding-top: 15px;
 
   font-size: 17px;
-  line-height: 50px;
   font-weight: 700;
   text-align: center;
-  vertical-align: middle;
+  text-indent: -3px;
   text-decoration: none;
   text-transform: uppercase;
-  color: @dark-blue;
+  color: rgba(22, 28, 53, 1);
 
   background-color: #ffd74b;
   border-radius: 30px;
+
+  &:hover {
+    background-color: #ffbd30;
+  }
+
+  &:active {
+    color: rgba(22, 28, 53, 0.3);
+  }
 }
 
 @media (min-width: @tablet-width) {
   .user-list {
-    display: flex;
-    justify-content: flex-end;
-    position: absolute;
-    top: 40px;
-    right: 40px;
-
-    width: 325px;
-
-    text-align: right;
-
-    &--tablet {
-      top: -51px;
-    }
-  }
-
-  .nav-show .user-list {
-    &--tablet {
-      top: -51px;
-    }
-  }
-
-  .inner-page .user-list {
-    &--tablet {
-      top: -270px;
-    }
-  }
-
-  .user-list__login {
-    box-sizing: border-box;
-    width: 188px;
-    padding-top: 15px;
-
-    font-size: 20px;
-    line-height: 30px;
+    display: none;
   }
 }
 
 @media (min-width: @desktop-width) {
   .user-list {
-    position: static;
     width: auto;
     order: 2;
     margin: 0;

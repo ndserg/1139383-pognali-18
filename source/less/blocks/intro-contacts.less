@@ -10,8 +10,41 @@
   font-size: 0;
   line-height: 0;
 
-  background-color: @yellow;
   border-radius: 50%;
+
+  &--phone {
+    background-color: #ff8d30;
+    background-image: url("../img/topmenu-phone.svg");
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: 18px;
+
+    &:hover {
+      background-color: #f26926;
+    }
+
+    &:active {
+      background-color: #f26926;
+      background-image: url("../img/topmenu-phone-opacity.svg");
+    }
+  }
+
+  &--email {
+    background-color: #ffbd30;
+    background-image: url("../img/topmenu-mail.svg");
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: 18px 14px;
+
+    &:hover {
+      background-color: #ff8d30;
+    }
+
+    &:active {
+      background-color: #ff8d30;
+      background-image: url("../img/topmenu-mail-opacity.svg");
+    }
+  }
 }
 
 .intro-contacts__login {
@@ -27,10 +60,18 @@
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  color: @dark-blue;
+  color: rgba(22, 28, 53, 1);
 
   background-color: #ffd74b;
   border-radius: 30px;
+
+  &:hover {
+    background-color: #ffbd30;
+  }
+
+  &:active {
+    color: rgba(22, 28, 53, 0.3);
+  }
 }
 
 @media (min-width: @tablet-width) {

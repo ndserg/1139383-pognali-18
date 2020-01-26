@@ -66,7 +66,14 @@
 
 .countries__tourists-total {
   margin-right: 5px;
-  line-height: 21px;
+  padding-left: 18px;
+
+  line-height: 18px;
+
+  background-image: url("../img/user.svg");
+  background-position: 0 2px;
+  background-repeat: no-repeat;
+  background-size: 11px 11px;
 }
 
 .countries__image {
@@ -86,14 +93,14 @@
   .countries__wrapper {
     position: relative;
 
-    padding-top: 125px;
+    padding-top: 123px;
     padding-bottom: 80px;
 
-    background: transparent url("../img/flags-back@1x.png") right 40px top 132px no-repeat;
+    background: transparent url("../img/flags-back@1x.png") right 40px top 130px no-repeat;
 
     &::after {
       position: absolute;
-      top: 460px;
+      top: 456px;
       left: 40px;
       z-index: -1;
 
@@ -109,6 +116,7 @@
 
   .countries__heading {
     margin-bottom: 59px;
+    margin-left: -2px;
   }
 
   .countries__text {
@@ -117,7 +125,7 @@
   }
 
   .countries__list {
-    margin-bottom: 45px;
+    margin-bottom: 47px;
     padding-top: 8px;
   }
 
@@ -155,6 +163,9 @@
 
     font-size: 20px;
     line-height: 30px;
+
+    background-position: 0 2px;
+    background-size: 20px 20px;
   }
 
   .countries__image {
@@ -164,17 +175,9 @@
     width: 186px;
     height: 140px;
   }
-
-  .countries__button {
-    margin-top: 48px;
-  }
 }
 
 @media (min-width: @desktop-width) {
-  .countries {
-    z-index: -2;
-  }
-
   .countries__wrapper {
     min-height: 0;
     height: 800px;
@@ -196,6 +199,7 @@
   .countries__heading {
     width: 400px;
     margin-top: 5px;
+    margin-left: 2px;
   }
 
   .countries__list {

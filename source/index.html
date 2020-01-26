@@ -12,7 +12,11 @@
     <header class="page-header page-header--nojs">
       <div class="page-header__wrapper">
         <a class="page-header__logo">
-          <img class="page-header__logo-img" src="https://via.placeholder.com/150x150" width="100" height="19" alt="Логотип сайта Погнали">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.png 1x, img/logo-desktop-white@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
+            <img src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" alt="Логотип сайта Погнали">
+          </picture>
         </a>
         <nav class="header-nav">
           <button class="header-nav__toggle" type="button">Открыть/Закрыть меню</button>
@@ -143,28 +147,37 @@
             Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
           <ul class="countries__list">
             <li class="countries__item">
-              <h3 class="countries__name">Таиланд</h3>
+              <h3 class="countries__name countries__name--thailand">Таиланд</h3>
               <p class="countries__tourists-total">
                 <span class="visually-hidden">Количество туристов в данном направлении: </span>18321
               </p>
               <p class="countries__description">Джунгли зовут!</p>
-              <img class="countries__image" src="https://via.placeholder.com/150x150" width="270" height="110" alt="Таиланд">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/thailand-desktop@1x.jpg 1x, img/thailand-desktop@2x.jpg 2x">
+                <img class="countries__image" src="img/thailand-mobile@1x.jpg" srcset="img/thailand-mobile@2x.jpg 2x" alt="Таиланд">
+              </picture>
             </li>
             <li class="countries__item">
-              <h3 class="countries__name">Франция</h3>
+              <h3 class="countries__name countries__name--france">Франция</h3>
               <p class="countries__tourists-total">
                 <span class="visually-hidden">Количество туристов в данном направлении: </span>12518
               </p>
               <p class="countries__description">Трэ бьен, манифик!</p>
-              <img class="countries__image" src="https://via.placeholder.com/150x150" width="270" height="110" alt="Франция">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/france-desktop@1x.jpg 1x, img/france-desktop@2x.jpg.jpg 2x">
+                <img class="countries__image" src="img/france-mobile@1x.jpg" srcset="img/france-mobile@2x.jpg 2x" alt="Франция">
+              </picture>
             </li>
             <li class="countries__item">
-              <h3 class="countries__name">Чехия</h3>
+              <h3 class="countries__name countries__name--czech">Чехия</h3>
               <p class="countries__tourists-total">
                 <span class="visually-hidden">Количество туристов в данном направлении: </span>5326
               </p>
               <p class="countries__description">Закоулки старой Европы</p>
-              <img class="countries__image" src="https://via.placeholder.com/150x150" width="270" height="110" alt="Чехия">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/czech-mobile@1x.jpg 1x, img/czech-mobile@2x.jpg 2x">
+                <img class="countries__image" src="img/czech-mobile@1x.jpg" srcset="img/czech-mobile@2x.jpg 2x" alt="Чехия">
+              </picture>
             </li>
           </ul>
           <a class="countries__button page-main__button" href="form.html">Показать все</a>
@@ -179,7 +192,11 @@
           <p class="page-main__text page-main__text--bold travelmates__text travelmates__text--bold">Теперь можно легко<br class="travelmates__text-tablet-br"> найти единомышленников!</p>
           <ul class="travelmates__list">
             <li class="travelmates__item">
-              <img class="travelmates__foto" src="https://via.placeholder.com/150x150" width="270" height="270" alt="Таня Фирсова">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/firsova-desktop@1x.jpg 1x, img/firsova-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/firsova-tablet@1x.jpg 1x, img/firsova-tablet@2x.jpg 2x">
+              <img class="travelmates__foto" src="img/firsova-mobile@1x.jpg" srcset="img/firsova-mobile@2x.jpg 2x" alt="Таня Фирсова">
+            </picture>
               <p class="travelmates__name">Таня Фирсова</p>
               <ul class="travelmates__countries travelmates-countries-list">
                 <li class="travelmates-countries-list__item travelmates-countries-list__item--srilanka" data-tooltip="Шри-ланка">Шри-ланка</li>
@@ -239,7 +256,11 @@
               </p>
             </li>
             <li class="travelmates__item">
-              <img class="travelmates__foto" src="https://via.placeholder.com/150x150" width="270" height="270" alt="Петя Демин">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/demin-desktop@1x.jpg 1x, img/demin-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg 1x, img/demin-tablet@2x.jpg 2x">
+                <img class="travelmates__foto" src="img/demin-mobile@1x.jpg" srcset="img/demin-mobile@2x.jpg 2x" alt="Петя Демин">
+              </picture>
               <p class="travelmates__name travelmates__name--online">Петя Демин</p>
               <ul class="travelmates__countries travelmates-countries-list">
                 <li class="travelmates-countries-list__item travelmates-countries-list__item--belgium" data-tooltip="Бельгия">Бельгия</li>
@@ -366,7 +387,11 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper wrapper">
         <a class="page-footer__logo">
-          <img class="page-footer__logo-img" src="https://via.placeholder.com/150x150" width="100" height="19" alt="Логотип сайта Погнали">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
+            <img src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" alt="Логотип сайта Погнали">
+          </picture>
         </a>
         <ul class="page-footer__social social-list-footer">
           <li class="social-list-footer__item">
@@ -379,9 +404,14 @@
             <a class="social-list-footer__link social-list-footer__link--inst" href="instagram.com">Инстаграм</a>
           </li>
         </ul>
-        <a class="page-footer__copyrytes htmlacademy-logo" href="https://htmlacademy.ru/intensive/adaptive">
-          <span class="htmlacademy-logo__text">Разработано</span>
-          <img class="htmlacademy-logo__image" src="https://via.placeholder.com/150x150" width="27" height="34" alt="Логотип htmlacademy.ru">
+        <a class="page-footer__copyrytes" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="page-footer__copyrytes-text">Разработано</span>
+          <svg class="page-footer__copyrytes-image" x="0px" y="0px" viewBox="0 0 27 34" style="enable-background:new 0 0 27 34;" xml:space="preserve">
+          <path class="st0" d="M13.6,0l-0.2,0L0,1.4V26l13.5,8L27,26l0,0V1.4L13.6,0z M19.3,16.8l-0.9,0.5l-5-3l0,1.4l3.8,2.3l-0.8,0.5l-3-1.8
+            l0,1.4l1.9,1.1l-1.8,1.1L2,13.6l11.4-6.8L25,13.5l-4.5,2.6l-7.1-4.2l0,1.4L19.3,16.8z M1.9,15.1l11.4,6.8l0,1l-8-4.7l0,1.4l8,4.8
+            l0,1.1l-8-4.7l0,1.4l8,4.8l0,0l8.2-4.9v-1.3l0-0.1V17l3.4-2v10l-11.6,6.9L1.9,24.9V15.1z M1.9,12.1V3.1l11.6-1.2l11.6,1.2v9
+            L13.5,5.3l0-0.1l-0.1,0l-0.1,0v0.1L1.9,12.1z"/>
+          </svg>
         </a>
       </div>
     </footer>

@@ -1,8 +1,86 @@
 .travelmates-countries-list {
   .list-clear;
+  position: absolute;
+  top: 258px;
+  left: 0;
+
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .travelmates-countries-list__item {
+  width: 35px;
+  height: 24px;
+  margin-right: 20px;
+
+  background-repeat: no-repeat;
+  background-size: 35px 24px;
+
   font-size: 0;
   line-height: 0;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &--australia {
+    background-image: url("../img/flag-australia.svg");
+  }
+
+  &--belgium {
+    background-image: url("../img/flag-belgium.svg");
+  }
+
+  &--bosnia {
+    background-image: url("../img/flag-bosnia.svg");
+  }
+
+  &--czech {
+    background-image: url("../img/flag-czech.svg");
+  }
+
+  &--dominica {
+    background-image: url("../img/flag-dominica.svg");
+  }
+
+  &--france {
+    background-image: url("../img/flag-france.svg");
+  }
+
+  &--germany {
+    background-image: url("../img/flag-germany.svg");
+  }
+
+  &--seychelles {
+    background-image: url("../img/flag-seychelles.svg");
+  }
+
+  &--srilanka {
+    background-image: url("../img/flag-sri-lanka.svg");
+  }
+
+  &--thailand {
+    background-image: url("../img/flag-thailand.svg");
+  }
+
+  &--united-kingdom {
+    background-image: url("../img/flag-united-kingdom.svg");
+  }
+
+  &--usa {
+    background-image: url("../img/flag-usa.svg");
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .travelmates-countries-list {
+    top: 273px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .travelmates-countries-list {
+    top: 276px;
+  }
 }

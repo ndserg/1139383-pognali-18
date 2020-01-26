@@ -1,12 +1,26 @@
+.travel-interval {
+  padding-bottom: 21px;
+}
+
 .travel-interval__group {
   .list-clear;
   margin: 0;
+  margin-top: 22px;
+  margin-bottom: 21px;
   padding: 0;
 }
 
+.travel-interval__group-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 21px;
+
+  letter-spacing: 1.4px;
+}
+
 .travel-interval__label {
-  display: block;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 
   font-size: 16px;
   line-height: 16px;
@@ -16,50 +30,205 @@
 }
 
 .travel-interval__measurment {
+  margin-top: -2px;
+
+  line-height: 16px;
+  text-transform: uppercase;
+
   opacity: 0.3;
 }
 
 .travel-interval__amount {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.travel-interval__input {
   box-sizing: border-box;
   width: 100%;
-  height: 42px;
-  margin-bottom: 20px;
+  height: 43px;
+  padding-top: 0;
+  padding-right: 50px;
+  padding-left: 50px;
 
   font-size: 15px;
   line-height: 13.5px;
   color: @travelmate-page-blue;
   text-align: center;
 
+
   border: 1px solid #cbced9;
   border-radius: 5px;
+
+  appearance: textfield;
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    appearance: none;
+  }
+
+  &:hover {
+    border-color: #959bb2;
+  }
+
+  &:active {
+    border-color: #161c35;
+  }
+}
+
+.travel-interval__button {
+  position: absolute;
+  top: 0;
+
+  width: 42px;
+  height: 43px;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+
+  font-size: 0;
+  line-height: 0;
+
+  border: none;
+  opacity: 0.2;
+
+  &--decrease {
+    left: 0;
+
+    background: transparent url("../img/qty-minus-mobile.svg") 50% no-repeat;
+    background-size: 14px 2px;
+  }
+
+  &--increase {
+    right: 0;
+
+    background: transparent url("../img/qty-plus-mobile.svg") 50% no-repeat;
+    background-size: 14px 14px;
+  }
+
+  &:hover {
+    opacity: 0.4;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
 }
 
 .travel-interval__checkbox-label {
+  position: relative;
+
+  display: block;
+  height: 26px;
+  padding-left: 39px;
+
   font-size: 15px;
-  line-height: 15px;
+  line-height: 26px;
   color: @grey;
+  vertical-align: middle;
+  letter-spacing: normal;
+
+  cursor: pointer;
+}
+
+.travel-interval__checkbox + label {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+    width: 24px;
+    height: 24px;
+
+    background-color: #ffffff;
+    border: 1px solid #cbced9;
+    border-radius: 5px;
+  }
+}
+
+.travel-interval__checkbox:checked + label {
+  &::before {
+    background-image: url("../img/tick-mobile@1x.svg");
+    background-size: 9px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-clip: content-box;
+  }
 }
 
 @media (min-width: @tablet-width) {
+  .travel-interval {
+    margin-top: 48px;
+    margin-bottom: 40px;
+    padding-bottom: 54px;
+  }
+
   .travel-interval__group {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-top: 40px;
+    margin-bottom: 35px;
+    padding-top: 24px;
+
+    border-top: 1px solid #cbced9;
   }
 
   .travel-interval__group-item {
-    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 100%;
+    margin-bottom: 25px;
   }
 
   .travel-interval__group-item:first-child {
     order: -2;
   }
 
+  .travel-interval__period {
+    padding-top: 24px;
+
+    border-top: 1px solid #cbced9;
+  }
+
+  .travel-interval__label,
+  .travel-interval__measurment,
+  .travel-interval__input {
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 1.9px;
+  }
+
+  .travel-interval__input {
+    height: 70px;
+  }
+
+  .travel-interval__button {
+    width: 59px;
+    height: 70px;
+
+    &--decrease {
+      background-image: url("../img/qty-minus.svg");
+      background-size: 20px 2px;
+    }
+
+    &--increase {
+      background-image: url("../img/qty-plus.svg");
+      background-size: 20px 20px;
+    }
+  }
+
   .travel-interval__label {
     width: 355px;
+    margin-bottom: 23px;
+  }
+
+  .travel-interval__measurment {
+    margin-right: 1px;
   }
 
   .travel-interval__amount {
@@ -70,13 +239,51 @@
     justify-content: flex-start;
     order: -1;
   }
+
+  .travel-interval__checkbox-label {
+    height: 36px;
+    padding-left: 60px;
+
+    font-size: 20px;
+    line-height: 36px;
+    text-transform: uppercase;
+    letter-spacing: 2.4px;
+    color: @travelmate-page-blue;
+  }
+
+  .travel-interval__checkbox + label {
+    &::before {
+      width: 36px;
+      height: 34px;
+    }
+  }
+
+  .travel-interval__checkbox:checked + label {
+    &::before {
+      background-size: 12px;
+    }
+  }
 }
 
 @media (min-width: @desktop-width) {
+  .travel-interval {
+    margin-bottom: 42px;
+    padding-top: 99px;
+    padding-bottom: 104px;
+  }
+
+  .travel-interval__group {
+    margin-top: 55px;
+    margin-bottom: 18px;
+    padding-top: 30px;
+  }
+
   .travel-interval__group-item {
     justify-content: flex-start;
+    align-items: top;
     flex-wrap: nowrap;
     width: 535px;
+    margin-bottom: 14px;
 
     &:first-child {
       order: -2;
@@ -84,22 +291,37 @@
   }
 
   .travel-interval__label {
-    width: 190px;
-    margin-right: 35px;
+    width: 200px;
+    margin-top: 26px;
+    margin-right: 20px;
+    margin-bottom: 0;
   }
 
   .travel-interval__measurment {
+    margin-top: 25px;
     order: 1;
+
+    color: @travelmate-page-blue;
+
+    opacity: 1;
   }
 
   .travel-interval__amount {
-    width: 185px;
-    margin-right: 35px;
+    width: 181px;
+    margin-right: 38px;
+  }
+
+  .travel-interval__period {
+    padding: 0;
+
+    border: none;
   }
 
   .travel-interval__ischildren {
     justify-content: flex-end;
-    width: 300px;
+    width: 246px;
+    margin-right: -2px;
+    padding-top: 17px;
     order: -1;
   }
 }

@@ -1,7 +1,7 @@
 .instructions {
   min-height: 330px;
   padding-right: 25px;
-  padding-bottom: 35px;
+  padding-bottom: 29px;
   padding-left: 25px;
   background: linear-gradient(to bottom, @dark-blue 0, @dark-blue 80px, @medium-blue 80px, @medium-blue 100%);
 }
@@ -14,12 +14,11 @@
 }
 
 .instructions__item {
-  display: block;
+  display: flex;
   box-sizing: border-box;
   min-height: 100px;
   margin-top: -20px;
   padding-top: 22px;
-  padding-right: 90px;
   padding-left: 25px;
   padding-bottom: 20px;
 
@@ -33,6 +32,10 @@
   &::after {
     counter-increment: instuctionCounter;
     content: counter(instuctionCounter);
+
+    margin-left: auto;
+    margin-right: 21px;
+
     color: white;
   }
 
@@ -71,7 +74,7 @@
   }
 
   .instructions__item {
-    box-sizing: border-box;
+    flex-direction: column;
     width: 359px;
     min-height: 140px;
     margin-top: 0;
@@ -83,6 +86,15 @@
     line-height: 24px;
 
     border-radius: 0;
+
+    &::after {
+      margin-top: 11px;
+      margin-right: 0;
+      margin-left: 0;
+
+      font-size: 30px;
+      line-height: 30px;
+    }
 
     &--first {
       border-top-left-radius: @border-radius-17;
@@ -118,10 +130,20 @@
   }
 
   .instructions__item {
+    flex-direction: row;
     width: 345px;
     min-height: 108px;
     border-radius: @border-radius-17;
     margin-left: -30px;
+
+    &::after {
+      margin-top: 0;
+      margin-right: 27px;
+      margin-left: auto;
+
+      font-size: 24px;
+      line-height: 24px;
+    }
 
     &--first {
       width: 344px;
@@ -138,6 +160,10 @@
 
     &--fourth {
       width: 315px;
+
+      &::after {
+        margin-right: -3px;
+      }
     }
   }
 }

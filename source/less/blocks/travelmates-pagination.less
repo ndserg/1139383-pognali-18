@@ -8,20 +8,67 @@
 }
 
 .travelmates-pagination__button {
+  position: relative;
   width: 134px;
   height: 50px;
+  cursor: pointer;
 
   font-size: 0;
   line-height: 0;
 
   border: none;
   background-color: #ffffff;
+
+  &::before {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 10px;
+    height: 20px;
+
+    background: transparent url("../img/triangle-arrow-right.svg") 0 0 no-repeat;
+    background-size: 10px 20px;
+  }
+
+  &--prev {
+    border-bottom-left-radius: @border-radius-20;
+    border-top-left-radius: @border-radius-20;
+
+    &::before {
+      top: 15px;
+      left: 63px;
+
+      transform: rotate(180deg);
+    }
+  }
+
+  &--next {
+    border-top-right-radius: @border-radius-20;
+    border-bottom-right-radius: @border-radius-20;
+
+    &::before {
+      top: 15px;
+      right: 62px;
+    }
+  }
+
+  &:hover {
+    &::before {
+      opacity: 0.6;
+    }
+  }
+
+  &:active {
+    &::before {
+      opacity: 0.3;
+    }
+  }
 }
 
 @media (min-width: @tablet-width) {
   .travelmates-pagination {
     justify-content: flex-start;
-    margin-top: 47px;
+    align-items: center;
     padding-top: 25px;
     padding-bottom: 25px;
     padding-left: 28px;
@@ -33,6 +80,7 @@
   .travelmates-pagination__list {
     .list-clear;
     display: flex;
+    margin-right: auto;
   }
 
   .travelmates-pagination__link {
@@ -48,22 +96,62 @@
     text-decoration: none;
     color: @dark-blue;
 
-    background-color: @yellow;
-    border-radius: 50%;
+    &:hover {
+      opacity: 0.6;
+      background: none;
+    }
+
+    &--active {
+      background-color: @yellow;
+      border-radius: 50%;
+      opacity: 1;
+
+      &:hover {
+        background-color: @yellow;
+        border-radius: 50%;
+        opacity: 1;
+      }
+    }
   }
 
   .travelmates-pagination__button {
+    position: static;
+
     width: 10px;
-    height: 20px;
+    height: 50px;
+
+    background: transparent url("../img/triangle-arrow-right.svg") 0 50% no-repeat;
+    background-size: 10px 20px;
+
+    border-radius: 0;
+
+    &::before {
+      display: none;
+    }
 
     &--prev {
-      margin-left: auto;
+      transform: rotate(180deg);
+    }
+
+    &--next {
+      margin-right: 33px;
+      margin-left: 33px;
+    }
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
     }
   }
 }
 
 @media (min-width: @desktop-width) {
-  .travelmates-pagination {
-    margin-top: 67px;
+  .travelmates-pagination__button {
+    &--next {
+      margin-right: 42px;
+    }
   }
 }

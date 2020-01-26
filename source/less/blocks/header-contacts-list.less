@@ -1,0 +1,62 @@
+@media (min-width: @tablet-width) {
+  .header-contacts-list {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .header-contacts-list {
+    display: flex;
+    margin: 0;
+    margin-left: auto;
+    padding: 0;
+  }
+
+  .header-contacts-list__link {
+    display: block;
+    width: 50px;
+    height: 50px;
+
+    font-size: 0;
+    line-height: 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: @medium-blue;
+
+    border-radius: 50%;
+
+    &--phone {
+      background-color: #ff8d30;
+      background-image: url("../img/topmenu-phone.svg");
+      background-position: 50%;
+      background-repeat: no-repeat;
+      background-size: 18px;
+
+      &:hover {
+        background-color: #f26926;
+      }
+
+      &:active {
+        background-color: #f26926;
+        background-image: url("../img/topmenu-phone-opacity.svg");
+      }
+    }
+
+    &--email {
+      background-color: #ffbd30;
+      background-image: url("../img/topmenu-mail.svg");
+      background-position: 50%;
+      background-repeat: no-repeat;
+      background-size: 18px 14px;
+
+      &:hover {
+        background-color: #ff8d30;
+      }
+
+      &:active {
+        background-color: #ff8d30;
+        background-image: url("../img/topmenu-mail-opacity.svg");
+      }
+    }
+  }
+}

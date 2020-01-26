@@ -16,6 +16,8 @@
   border-radius: 50%;
 
   & svg {
+    fill: #1d2e5b;
+    fill-opacity: 0.15;
     vertical-align: middle;
   }
 
@@ -37,6 +39,12 @@
   &--walk svg {
     width: 15px;
     height: 17px;
+  }
+
+  &--used {
+    & svg {
+      fill-opacity: 1;
+    }
   }
 
   &:last-child {
@@ -87,6 +95,11 @@
   }
 
   .transport-list__item {
+    flex-shrink: 0;
     margin-right: 14px;
+
+    &--bike {
+      margin-right: 12px;
+    }
   }
 }

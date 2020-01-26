@@ -1,0 +1,55 @@
+.header-user-list__login {
+  display: block;
+  width: 100%;
+  height: 50px;
+
+  font-size: 17px;
+  line-height: 50px;
+  font-weight: 700;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: @dark-blue;
+
+  background-color: #ffd74b;
+  border-radius: 30px;
+
+  &:hover {
+    background-color: #ffbd30;
+  }
+
+  &:active {
+    color: rgba(22, 28, 53, 0.3);
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .header-user-list {
+    display: flex;
+    justify-content: flex-end;
+
+    text-align: right;
+  }
+
+  .header-user-list__login {
+    box-sizing: border-box;
+    width: 188px;
+    padding-top: 12px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .header-user-list {
+    width: auto;
+    order: 2;
+    margin: 0;
+  }
+
+  .header-user-list__login {
+    padding-top: 12px;
+  }
+}

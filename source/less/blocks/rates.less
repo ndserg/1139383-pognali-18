@@ -11,8 +11,8 @@
 
 .rates__wrapper {
   min-height: 450px;
-  padding-top: 85px;
-  padding-bottom: 38px;
+  padding-top: 83px;
+  padding-bottom: 37px;
 }
 
 .rates__heading {
@@ -23,23 +23,74 @@
 }
 
 .rates__list {
+  position: relative;
+  counter-reset: ratesCounter;
   .list-clear;
-  margin-bottom: 28px;
+  margin-bottom: 26px;
   padding-left: 25px;
   padding-right: 25px;
+
+  &::after {
+    position: absolute;
+    top: -130px;
+    right: 0;
+
+    display: block;
+    content: "";
+    width: 100px;
+    height: 99px;
+
+    background-image: url("../img/rates@1x.png");
+    background-repeat: no-repeat;
+    background-size: 100px 99px;
+  }
 }
 
 .rates__item {
+  position: relative;
+  counter-increment: ratesCounter;
+
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 11px;
 
   font-weight: 300;
   color: @grey;
 
   border-top: 1px solid rgba(0, 0, 0, 0.05);
 
+  &::after {
+    position: absolute;
+    top: 3px;
+    right: -24px;
+
+    display: block;
+    content: counter(ratesCounter);
+    width: 34px;
+    height: 34px;
+
+    font-size: 16px;
+    line-height: 34px;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+    vertical-align: middle;
+
+    background-color: #ffa530;
+    border-radius: 50%;
+  }
+
+  &:nth-child(2) {
+    &::after {
+      background-color: #ffbd30;
+    }
+  }
+
   &:last-child {
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+
+    &::after {
+      background-color: #ffd74b;
+    }
   }
 }
 
@@ -59,17 +110,23 @@
 @media (min-width: @tablet-width) {
   .rates {
     margin-top: -80px;
-    padding-bottom: 30px;
+    padding-bottom: 29px;
+
+    border-bottom-right-radius: @border-radius-50;
+    border-bottom-left-radius: @border-radius-50;
   }
 
   .rates__wrapper {
-    padding-top: 157px;
-    padding-bottom: 35px;
+    padding-top: 155px;
+    padding-bottom: 37px;
+
+    background-position: right 86px bottom 18px;
   }
 
   .rates__heading {
     width: 100%;
     margin-bottom: 72px;
+    margin-left: 2px;
 
     text-align: center;
   }
@@ -78,6 +135,26 @@
     margin-bottom: 33px;
     padding-right: 0;
     padding-left: 55px;
+
+    &::before {
+      position: absolute;
+      top: -43px;
+      right: -35px;
+
+      display: block;
+      content: "";
+      width: 198px;
+      height: 285px;
+
+      background-color: #e2e5f2;
+      border-radius: @border-radius-17;
+    }
+
+    &::after {
+      top: auto;
+      right: 10px;
+      bottom: -117px;
+    }
   }
 
   .rates__item {
@@ -88,27 +165,88 @@
 
     font-size: 28px;
     line-height: 33px;
+
+    &::after {
+      position: absolute;
+      top: -2px;
+      right: auto;
+      left: -90px;
+
+      width: 67px;
+      height: 67px;
+
+      font-size: 28px;
+      line-height: 67px;
+    }
   }
 
   .rates__price {
     display: inline-block;
+    margin-left: auto;
   }
 
   .rates__button {
-    display: block;
-    margin-left: 54px;
+    position: relative;
+
+    display: inline-block;
+    margin-left: 0;
     padding-top: 25px;
     padding-bottom: 20px;
+    padding-left: 54px;
 
     font-size: 20px;
     line-height: 20px;
-    color: #132576;
+    color: rgba(19, 37, 118, 1);
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: -34px;
+
+      display: block;
+      content: "";
+      width: 67px;
+      height: 67px;
+
+      background-color: #e2e5f2;
+      border-radius: 50%;
+    }
+
+    &::after {
+      position: absolute;
+      top: 23px;
+      left: -10px;
+
+      display: block;
+      content: "";
+      width: 17px;
+      height: 21px;
+
+      background-image: url("../img/business.svg");
+      background-repeat: no-repeat;
+      background-size: 17px 21px;
+    }
+
+    &:hover {
+      color: rgba(19, 37, 118, 0.7);
+
+      &::after {
+        opacity: 0.7;
+      }
+    }
+
+    &:active {
+      color: rgba(19, 37, 118, 0.3);
+
+      &::after {
+        opacity: 0.3;
+      }
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
   .rates {
-    z-index: -4;
     margin-top: -80px;
   }
 
@@ -125,9 +263,27 @@
   .rates__list {
     padding-right: 275px;
     padding-left: 91px;
+
+    &::before {
+      top: -50px;
+      right: 115px;
+
+      width: 444px;
+      height: 300px;
+    }
+
+    &::after {
+      right: 4px;
+      bottom: 0;
+
+      width: 198px;
+      height: 198px;
+
+      background-size: 198px 198px;
+    }
   }
 
   .rates__button {
-    margin-left: 90px;
+    margin-left: 36px;
   }
 }

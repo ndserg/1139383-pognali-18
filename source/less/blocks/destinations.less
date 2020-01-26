@@ -4,7 +4,7 @@
 
 .destinations__heading {
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 
   font-size: 24px;
   line-height: 24px;
@@ -13,19 +13,29 @@
 }
 
 .destinations__button {
-  display: block;
-  width: 100%;
-  margin-bottom: 25px;
-  padding-top: 8px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 230px;
+  height: 40px;
+  margin: 0;
+  margin-bottom: 2px;
+  margin-left: -5px;
+  padding: 0;
+  padding-top: 4px;
 
   font-size: 17px;
   line-height: 30px;
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
+  text-decoration: none;
   color: @dark-blue;
 
   border: none;
+  border-radius: @border-radius-30;
   background-color: @yellow;
 
   &:hover {
@@ -37,24 +47,11 @@
 
     background-color: #ffbd30;
   }
-
-  &--foto {
-    background-color: #dfe3f0;
-
-    &:hover {
-      background-color: #d1d7e9;
-    }
-
-    &:active {
-      color: @button-text-color-active;
-
-      background-color: #d1d7e9;
-    }
-  }
 }
 
 .destinations__button-step-back {
   display: block;
+  margin-top: 12px;
 
   font-size: 17px;
   line-height: 30px;
@@ -63,11 +60,53 @@
   text-transform: uppercase;
   text-decoration: none;
   color: @dark-blue;
+
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @tablet-width) {
+  .destinations__heading {
+    margin-bottom: 0;
+
+    font-size: 36px;
+    line-height: 50px;
+  }
+
   .destinations__button {
-    order: 1;
+    align-items: flex-start;
+    width: 285px;
+    height: 81px;
+    margin-left: 1px;
+    padding-left: 33px;
+
+    font-size: 24px;
+    line-height: 24px;
+    text-align: left;
+    text-transform: none;
+    color: @travelmate-page-blue;
+
+    border-radius: @border-radius-17;
+  }
+
+  .destinations__button-step-back {
+    margin-left: auto;
+    padding-top: 19px;
+    padding-left: 31px;
+
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: none;
+    color: @travelmate-page-blue;
+
+    background: transparent url("../img/triangle-arrow-left.svg") left 24px no-repeat;
+    background-size: 10px 14px;
   }
 }
 
@@ -76,22 +115,18 @@
     position: relative;
   }
 
+  .destinations__heading {
+    text-indent: 7px;
+  }
+
   .destinations__button {
-    width: 190px;
+    width: 285px;
+    padding-left: 33px;
     order: 0;
   }
 
-  .destinations__button--foto {
-    position: absolute;
-    z-index: 1;
-    top: -90px;
-    right: 155px;
-
-    padding-right: 35px;
-    padding-left: 35px;
-
-    font-size: 20px;
-    line-height: 39px;
-    font-weight: 500;
+  .destinations__button-step-back {
+    margin-right: 2px;
+    padding-left: 33px;
   }
 }

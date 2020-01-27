@@ -188,12 +188,24 @@
         <section class="destinations__plans-config plans-editor">
           <div class="plans-editor__wrapper wrapper">
             <h2 class="destinations__heading plans-editor__header">Добавить план:</h2>
+            <ul class="plans-editor__steps-list">
+              <li class="plans-editor__indicator">
+                <a class="plans-editor__indicator-link plans-editor__indicator-link--current" href="#step1">Даты</a>
+              </li>
+              <li class="plans-editor__indicator">
+                <a class="plans-editor__indicator-link" href="#step2">Маршрут</a>
+              </li>
+              <li class="plans-editor__indicator">
+                <a class="plans-editor__indicator-link" href="#step3">Развлечения</a>
+              </li>
+            </ul>
+
             <div class="plans-editor__steps travel-interval" id="step1">
               <h3 class="plans-editor__heading">
                 <span class="plans-editor__step-number">Шаг 1.</span>
                 Даты пребывания
               </h3>
-              <ul class="plans-editor__steps-markers marker-list">
+              <ul class="plans-editor__steps-markers marker-list marker-list">
                 <li class="marker-list__item">
                   <a class="marker-list__link marker-list__link--current" href="#step1">Даты</a>
                 </li>
@@ -327,10 +339,10 @@
               <ul class="countries-select__list">
                 <li class="countries-select__item">
                   <select class="countries-select__group" name="countries-1" id="countries-1">
-                    <option class="countries-select__country countries-select__country--bigenc" value="Босния и герцеговина">Босния и герцеговина
+                    <option class="countries-select__country countries-select__country--bosnia" value="Босния и герцеговина">Босния и герцеговина
                     </option>
                   </select>
-                  <label class="countries-select__label countries-select__label--bigenc" for="countries-1">Босния и герцеговина</label>
+                  <label class="countries-select__label countries-select__label--bosnia" for="countries-1">Босния и герцеговина</label>
                   <button class="countries-select__button-close countries-1" type="button">Убрать из списка</button>
                 </li>
                 <li class="countries-select__item">
@@ -446,12 +458,12 @@
                 Можно писать в свободной форме и ставить тэги.</p>
               <ul class="entertainment__list">
                 <li class="entertainment__item">
-                  <h4 class="entertainment__country">Босния и герцеговина</h4>
+                  <h4 class="entertainment__country entertainment__country--bosnia">Босния и герцеговина</h4>
                   <textarea class="entertainment__text" name="plan" rows="9" cols="20" placeholder="План действий" required></textarea>
                   <p class="entertainment__text-error">Это поле должно быть заполнено</p>
                 </li>
                 <li class="entertainment__item">
-                  <h4 class="entertainment__country">Чехия</h4>
+                  <h4 class="entertainment__country entertainment__country--czech">Чехия</h4>
                   <textarea class="entertainment__text" name="plan" rows="9" cols="20" placeholder="План действий" required>Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.
                   </textarea>
                 </li>

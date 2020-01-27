@@ -7,6 +7,8 @@
 }
 
 .plans-editor__wrapper {
+  display: flex;
+  flex-wrap: wrap;
   padding-top: 30px;
 }
 
@@ -14,8 +16,54 @@
   display: none;
 }
 
+.plans-editor__steps-list {
+  .list-clear();
+  display: flex;
+  align-items: center;
+  height: 24px;
+  margin-right: 20px;
+  margin-left: auto;
+}
+
+.plans-editor__indicator {
+  margin-right: 15px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.plans-editor__indicator-link {
+  display: block;
+  width: 5px;
+  height: 5px;
+
+  font-size: 0;
+  line-height: 0;
+  text-decoration: none;
+
+
+  background-color: @button-text-color;
+  border-radius: 50%;
+  opacity: 0.3;
+
+  &--current {
+    opacity: 1;
+  }
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.15;
+  }
+}
+
 .plans-editor__steps {
   position: relative;
+  box-sizing: border-box;
+  width: 270px;
   margin-bottom: 10px;
   padding-top: 24px;
   padding-right: 25px;
@@ -57,6 +105,7 @@
   }
 
   .plans-editor__steps {
+    width: 618px;
     padding-top: 48px;
     padding-right: 44px;
     padding-left: 44px;
@@ -67,6 +116,15 @@
   .plans-editor__heading {
     font-size: 36px;
     line-height: 36px;
+  }
+
+  .plans-editor__steps-list {
+    height: 42px;
+    margin-right: 0;
+  }
+
+  .plans-editor__indicator {
+    margin-right: 29px;
   }
 
   .plans-editor__description {
@@ -80,7 +138,20 @@
 
 @media (min-width: @desktop-width) {
   .plans-editor__wrapper {
+    display: block;
     padding-left: 60px;
+  }
+
+  .plans-editor__steps {
+    width: 100%;
+    padding-right: 160px;
+    padding-left: 160px;
+
+    border-radius: @border-radius-50;
+  }
+
+  .plans-editor__steps-list {
+    display: none;
   }
 
   .plans-editor__break {
@@ -98,13 +169,6 @@
   .plans-editor__step-number {
     display: inline;
     margin-right: -3px;
-  }
-
-  .plans-editor__steps {
-    padding-right: 160px;
-    padding-left: 160px;
-
-    border-radius: @border-radius-50;
   }
 
   .plans-editor__description {

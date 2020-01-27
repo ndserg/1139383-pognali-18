@@ -20,6 +20,11 @@
   background: url("../img/smolov-back-desktop@1x.png") 152px 70px no-repeat,
     url("../img/rogovaya-back-mobile@1x.png") -10px 340px no-repeat;
 
+  @media (min-resolution: @retina-dppx) {
+    background-image: url("../img/smolov-back-desktop@2x.png"),
+      url("../img/rogovaya-back-mobile@2x.png");
+  }
+
   &::before {
     .decorative-block;
     top: 70px;
@@ -156,6 +161,11 @@
 
     background: url("../img/smolov-back-desktop@1x.png") 40px 505px no-repeat,
       url("../img/rogovaya-back-desktop@1x.png") right 75px top 160px no-repeat;
+
+    @media (min-resolution: @retina-dppx) {
+      background-image: url("../img/smolov-back-desktop@2x.png"),
+        url("../img/rogovaya-back-desktop@2x.png");
+    }
 
     &::before {
       .decorative-block;

@@ -18,6 +18,10 @@
 
   background: transparent url("../img/about-mobile@1x.png") 17px -1px no-repeat;
 
+  @media (min-resolution: @retina-dppx) {
+    background-image: url("../img/about-mobile@2x.png");
+  }
+
   &::before {
     .decorative-block;
   }
@@ -46,6 +50,10 @@
     padding-right: 385px;
 
     background: transparent url("../img/about-tablet@1x.png") right 8px top 45px no-repeat;
+
+    @media (min-resolution: @retina-dppx) {
+      background-image: url("../img/about-tablet@2x.png");
+    }
 
     &::before {
       .decorative-block;
@@ -97,6 +105,10 @@
     padding-right: 690px;
 
     background: transparent url("../img/about-desktop@1x.png") right 60px top 95px no-repeat;
+
+    @media (min-resolution: @retina-dppx) {
+      background-image: url("../img/about-desktop@2x.png");
+    }
 
     &::before {
       .decorative-block;

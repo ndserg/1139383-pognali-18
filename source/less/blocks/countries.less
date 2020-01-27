@@ -191,6 +191,10 @@
 
     background: transparent url("../img/flags-back@1x.png") right 40px top 130px no-repeat;
 
+    @media (min-resolution: @retina-dppx) {
+      background-image: url("../img/flags-back@2x.png");
+    }
+
     &::after {
       position: absolute;
       top: 456px;

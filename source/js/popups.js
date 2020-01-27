@@ -3,6 +3,12 @@ var main_nav = document.querySelector(".main-nav");
 var page_header = document.querySelector(".page-header");
 var logo = document.querySelector(".page-header__logo");
 
+var rates_open = document.querySelector(".rates__button");
+var rates_modal = document.querySelector(".rates-modal");
+var rates_close = document.querySelector(".rates-modal__button-close");
+
+
+//modal menu
 main_nav.classList.add("main-nav--js");
 logo.classList.add("page-header__logo--js");
 
@@ -24,3 +30,20 @@ header_nav_toggle.addEventListener("click", function (evt) {
     logo.classList.add("page-header__logo--js");
   };
 });
+//modal menu end
+
+//rates modal
+if (rates_modal) {
+rates_open.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  if (rates_modal.classList.contains("visually-hidden")) {
+    rates_modal.classList.remove("visually-hidden");
+  };
+});
+
+rates_close.addEventListener("click", function (evt) {
+  evt.preventDefault();
+    rates_modal.classList.add("visually-hidden");
+});
+};
+//rate modal end

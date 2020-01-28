@@ -14,22 +14,19 @@
 
 .destinations__button {
   box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
+  display: block;
   width: 230px;
-  height: 40px;
+  min-height: 40px;
   margin: 0;
   margin-bottom: 2px;
   margin-left: -5px;
   padding: 0;
-  padding-top: 4px;
 
   font-size: 17px;
-  line-height: 30px;
+  line-height: 40px;
   font-weight: 700;
   text-align: center;
+  vertical-align: middle;
   text-transform: uppercase;
   text-decoration: none;
   color: @dark-blue;
@@ -80,32 +77,46 @@
   }
 
   .destinations__button {
-    align-items: flex-start;
     width: 285px;
-    height: 81px;
+    min-height: 81px;
     margin-left: 1px;
+    padding-right: 70px;
     padding-left: 33px;
 
     font-size: 24px;
-    line-height: 24px;
+    line-height: 81px;
     text-align: left;
     text-transform: none;
     color: @travelmate-page-blue;
 
     border-radius: @border-radius-17;
+    background-image: url("../img/triangle-arrow-right.svg");
+    background-repeat: no-repeat;
+    background-size: 10px 14px;
+    background-position: right 38px center;
+
+    &:active {
+      background-image: url("../img/triangle-arrow-right-opacity.svg");
+    }
   }
 
   .destinations__button-step-back {
+    min-height: 81px;
+    margin: 0;
+    padding: 0;
     margin-left: auto;
-    padding-top: 19px;
     padding-left: 31px;
 
     font-size: 24px;
-    line-height: 24px;
+    line-height: 81px;
     text-transform: none;
+    vertical-align: middle;
     color: @travelmate-page-blue;
 
-    background: transparent url("../img/triangle-arrow-left.svg") left 24px no-repeat;
+    background-color: transparent;
+    background-image: url("../img/triangle-arrow-left.svg");
+    background-repeat: no-repeat;
+    background-position: left center;
     background-size: 10px 14px;
   }
 }

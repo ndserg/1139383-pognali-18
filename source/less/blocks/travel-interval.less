@@ -72,7 +72,8 @@
     border-color: #959bb2;
   }
 
-  &:active {
+  &:active,
+  &:focus {
     border-color: #161c35;
   }
 }
@@ -109,10 +110,18 @@
 
   &:hover {
     opacity: 0.4;
+
+    & + .travel-interval__input {
+      border-color: #959bb2;
+    }
   }
 
   &:active {
     opacity: 0.1;
+
+    & + .travel-interval__input {
+      border-color: #161c35;
+    }
   }
 }
 
@@ -132,36 +141,62 @@
   cursor: pointer;
 }
 
-.travel-interval__checkbox + label {
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
+.travel-interval__checkbox {
+  & + label {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
 
-    display: block;
-    width: 24px;
-    height: 24px;
+      display: block;
+      width: 24px;
+      height: 24px;
 
-    background-color: #ffffff;
-    border: 1px solid #cbced9;
-    border-radius: 5px;
+      background-color: #ffffff;
+      border: 1px solid #cbced9;
+      border-radius: 5px;
+    }
   }
 }
 
-.travel-interval__checkbox:checked + label {
-  &::before {
-    background-image: url("../img/tick-mobile@1x.svg");
-    background-size: 9px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-clip: content-box;
+.travel-interval__checkbox:hover,
+.travel-interval__checkbox:focus {
+  & + label {
+    &::before {
+      border-color: #959bb2;
+    }
+  }
+}
+
+.travel-interval__checkbox:active {
+  & + label {
+    &::before {
+      border: none;
+      background-color: #e2e5f1;
+      background-image: url("../img/tick-mobile@1x-opacity.svg");
+      background-size: 9px 9px;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+}
+
+.travel-interval__checkbox:checked {
+  & + label {
+    &::before {
+      background-image: url("../img/tick-mobile@1x.svg");
+      background-size: 9px 9px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-clip: content-box;
+    }
   }
 }
 
 @media (min-width: @tablet-width) {
   .travel-interval {
-    margin-top: 48px;
+    margin-top: 50px;
     margin-bottom: 40px;
     padding-bottom: 54px;
   }
@@ -251,16 +286,28 @@
     color: @travelmate-page-blue;
   }
 
-  .travel-interval__checkbox + label {
-    &::before {
-      width: 36px;
-      height: 34px;
+  .travel-interval__checkbox {
+    & + label {
+      &::before {
+        width: 36px;
+        height: 34px;
+      }
     }
   }
 
-  .travel-interval__checkbox:checked + label {
-    &::before {
-      background-size: 12px;
+  .travel-interval__checkbox:checked {
+    & + label {
+      &::before {
+        background-size: 12px 12px;
+      }
+    }
+  }
+
+  .travel-interval__checkbox:active {
+    & + label {
+      &::before {
+        background-size: 12px 12px;
+      }
     }
   }
 }
@@ -273,7 +320,7 @@
   }
 
   .travel-interval__group {
-    margin-top: 55px;
+    margin-top: 57px;
     margin-bottom: 18px;
     padding-top: 30px;
   }

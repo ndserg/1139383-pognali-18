@@ -40,13 +40,8 @@
     background-color: #ffffff;
   }
 
-  &--selected {
-    color: #ffffff;
-
-    background-color: @travelmate-page-blue;
-  }
-
-  &:hover {
+  &:hover,
+  &:focus {
     color: #ffffff;
 
     background-color: @travelmate-page-blue;
@@ -57,6 +52,18 @@
     color: #ffffff;
 
     background-color: #101d41;
+  }
+
+  &--selected {
+    color: #ffffff;
+
+    background-color: @travelmate-page-blue;
+
+    &:hover {
+      outline: none;
+
+      background-color: @travelmate-page-blue;
+    }
   }
 }
 
@@ -117,7 +124,8 @@
     background-size: 9px 18px;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     opacity: 0.5;
   }
 

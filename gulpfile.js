@@ -45,7 +45,7 @@ gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
     "source/js/**",
-    "source/css/*.min*",
+    "source/css/**",
     "source/*.*"
     ], {
     base: "source"
@@ -54,9 +54,16 @@ gulp.task("copy", function () {
 });
 
 
+gulp.task("build", gulp.series(
+  "clean",
+  "css",
+  "copy",
+  "images"
+));
+
 gulp.task("server", function () {
   server.init({
-    server: "source/",
+    server: "build/",
     notify: false,
     open: true,
     cors: true,
@@ -67,11 +74,4 @@ gulp.task("server", function () {
   gulp.watch("source/*.html").on("change", server.reload);
 });
 
-gulp.task("start", gulp.series("css", "server"));
-
-gulp.task("build", gulp.series(
-  "clean",
-  "css",
-  "copy",
-  "images"
-));
+gulp.task("start", gulp.series("build", "server"));

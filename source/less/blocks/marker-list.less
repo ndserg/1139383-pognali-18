@@ -6,7 +6,7 @@
 @media (min-width: @desktop-width) {
   .marker-list {
     position: absolute;
-    top: 106px;
+    top: 109px;
     right: 206px;
 
     display: block;
@@ -40,20 +40,28 @@
       opacity: 0.3;
     }
 
-    &--current {
-      opacity: 1;
-
-      &::before {
-        opacity: 1;
-      }
-    }
-
     &:hover {
       opacity: 0.3;
     }
 
     &:active {
       opacity: 0.1;
+    }
+
+    &--current {
+      opacity: 1;
+
+      &::before {
+        opacity: 1;
+      }
+
+      &:hover {
+        opacity: 1;
+      }
+
+      &:active {
+        opacity: 1;
+      }
     }
   }
 }

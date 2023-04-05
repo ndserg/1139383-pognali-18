@@ -2,7 +2,7 @@
 #### _в рамках курса Frontend React разработчик (http://htmlacademy.ru)_
 - - - 
 
-__[Проект On-Line](http://pognali.dendev.ru)__  
+__[Проект On-Line](https://pognali.dendev.ru)__  
 
 #### Используемые технологии
 *   HTML

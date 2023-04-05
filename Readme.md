@@ -27,7 +27,7 @@ __[Проект On-Line](https://pognali.dendev.ru)__
 ### Скриншоты  
 ![Скриншот Главная](/screenshots/index-desktop-1.jpg)
 ![Скриншот Главная](/screenshots/index-desktop-2.jpg)
-![Скриншот Главная](/screenshots/form-desktop-1.jpg)
-![Скриншот Главная](/screenshots/form-desktop-2.jpg)
-![Скриншот Главная](/screenshots/catalog-desktop-1.jpg)
-![Скриншот Главная](/screenshots/cat-mobile-col.jpg)
+![Скриншот форма](/screenshots/form-desktop-1.jpg)
+![Скриншот форма](/screenshots/form-desktop-2.jpg)
+![Скриншот каталог](/screenshots/catalog-desktop-1.jpg)
+![Скриншот каталог мобильная версия](/screenshots/cat-mobile-col.jpg)

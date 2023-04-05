@@ -1,9 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <script>
-        document.createElement('picture');
-  </script>
-  <script src="js/picturefill.min.js" async></script>
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Погнали</title>
@@ -15,7 +11,7 @@
 
     <header class="page-header page-header--nojs">
       <div class="page-header__wrapper">
-        <a class="page-header__logo">
+        <a class="page-header__logo" href="index.html">
           <picture>
             <source media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.png 1x, img/logo-desktop-white@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
@@ -38,7 +34,7 @@
             </ul>
             <ul class="header-nav__list header-user-list">
               <li class="header-user-list__item">
-                <a class="header-user-list__login " href="login.html">Авторизация</a>
+                <a class="header-user-list__login " href="#">Авторизация</a>
               </li>
             </ul>
             <ul class="header-nav__list header-contacts-list">
@@ -69,7 +65,7 @@
         </ul>
         <ul class="main-nav__list user-list">
           <li class="user-list__item">
-            <a class="user-list__login" href="login.html">Авторизация</a>
+            <a class="user-list__login" href="#">Авторизация</a>
           </li>
         </ul>
         <ul class="main-nav__list main-nav-contacts-list">
@@ -107,7 +103,7 @@
               <a class="intro-contacts__link intro-contacts__link--email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </li>
             <li class="intro-contacts__item intro-contacts__item--login">
-              <a class="intro-contacts__login" href="login.html">Авторизация</a>
+              <a class="intro-contacts__login" href="#">Авторизация</a>
             </li>
           </ul>
 
@@ -140,7 +136,7 @@
           <p class="page-main__text about__text">Любое путешествие веселее<br class="about__text-mobile-br"> с попутчиками, которые на одной волне с тобой!
             Делитесь своими идеями путешествий<br class="about__text-tablet-br"> и черпайте вдохновение в чужих.</p>
           <p class="page-main__text page-main__text--bold about__text about__text--bold">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
-          <a class="about__button page-main__button" href="about.html">Подробнее</a>
+          <a class="about__button page-main__button" href="#">Подробнее</a>
         </div>
       </section>
 
@@ -354,7 +350,7 @@
             Зарегистрируйтесь,<br> это быстро и бесплатно!
           </p>
           <p class="page-main__text contact__text">
-            Уже зарегистрированы? Тогда скорее <a class="contact__login" href="login.html">авторизуйтесь.</a>
+            Уже зарегистрированы? Тогда скорее <a class="contact__login" href="#">авторизуйтесь.</a>
           </p>
           <form class="contact__form" action="https://echo.htmlacademy.ru" method="post">
             <input class="contact__email" type="email" name="email" id="email" placeholder="E-mail" required>
@@ -390,7 +386,7 @@
 
     <footer class="page-footer">
       <div class="page-footer__wrapper wrapper">
-        <a class="page-footer__logo">
+        <a class="page-footer__logo" href="index.html">
           <picture>
             <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
@@ -439,6 +435,10 @@
       <button class="rates-modal__button-close" type="button">Закрыть окно</button>
     </section>
 
+  <script>
+        document.createElement('picture');
+  </script>
+  <script src="js/picturefill.min.js" async></script>
   <script src="js/popups.js"></script>
   </body>
 </html>

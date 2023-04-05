@@ -21,6 +21,13 @@
 *   Сборка для разработки с запуском локального сервера: `npm start`
 *   Сборка без запуска сервера (готовый проект для размещения на хостинге): `npm run build`
 
-[Проект](http://pognali.dendev.ru)  
-[GitHub](https://github.com/ndserg/1139383-pognali-18)  
-![Проект](http://dendev.ru/img/pognali-310x300.jpg)
+__[Проект On-Line](http://pognali.dendev.ru)__  
+__[GitHub](https://github.com/ndserg/1139383-pognali-18)__  
+  
+### Скриншоты  
+![Скриншот Главная](/screenshots/index-desktop-1.jpg)
+![Скриншот Главная](/screenshots/index-desktop-2.jpg)
+![Скриншот Главная](/screenshots/form-desktop-1.jpg)
+![Скриншот Главная](/screenshots/form-desktop-2.jpg)
+![Скриншот Главная](/screenshots/catalog-desktop-1.jpg)
+![Скриншот Главная](/screenshots/cat-mobile-col.jpg)

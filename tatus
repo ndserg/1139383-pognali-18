@@ -1,0 +1,350 @@
+[33mcommit 9dea41b0b11cc64975273f7ec53aafa61297dca5[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Denis Natalevich <ndserg@gmail.com>
+Date:   Wed Apr 5 16:34:50 2023 +0300
+
+    Доработает сборку. Добавит описание Readme.md. Небольшие правки в html
+
+[33mcommit 6d0c8f35f6759343d6ad0df3a2a05247e524cc4c[m
+Author: ndserg <ndserg@gmail.com>
+Date:   Wed Jan 29 16:44:35 2020 +0300
+
+    правки к проекту по критерию Б11
+
+[33mcommit 079d3f83918c22f9a9de4839dd53f7539fad6ac5[m
+Merge: 6349ce0 7680ca1
+Author: Keks <keksobot@users.noreply.github.com>
+Date:   Tue Jan 28 16:19:33 2020 +0300
+
+    Merge pull request #17 from ndserg/master
+
+[33mcommit 7680ca116074bf3bcc6d552b1243603b95af637f[m
+Author: ndserg <ndserg@gmail.com>
+Date:   Tue Jan 28 16:12:39 2020 +0300
+
+    правки после 1-й проверки
+
+[33mcommit 6349ce02915ebf36244ef37036fcd9c9657622bb[m
+Merge: 3c89bfe b4e65ad
+Author: Keks <keksobot@users.noreply.github.com>
+Date:   Tue Jan 28 00:06:53 2020 +0300
+
+    Merge pull request #16 from ndserg/module8-task1
+
+[33mcommit b4e65ade8e141be74e9cfd0ea94459b5956a245f[m[33m ([m[1;31morigin/module8-task1[m[33m)[m
+Author: ndserg <ndserg@gmail.com>
+Date:   Tue Jan 28 00:03:48 2020 +0300
+
+    подключает picturefill
+
+[33mcommit 7d0a34fc1446faf6dfa1bffb089d0ef9a6e9dc57[m
+Author: ndserg <ndserg@gmail.com>
+Date:   Mon Jan 27 16:36:38 2020 +0300
+
+    17. Автоматизируем сборку личного проекта
+
+[33mcommit 3c89bfe871d282e23a3c16be944047e8baf23c57[m
+Merge: cbd024b 0315f81
+Author: Keks <keksobot@users.noreply.github.com>
+Date:   Mon Jan 27 13:53:36 2020 +0300
+
+    Merge pull request #15 from ndserg/module6-task2
+
+[33mcommit 0315f8141e0b5d3987de0bfe6f0c5ffe4bb5a8e3[m[33m ([m[1;31morigin/module6-task2[m[33m)[m
+Author: ndserg <ndserg@gmail.com>
+Date:   Mon Jan 27 13:24:23 2020 +0300
+
+    14. Завершаем подготовку адаптивной графики в личном проекте
+
+[33mcommit cbd024b707115b27ac5652f857068bec1c6943fb[m
+Merge: bd36e74 165abcc
+Author: Keks <keksobot@users.noreply.github.com>
+Date:   Sun Jan 26 23:12:38 2020 +0300
+
+    Merge pull request #14 from ndserg/module6-task1
+
+[33mcommit 165abcc0bde1a5819b538d64d3a372b6614ef0d3[m[33m ([m[1;31morigin/module6-task1[m[33m)[m
+Author: ndserg <ndserg@gmail.com>
+Date:   Sun Jan 26 20:12:34 2020 +0300
+
+    13. Начинаем подготовку адаптивной графики в личном проекте
+
+[33mcommit bd36e74d947e7216996862701c1437c5cbcd9b4b[m
+Author: Keks <keks@htmlacademy.ru>
+Date:   Sun Jan 26 13:51:30 2020 +0300
+
+    :gift: Добавляет остатки ретиновой и векторной графики
+
+[33mcommit e5d73c0c732a2948d7a175a8f4fd9df22dcd508f[m
+Merge: 20505a8 9ae1871
+Author: Keks <keksobot@users.noreply.github.com>
+Date:   Sun Jan 26 11:43:15 2020 +0300
+
+    Merge pull request #13 from ndserg/module5-task2
+
+[33mcommit 9ae1871e3d44eab4d798c77200139c3b966526db[m[33m ([m[1;31morigin/module5-task2[m[33m)[m
+Author: ndserg <ndserg@gmail.com>
+Date:   Sun Jan 26 05:16:40 2020 +0300
+
+    Завершаем вёрстку личного проекта
+
+[33mcommit 20505a8e2c4bf0701b6807ad3a500f8b7c7b2bdd[m
+Merge: 46729d9 321f0a8
+Author: Keks <keksobot@users.noreply.github.com>
+Date:   Wed Jan 15 20:41:06 2020 +0300
+
+    Merge pull request #12 from ndserg/module5-task1
+
+[33mcommit 321f0a83574244301f0470031dbe9b8205f516c1[m[33m ([m[1;31morigin/module5-task1[m[33m)[m
+Author: ndserg <ndserg@gmail.com>
+Date:   Tue Jan 14 16:17:43 2020 +0300
+
+    10. Продолжаем вёрстку личного проекта - правки
+
+[33mcommit 794d0e841f9c38e9301523a2dd6508a47a3f2ef6[m
+Author: ndserg <ndserg@gmail.com>
+Date:   Tue Jan 14 13:15:54 2020 +0300
+
+    10. Продолжаем вёрстку личного проекта - правки
+
+[33mcommit 60329c4f30e5c7e3b24ac62a9bac3c5748eac546[m
+Author: ndserg <ndserg@gmail.com>
+Date:   Mon Jan 13 21:36:49 2020 +0300
+
+    10. Продолжаем вёрстку личного проекта
+
+[33mcommit 7cd4b8310cee72df0ef1d3ae15e5eccab799fcc6[m
+Author: ndserg <ndserg@gmail.com>
+Date:   Mon Jan 13 21:24:07 2020 +0300
+
+    10. Продолжаем вёрстку личного проекта
+
+[33mcommit 46729d9325b6ec06eaec561ab9e930471f15b934[m
+Merge: 2aadd56 99530f6
+Author: Keks <keksobot@users.noreply.github.com>
+Date:   Wed Dec 25 23:00:37 2019 +0300
+
+    Merge pull request #11 from ndserg/module4-task2
+
+[33mcommit 99530f66829b8001c550fa204c1ec1a7c50d63d1[m[33m ([m[1;31morigin/module4-task2[m[33m)[m
+Author: ndserg <ndserg@gmail.com>
+Date:   Tue Dec 24 14:21:07 2019 +0300
+
+    Завершаем вёрстку адаптивных сеток
+
+[33mcommit 2aadd5666fe1693aee2f3fb0252d746a1d659800[m
+Merge: fea3867 5c01a5a
+Author: Keks <keksobot@users.noreply.github.com>
+Date:   Sun Dec 22 20:17:42 2019 +0300
+
+    Merge pull request #10 from ndserg/module4-task1
+
+[33mcommit 5c01a5a7bb803254ffd9c022e27709cbec11a9fa[m[33m ([m[1;31morigin/module4-task1[m[33m)[m
+Author: ndserg <ndserg@gmail.com>
+Date:   Sun Dec 22 16:40:33 2019 +0300
+
+    Начинаем верстать адаптивные сетки
+
+[33mcommit fea3867ea666468f07268021f4504382be8e9e9c[m
+Merge: 3807b71 38d2ec6
+Author: Keks <keksobot@users.noreply.github.com>
+Date:   Thu Dec 12 10:54:43 2019 +0300
+
+    Merge pull request #9 from ndserg/module3-task2
+
+[33mcommit 38d2ec608751add610e80bc17cad21808eca8690[m[33m ([m[1;31morigin/module3-task2[m[33m)[m
+Author: ndserg <ndserg@gmail.com>
+Date:   Thu Dec 12 10:13:04 2019 +0300
+
+    добавил файл .stylelintignore
+
+[33mcommit 5c60fe5f1d95ed97db957a63e56e9bfb322d020b[m
+Author: ndserg <ndserg@gmail.com>
+Date:   Wed Dec 11 10:07:30 2019 +0300
+
+    Продолжаем вёрстку с препроцессором - правки 1
+
+[33mcommit 509240d605845c4f73302b7073587e8f1ab669ba[m
+Author: ndserg <ndserg@gmail.com>
+Date:   Tue Dec 10 23:26:54 2019 +0300
+
+    Продолжаем вёрстку с препроцессором
+
+[33mcommit 3807b716b1ab5d5658b2d164a67375de648590bb[m
+Merge: 7eb949e fc55d06
+Author: Keks <keksobot@users.noreply.github.com>
+Date:   Mon Dec 2 21:31:22 2019 +0300
+
+    Merge pull request #8 from ndserg/module3-task1
+
+[33mcommit fc55d060c51c10d1d6b4336384a3a81644e89247[m[33m ([m[1;31morigin/module3-task1[m[33m)[m
+Author: ndserg <ndserg@gmail.com>
+Date:   Mon Dec 2 21:11:33 2019 +0300
+
+    Начинаем вёрстку с препроцессором - правки-2
+
+[33mcommit 3eff5f380c792ecd69ead17b0311e1242748a1e8[m
+Author: ndserg <ndserg@gmail.com>
+Date:   Sun Dec 1 22:46:38 2019 +0300
+
+    Начинаем вёрстку с препроцессором - правки-1
+
+[33mcommit 03538bc2809425b03b08dd2c17cd4c7b96ea63b6[m
+Author: ndserg <ndserg@gmail.com>
+Date:   Fri Nov 29 16:19:48 2019 +0300
+
+    Начинаем вёрстку с препроцессором
+
+[33mcommit 7eb949e9b6c9b0519d394d3736f95fbe0dda674a[m
+Merge: a784dbf ff4051b
+Author: Keks <keksobot@users.noreply.github.com>
+Date:   Thu Nov 21 13:44:08 2019 +0300
+
+    Merge pull request #7 from ndserg/module2-task2
+
+[33mcommit ff4051ba8bbe5a13b54fac18830b41dc6d76c8e8[m[33m ([m[1;31morigin/module2-task2[m[33m)[m
+Author: ndserg <ndserg@gmail.com>
+Date:   Wed Nov 20 22:31:55 2019 +0300
+
+    Завершаем методичную разметку личного проекта
+
+[33mcommit a784dbfc1c49259b34f949f142a1488bae495b19[m
+Merge: 3121794 939bfba
+Author: Keks <keksobot@users.noreply.github.com>
+Date:   Mon Nov 18 23:19:55 2019 +0300
+
+    Merge pull request #6 from ndserg/module2-task1
+
+[33mcommit 939bfba5c279cd22a825895bd7827328bb1d53ff[m[33m ([m[1;31morigin/module2-task1[m[33m)[m
+Author: ndserg <ndserg@gmail.com>
+Date:   Mon Nov 18 23:11:07 2019 +0300
+
+    Правки к первому заданию
+
+[33mcommit 7c2124f60dda2b62bd7d806169cc21abc1ce0e50[m
+Merge: 636f693 3121794
+Author: ndserg <ndserg@gmail.com>
+Date:   Mon Nov 18 17:56:43 2019 +0300
+
+    Merge branch 'master' of github.com:htmlacademy-adaptive/1139383-pognali-18 into module2-task1
+
+[33mcommit 312179420b6db0bd1f08d480f820ec2779427a7c[m
+Merge: c6cfe05 31f01af
+Author: Zubov Sergey <serj@zsa-studio.ru>
+Date:   Fri Nov 15 12:12:13 2019 +0300
+
+    Merge pull request #5 from htmlacademy-adaptive/dependabot/npm_and_yarn/js-yaml-3.13.1
+    
+    Bump js-yaml from 3.13.0 to 3.13.1
+
+[33mcommit 31f01af9dcc9b15285a2ad7f6e7fe5d6961a98bd[m
+Author: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Date:   Fri Nov 15 09:11:21 2019 +0000
+
+    Bump js-yaml from 3.13.0 to 3.13.1
+    
+    Bumps [js-yaml](https://github.com/nodeca/js-yaml) from 3.13.0 to 3.13.1.
+    - [Release notes](https://github.com/nodeca/js-yaml/releases)
+    - [Changelog](https://github.com/nodeca/js-yaml/blob/master/CHANGELOG.md)
+    - [Commits](https://github.com/nodeca/js-yaml/compare/3.13.0...3.13.1)
+    
+    Signed-off-by: dependabot[bot] <support@github.com>
+
+[33mcommit c6cfe057b4a892a746af5a5d3becad94176633c8[m
+Merge: 398576e e274009
+Author: Zubov Sergey <serj@zsa-studio.ru>
+Date:   Fri Nov 15 12:10:42 2019 +0300
+
+    Merge pull request #4 from htmlacademy-adaptive/dependabot/npm_and_yarn/lodash.merge-4.6.2
+    
+    Bump lodash.merge from 4.6.1 to 4.6.2
+
+[33mcommit 398576e16ae1f920edd9b02d0b62d24400b121c3[m
+Merge: 1cecc86 5868737
+Author: Zubov Sergey <serj@zsa-studio.ru>
+Date:   Fri Nov 15 12:10:30 2019 +0300
+
+    Merge pull request #3 from htmlacademy-adaptive/dependabot/npm_and_yarn/mixin-deep-1.3.2
+    
+    Bump mixin-deep from 1.3.1 to 1.3.2
+
+[33mcommit 1cecc8621b939eb788f4bc189abeab70acce3d4c[m
+Merge: f31a7f1 a259c45
+Author: Zubov Sergey <serj@zsa-studio.ru>
+Date:   Fri Nov 15 12:09:54 2019 +0300
+
+    Merge pull request #1 from htmlacademy-adaptive/dependabot/npm_and_yarn/lodash-4.17.15
+    
+    Bump lodash from 4.17.11 to 4.17.15
+
+[33mcommit 636f6936d10d6ee7fad956d73a3d431d59e75113[m
+Author: ndserg <ndserg@gmail.com>
+Date:   Thu Nov 14 22:41:02 2019 +0300
+
+    Начинаем методичную разметку личного проекта
+
+[33mcommit e2740095cb0fd1677a428a7bdf3463378ebc2bb5[m
+Author: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Date:   Tue Nov 12 07:29:06 2019 +0000
+
+    Bump lodash.merge from 4.6.1 to 4.6.2
+    
+    Bumps [lodash.merge](https://github.com/lodash/lodash) from 4.6.1 to 4.6.2.
+    - [Release notes](https://github.com/lodash/lodash/releases)
+    - [Commits](https://github.com/lodash/lodash/commits)
+    
+    Signed-off-by: dependabot[bot] <support@github.com>
+
+[33mcommit 586873749c3bdbcbd4821a712fc2fe6053b87fba[m
+Author: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Date:   Tue Nov 12 07:29:03 2019 +0000
+
+    Bump mixin-deep from 1.3.1 to 1.3.2
+    
+    Bumps [mixin-deep](https://github.com/jonschlinkert/mixin-deep) from 1.3.1 to 1.3.2.
+    - [Release notes](https://github.com/jonschlinkert/mixin-deep/releases)
+    - [Commits](https://github.com/jonschlinkert/mixin-deep/compare/1.3.1...1.3.2)
+    
+    Signed-off-by: dependabot[bot] <support@github.com>
+
+[33mcommit f31a7f11822b52d1a18d611a21ad117292e051fe[m
+Author: Keks <keks@htmlacademy.ru>
+Date:   Tue Nov 12 10:28:25 2019 +0300
+
+    :kissing_cat: Добавляет сборку Less на Gulp
+
+[33mcommit 805ad839b807e859857bd6900124b39e89dba3f8[m
+Author: Keks <keks@htmlacademy.ru>
+Date:   Tue Nov 12 10:28:18 2019 +0300
+
+    :gift: Нарезает графику для вёрстки
+
+[33mcommit eccee9fc333b7e587cbdf878adc562076ad12794[m
+Merge: 90766ee 52b9705
+Author: Keks <keksobot@users.noreply.github.com>
+Date:   Thu Nov 7 11:38:03 2019 +0300
+
+    Merge pull request #2 from ndserg/module1-task1
+
+[33mcommit 52b9705632f93be9f5513e7a70c6a31fc361439d[m[33m ([m[1;31morigin/module1-task1[m[33m)[m
+Author: ndserg <ndserg@gmail.com>
+Date:   Wed Nov 6 23:51:54 2019 +0300
+
+    Добавляет наставника
+
+[33mcommit a259c45800600f2417bb2490ad4244c4e82f41c4[m[33m ([m[1;31morigin/dependabot/npm_and_yarn/lodash-4.17.15[m[33m)[m
+Author: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Date:   Tue Nov 5 20:16:39 2019 +0000
+
+    Bump lodash from 4.17.11 to 4.17.15
+    
+    Bumps [lodash](https://github.com/lodash/lodash) from 4.17.11 to 4.17.15.
+    - [Release notes](https://github.com/lodash/lodash/releases)
+    - [Commits](https://github.com/lodash/lodash/compare/4.17.11...4.17.15)
+    
+    Signed-off-by: dependabot[bot] <support@github.com>
+
+[33mcommit 90766ee7ab6c6d5518903a43a9430faac8c4ab41[m
+Author: Keks <keks@htmlacademy.ru>
+Date:   Tue Nov 5 23:10:55 2019 +0300
+
+    :hatching_chick:

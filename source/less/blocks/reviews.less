@@ -1,9 +1,7 @@
 .reviews {
   min-height: 145px;
   padding-top: 46px;
-  padding-right: 25px;
   padding-bottom: 10px;
-  padding-left: 25px;
 
   color: #ffffff;
 
@@ -14,6 +12,8 @@
   width: 205px;
   margin: 0;
   padding: 0;
+  padding-right: 25px;
+  padding-left: 25px;
 }
 
 .reviews__author {
@@ -31,22 +31,28 @@
   .reviews {
     min-height: 387px;
     padding-top: 0;
-    padding-left: 75px;
 
     background-color: transparent;
   }
 
   .reviews__item {
     width: 265px;
+    padding-left: 75px;
+    padding-right: 75px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .reviews {
     min-height: 200px;
-    width: 320px;
     margin-bottom: 64px;
     padding-top: 10px;
-    padding-left: 0;
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+
+  .reviews__item {
+    width: 265px;
+    padding: 0;
   }
 }

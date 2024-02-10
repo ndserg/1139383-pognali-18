@@ -1,24 +1,18 @@
 .wrapper {
   box-sizing: border-box;
-  width: 320px;
+  width: 270px;
   margin: 0 auto;
   padding: 0;
-  padding-right: 25px;
-  padding-left: 25px;
 }
 
 @media (min-width: @tablet-width) {
   .wrapper {
-    width: @tablet-width;
-    padding-right: 75px;
-    padding-left: 75px;
+    width: calc(@tablet-width - 80px);
   }
 }
 
 @media (min-width: @desktop-width) {
   .wrapper {
-    width: @desktop-width;
-    padding-right: 60px;
-    padding-left: 130px;
+    width: calc(@desktop-width - 120px);
   }
 }

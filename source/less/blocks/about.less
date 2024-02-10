@@ -1,12 +1,38 @@
 .about {
   position: relative;
   z-index: 7;
+  overflow: hidden;
 
   color: #ffffff;
-
   background-color: @medium-blue;
+
   border-bottom-right-radius: @border-radius-30;
   border-bottom-left-radius: @border-radius-30;
+
+
+  &::before {
+    .decorative-block;
+    left: calc(50% - 154px);
+  }
+
+  &::after {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+
+    display: block;
+    width: 100%;
+    min-height: 351px;
+    content: "";
+
+    background-image:  url("../img/about-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-position: calc(50% + 10px) top;
+
+    @media (min-resolution: @retina-dppx) {
+      background-image: url("../img/about-mobile@2x.png");
+    }
+  }
 }
 
 .about__wrapper {
@@ -15,16 +41,6 @@
   min-height: 351px;
   padding-top: 32px;
   padding-bottom: 50px;
-
-  background: transparent url("../img/about-mobile@1x.png") 17px -1px no-repeat;
-
-  @media (min-resolution: @retina-dppx) {
-    background-image: url("../img/about-mobile@2x.png");
-  }
-
-  &::before {
-    .decorative-block;
-  }
 }
 
 .about__text-tablet-br {
@@ -38,33 +54,42 @@
 
 @media (min-width: @tablet-width) {
   .about {
-    margin-top: -5px;
     padding-top: 88px;
 
     border-bottom-right-radius: @border-radius-50;
     border-bottom-left-radius: @border-radius-50;
-  }
-
-  .about__wrapper {
-    min-height: 682px;
-    padding-top: 40px;
-    padding-right: 385px;
-
-    background: transparent url("../img/about-tablet@1x.png") right 8px top 45px no-repeat;
-
-    @media (min-resolution: @retina-dppx) {
-      background-image: url("../img/about-tablet@2x.png");
-    }
 
     &::before {
       .decorative-block;
-      left: 40px;
+      top: 60px;
+      left: calc(50% - 344px);
       width: 688px;
       height: 213px;
 
       border-top-left-radius: 30px;
       border-bottom-left-radius: 30px;
     }
+
+    &::after {
+      top: 140px;
+      left: calc(50% - 190px);
+
+      min-height: 548px;
+
+      background-image:  url("../img/about-tablet@1x.png");
+      background-position: center center;
+
+      @media (min-resolution: @retina-dppx) {
+        background-image: url("../img/about-tablet@2x.png");
+      }
+    }
+  }
+
+  .about__wrapper {
+    min-height: 682px;
+    padding-top: 40px;
+    padding-right: 385px;
+    padding-left: 34px;
   }
 
   .about-heading {
@@ -98,6 +123,14 @@
   .about {
     margin-top: -80px;
     padding-top: 70px;
+
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      display: none;
+    }
   }
 
   .about__wrapper {
@@ -114,7 +147,7 @@
     &::before {
       .decorative-block;
       top: 80px;
-      left: 60px;
+      left: 0;
       width: 213px;
       height: 213px;
 
